@@ -1,0 +1,24 @@
+
+dev/ 	// development dir
+	
+
+dist/	// production dir
+
+
+Each lesson src (.html and .js) in a separate folder, 
+like : 1-vue-instance
+
+Assets are in general folder ../
+
+
+dev/
+  css/
+  images/
+
+lesson-1
+  index.html
+  main.js
+
+lesson-2
+  index.html
+  main.js
