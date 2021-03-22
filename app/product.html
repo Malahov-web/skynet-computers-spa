@@ -196,6 +196,7 @@
         <section class="section">
             <div class="container">
 
+
                 <div class="topline">
                     <div class="breadcrumbs-outer">
 
@@ -208,6 +209,7 @@
                     </div>
                     <h1 class="h1 page-title">{{ product.title }}</h1>
                 </div>
+
 
                 <main class="main main--sidebar--right">
 
@@ -301,6 +303,49 @@
 
                             </div>
 
+                            <div class="productfull__description">
+                                <div class="productfull__description-title g-subtitle h4">Описание:</div>
+                                <!-- <div class="productfull__description-text" v-if="product.description">{{ product.description }}</div> -->
+
+                                <!-- <div class="productfull__description-text" __v-if="product.description">{{ product.description || 'Описание товара отсутствует.' }}</div> -->
+
+                                <!-- <div class="productfull__description-text" v-if="product.description">{{ product.description }}</div> -->
+                                <!-- <div class="productfull__description-text" v-else="product.description">{{ textTemplates.descriptionHasNo }}</div> -->
+
+                                <div class="productfull__description-text" v-html="product.description || textTemplates.descriptionHasNo "></div>
+
+                            </div>  
+                            
+                            
+                            <div class="productfull__specifications">
+                                <div class="productfull__specifications g-subtitle h4">Характеристики:</div>
+
+                                <ul class="productfull__specifications-list">
+                                
+
+                                    <li class="productfull__specifications-list-item" v-for="(item, key) in product.specificationsShort">
+                                        <div class="productfull__specifications-list-item-name">
+                                            <span>{{ item.title }}</span>
+                                        </div>
+                                        <div class="productfull__specifications-list-item-value">
+                                            {{ item.value }}<span v-if="key == 'responseTime'">мс</span>
+                                        </div>
+                                    </li>
+
+
+                                    <!-- <li class="productfull__specifications-list-item">
+                                        <div class="productfull__specifications-list-item-name">
+                                            <span>Производитель</span>
+                                        </div>
+                                        <div class="productfull__specifications-list-item-value">
+                                            Apple
+                                        </div>
+                                    </li> -->
+
+
+                                </ul>
+                            </div>
+
 
                         </div>
 
@@ -308,6 +353,7 @@
                     </div>     
 
                 </main>
+
 
                 <aside class="sidebar sidebar--productfull">
                     <div class="sidebar-inner">
@@ -317,11 +363,13 @@
                     </div>
                 </aside>
 
+
                 <div class="bottomline">
 
 
 
                 </div>
+
 
             </div>
         </section>

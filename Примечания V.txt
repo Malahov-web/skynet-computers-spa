@@ -1,0 +1,9 @@
+
+
+Неправильно:
+<span v-if="key == responseTime">
+т.к. посчитает responseTime за переменную
+
+Правильно:
+<span v-if="key == 'responseTime'">
+потому что ключ объекта д.б. строкой
