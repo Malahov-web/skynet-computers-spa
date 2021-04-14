@@ -1,0 +1,72 @@
+
+
+..
+
+..
+
+вт 13.04
+  .. (0.5)
+  Deploy project 0.1-0.4 (1)
+  Deploy project 0.1.5-6 (1)
+
+..
+
+
+перенести файлы?
+
+Нужно создатать сборку на vue-cli,
+Для этого необх-мо 
+  0) предвариательно
+    + 0.1 сделать резервную копию проекта
+    + 0.2 удалить файлы из проекта
+    + 0.3 создать через vue-cli    
+    + 0.4 перенести из резервной копии папку реп-я git
+    + 0.5 подключить файлы стилей
+      0.5.1 need; install npm i bourbon ?
+      0.5.2 need: install mw-grid
+      0.5.3 перенести или отключить стили подключаемые в блоках и комп-х (в src/views/ )?
+      0.5.4 перенести или отключить файлы шрифтов ../fonts/themify/...
+        0.5.4.1 изменить структуру - Перенести scss внутрь  ./src/assets/src/scss/
+      0.5.5 перенести или изменит пути в libs - bourbon
+      0.5.6 еще раз перенести или отключить файлы шрифтов -  
+      0.5.7 перенести /images/ в ./ 
+    + 0.6 протестить сборку стилей
+      если не работает сравнить версии sass
+  
+  1) создать project через vue-cli, 
+  2) затем добавить исходный код уже имеющийся
+  3) настроить/проверить компиляци. стилей через node-sass (возможно нужна просто та же версия что и в Gulp)
+
+
+
+
+
+
+0.5 Errors
+
+0.5.1
+Syntax Error: SassError: File to import not found or unreadable: ../../../node_modules/bourbon/core/bourbon.
+0.5.2
+Syntax Error: SassError: File to import not found or unreadable: node_modules/mw-grid/src/_mwgrid.scss.
+0.5.3
+Syntax Error: SassError: File to import not found or unreadable: ../view/blocks/news/news.
+0.5.4
+ ERROR  Failed to compile with 12 errors                                                                        03:30:00
+These relative modules were not found:
+* ../fonts/themify/themify.eot in ./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-oneOf-1-2!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=style&index=0&lang=scss&
+0.5.5
+Syntax Error: SassError: File to import not found or unreadable: ../../../node_modules/bourbon/core/bourbon.
+
+0.5.6
+? (!) Ресурсы, типа fonts должны в .scss иметь пути относительно файла public/index.html,
+т.е. сборищик при компиляции serve - вставляет код  inline в html-страницу!
+
+Не, кажется та же хуйня
+
+0.5.7
+ ERROR  Failed to compile with 12 errors                                                                        03:56:41
+These relative modules were not found:
+* ../images/the-terminator-sarah-connor-robot-graphic--clean--reverse-x--muted.png 
+
++ Да, заработало когда перенес images/ в /. 
+(!) Путь при компиляции считается от index.html !

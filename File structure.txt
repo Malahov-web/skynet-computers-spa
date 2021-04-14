@@ -1,24 +1,13 @@
 
-dev/ 	// development dir
-	
+Файловая структура -
 
-dist/	// production dir
+public/  -  готовые скомпилируанные webpack'ом файлы
 
+src/  -  исходники приложения
 
-Each lesson src (.html and .js) in a separate folder, 
-like : 1-vue-instance
-
-Assets are in general folder ../
-
-
-dev/
-  css/
-  images/
-
-lesson-1
-  index.html
-  main.js
-
-lesson-2
-  index.html
-  main.js
+    /components/  - компоненты Vue
+    /views/  -  компоненты-страницы  для Vue router
+    /router/  - Vue router
+    /store/  - Vue x
+    /assets/  -  ассеты
+        /scss/  - исходники стилей
