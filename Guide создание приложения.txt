@@ -1,0 +1,14 @@
+
+
+1. Deploy (install with vue-cli)
+
+    1.1 Integrate yet ready assets from vue project (Ooh.. it'll be hard mb)
+
+2. Настроить Router 
+  Создать страницы
+  Создать меню Nav?
+  Создать файлы компонентов во views/
+
+3. Вставить шаблоны  в компоненты views
+
+4. Добавить данные к компонентам?

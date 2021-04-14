@@ -5,11 +5,17 @@
 ..
 
 вт 13.04
-  .. (0.5)
+  Deploy :design (0.5)
   Deploy project 0.1-0.4 (1)
   Deploy project 0.1.5-6 (1)
 
-..
+  Deploy project 2; Router :настроить, views/ add page templates, components: add CategoryBlock.vue (1)
+
+..далее:
+..написать data (взять из староой версии app, + из верстка skynet-computers, + из car-audio-2 ?)
+..нарисовать схему структуры приложения (дерево компонентов)
+
+
 
 
 перенести файлы?
