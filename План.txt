@@ -15,7 +15,11 @@
 ..написать data (взять из староой версии app, + из верстка skynet-computers, + из car-audio-2 ?)
 ..нарисовать схему структуры приложения (дерево компонентов)
 
+чт
+  add CategorySubcategoriesList.vue (1)
+  add CategorySubcategoriesListItem.vue, Проектирование архитектуры.txt (1)
 
+  skynet-computers-app - products :data (0.5)
 
 
 перенести файлы?

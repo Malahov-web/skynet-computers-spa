@@ -12,3 +12,24 @@
 3. Вставить шаблоны  в компоненты views
 
 4. Добавить данные к компонентам?
+
+
+Создание компонента:
+
+1. Создать файл components/Component.vue
+
+2. Snipp: vbase 
+
+3. Add 
+ 
+  3.1 Tempalate
+ 
+  3.2 Styles ?
+
+  3.3 Data
+  3.4 Import/Export - Snipp: v-import..
+  3.7 Add Tempalte in Parent comp
+  3.5 Props
+  3.6 Add Tempalte logic
+
+  3.8 Add Methods ..

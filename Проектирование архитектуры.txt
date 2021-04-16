@@ -1,0 +1,9 @@
+
+key: Как проектировать архитектуру приложений
+https://habr.com/ru/post/276593/
+
+проектирование приложения vue
+https://qna.habr.com/q/626427
+еще по Vue
+https://medium.com/@gearmobile
+https://tproger.ru/translations/tools-for-vue-js/
