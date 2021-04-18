@@ -20,6 +20,17 @@
   add CategorySubcategoriesListItem.vue, Проектирование архитектуры.txt (1)
 
   skynet-computers-app - products :data (0.5)
+пт
+  add ProductsGrid.vue, ProductsGridItem.vue , (1)
+  add ProductImage.vue, ProductTitle.vue, ProductParameters.vue, ProductCode.vue, ProductRating.vue (1)
+
+  update ProductRating.vue, formattedPrice (1)
+
+сб
+  ProductButton.vue,  BaseButtonBuy.vue, ProductAvailability.vue,(0.5)
+
+
+
 
 
 перенести файлы?

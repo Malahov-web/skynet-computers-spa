@@ -111,166 +111,7 @@
             </div>
 
             <div class="mv_12">
-              <div class="row row-line top products-grid">
-                <div class="mv_12 mh_6 tb_4 ds_4 product-outer">
-                  <div class="product">
-                    <a href="product.html" class="product__image"
-                      ><img src="uploads/products-grid/0185414_3.JPG" alt=""
-                    /></a>
-                    <div class="product__title-outer">
-                      <a href="product.html" class="product__title"
-                        >Материнская плата ASUS M5A78L-M LX3</a
-                      >
-                    </div>
-                    <div class="product__parameters">
-                      <ul class="product__parameters-list">
-                        <li>AMD 760G + SB710</li>
-                        <li>2*DDR3</li>
-                        <li>PCI-E16x</li>
-                        <li>SVGA</li>
-                      </ul>
-                    </div>
-                    <div class="product__code">
-                      код: <span class="product__code-value">181350</span>
-                    </div>
-                    <div class="product__rating-outer">
-                      <div class="product__rating rating" data-value="4">
-                        <ul>
-                          <li class="on"><span></span></li>
-                          <li class="on"><span></span></li>
-                          <li class="on"><span></span></li>
-                          <li class="on"><span></span></li>
-                          <li class="off"><span></span></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="product__price-outer">
-                      <div class="product__price">
-                        <span class="product__price-value">3 530</span>
-                        <span class="product__price-currency">₽</span>
-                      </div>
-                    </div>
-                    <div class="product__button-outer">
-                      <a href="" class="product__button button button-buy"
-                        ><span>В корзину</span></a
-                      >
-                    </div>
-                    <div class="product__availability product__availability">
-                      наличие:
-                      <span
-                        class="product__availability-value product__availability-value--in-stock"
-                        >в магазине</span
-                      >
-                    </div>
-                  </div>
-                </div>
-
-                <div class="mv_12 mh_6 tb_4 ds_4 product-outer">
-                  <div class="product">
-                    <a href="product.html" class="product__image"
-                      ><img src="uploads/products-grid/0282409_4.jpg" alt=""
-                    /></a>
-                    <div class="product__title-outer">
-                      <a href="product.html" class="product__title"
-                        >Материнская плата ASUS M5A78L-M LX3</a
-                      >
-                    </div>
-                    <div class="product__parameters">
-                      <ul class="product__parameters-list">
-                        <li>AMD 760G + SB710</li>
-                        <li>2*DDR3</li>
-                        <li>PCI-E16x</li>
-                        <li>SVGA</li>
-                      </ul>
-                    </div>
-                    <div class="product__code">
-                      код: <span class="product__code-value">181350</span>
-                    </div>
-                    <div class="product__rating-outer">
-                      <div class="product__rating rating" data-value="4">
-                        <ul>
-                          <li class="on"><span></span></li>
-                          <li class="on"><span></span></li>
-                          <li class="on"><span></span></li>
-                          <li class="on"><span></span></li>
-                          <li class="off"><span></span></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="product__price-outer">
-                      <div class="product__price">
-                        <span class="product__price-value">3 530</span>
-                        <span class="product__price-currency">₽</span>
-                      </div>
-                    </div>
-                    <div class="product__button-outer">
-                      <a href="" class="product__button button button-buy"
-                        ><span>В корзину</span></a
-                      >
-                    </div>
-                    <div class="product__availability product__availability">
-                      наличие:
-                      <span
-                        class="product__availability-value product__availability-value--in-stock"
-                        >в магазине</span
-                      >
-                    </div>
-                  </div>
-                </div>
-
-                <div class="mv_12 mh_6 tb_4 ds_4 product-outer">
-                  <div class="product">
-                    <a href="product.html" class="product__image"
-                      ><img src="uploads/products-grid/0647699_01.png" alt=""
-                    /></a>
-                    <div class="product__title-outer">
-                      <a href="product.html" class="product__title"
-                        >Материнская плата ASUS M5A78L-M LX3</a
-                      >
-                    </div>
-                    <div class="product__parameters">
-                      <ul class="product__parameters-list">
-                        <li>AMD 760G + SB710</li>
-                        <li>2*DDR3</li>
-                        <li>PCI-E16x</li>
-                        <li>SVGA</li>
-                      </ul>
-                    </div>
-                    <div class="product__code">
-                      код: <span class="product__code-value">181350</span>
-                    </div>
-                    <div class="product__rating-outer">
-                      <div class="product__rating rating" data-value="4">
-                        <ul>
-                          <li class="on"><span></span></li>
-                          <li class="on"><span></span></li>
-                          <li class="on"><span></span></li>
-                          <li class="on"><span></span></li>
-                          <li class="on"><span></span></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="product__price-outer">
-                      <div class="product__price">
-                        <span class="product__price-value">3 530</span>
-                        <span class="product__price-currency">₽</span>
-                      </div>
-                    </div>
-                    <div class="product__button-outer">
-                      <a href="" class="product__button button button-buy"
-                        ><span>В корзину</span></a
-                      >
-                    </div>
-                    <div class="product__availability product__availability">
-                      наличие:
-                      <span
-                        class="product__availability-value product__availability-value--in-stock"
-                        >в магазине</span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <ProductsGrid v-bind:products="products"></ProductsGrid>
             </div>
           </div>
 
@@ -485,7 +326,7 @@
             </div>
           </div>
 
-          <div class="row section-pagination">
+          <div class="row section-pagination" style="display: none">
             <div class="mv_12 section__block">
               <div class="pagination-outer">
                 <ul class="pagination">
@@ -646,6 +487,7 @@
 <script>
 import CategoryBlock from "@/components/CategoryBlock.vue";
 import CategorySubcategoriesList from "@/components/CategorySubcategoriesList.vue";
+import ProductsGrid from "@/components/ProductsGrid.vue";
 
 export default {
   name: "Category",
@@ -653,6 +495,7 @@ export default {
   components: {
     CategoryBlock,
     CategorySubcategoriesList,
+    ProductsGrid,
   },
 
   data() {
@@ -668,6 +511,7 @@ export default {
         1: {
           id: "01910527",
           title: 'Монитор 23.8" DELL S2421HN',
+          image: "uploads/productfull/DELL-S2421HN-black.jpg",
           diagonal: 23.8,
           brand: "dell",
           brandImage: "uploads/brands/dell.webp",
@@ -726,7 +570,7 @@ export default {
             },
           ],
 
-          rating: 4.3,
+          rating: 4.7,
           reviews: [{}, {}],
         },
         2: {
