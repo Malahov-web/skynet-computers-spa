@@ -28,9 +28,12 @@
 
 сб
   ProductButton.vue,  BaseButtonBuy.vue, ProductAvailability.vue,(0.5)
+  BaseSelect.vue (1)
 
+--
 
-
+пн
+  BaseSelect.vue :update, Category.vue :update (0.5)
 
 
 перенести файлы?

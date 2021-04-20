@@ -46,12 +46,17 @@
                     <div class="sort__item">
                       <div class="sort__item-title">Сортировать</div>
                       <div class="sort__item-field">
-                        <select name="select-sort" class="select">
+                        <BaseSelect
+                          :options="filter.sort"
+                          v-on:change-sort="updateSort"
+                        ></BaseSelect>
+
+                        <!-- <select name="select-sort" class="select">
                           <option value="">Новые</option>
                           <option value="">Популярные</option>
                           <option value="">Цена по возрастанию</option>
                           <option value="">Цена по убыванию</option>
-                        </select>
+                        </select> -->
                         <!-- <div class="select select--closed">
                                             <div class="select__title">Новые<i class="themify  themify-angle-right"></i></div>
                                             <ul class="select__list">
@@ -65,20 +70,16 @@
                     <div class="sort__item sort__item--pagination">
                       <div class="sort__item-title">Показывать по</div>
                       <div class="sort__item-field">
-                        <select name="select-pages" class="select">
-                          <!-- <option value="" disabled>Показывать</option> -->
+                        <BaseSelect
+                          :options="filter.show"
+                          v-on:change-sort="updateShow"
+                        ></BaseSelect>
+                        <!--select name="select-pages" class="select">
+                          <option value="" disabled>Показывать</option>
                           <option value="">12</option>
                           <option value="">24</option>
                           <option value="">48</option>
-                        </select>
-                        <!-- <div class="select select--closed">
-                                            <div class="select__title">12<i class="themify  themify-angle-right"></i></div>
-                                            <ul class="select__list">
-                                                <li class="select__list-item">Item 1</li>
-                                                <li class="select__list-item">Item 2</li>
-                                                <li class="select__list-item">Item 3</li>
-                                            </ul>
-                                        </div> -->
+                        </select-->
                       </div>
                     </div>
                   </div>
@@ -507,6 +508,72 @@ export default {
         image: "uploads/categories/comp.png",
       },
 
+      filter: {
+        state: {
+          sort: 1,
+          show: 0,
+        },
+
+        // sort: [
+        //   ("0": {
+        //     title: "Newest",
+        //     value: "new",
+        //   }),
+        //   ("1": {
+        //     title: "Most popular",
+        //     value: "popular",
+        //   }),
+        //   ("2": {
+        //     title: "Price increase",
+        //     value: "increase",
+        //   }),
+        //   ("3": {
+        //     title: "Price decrease",
+        //     value: "decrease",
+        //   }),
+        // ],
+
+        // sort: {
+        //     "0": "Newest",
+        //     "0": "Newest",
+        //     "0": "Newest",
+        //     "0": "Newest",
+        // },
+        sort: [
+          {
+            title: "Newest",
+            value: "new",
+          },
+          {
+            title: "Most popular",
+            value: "popular",
+          },
+          {
+            title: "Price increase",
+            value: "increase",
+          },
+          {
+            title: "Price decrease",
+            value: "decrease",
+          },
+        ],
+
+        show: [
+          {
+            title: "12",
+            value: "12",
+          },
+          {
+            title: "24",
+            value: "24",
+          },
+          {
+            title: "48",
+            value: "48",
+          },
+        ],
+      },
+
       products: {
         1: {
           id: "01910527",
@@ -662,6 +729,18 @@ export default {
         },
       ],
     };
+  },
+
+  methods: {
+    updateSort(activeOption) {
+      console.log("activeOption");
+      console.log(activeOption);
+      this.filter.state.sort = activeOption;
+    },
+
+    updateShow(activeOption) {
+      this.filter.state.show = activeOption;
+    },
   },
 };
 </script>
