@@ -34,7 +34,13 @@
 
 пн
   BaseSelect.vue :update, Category.vue :update (0.5)
+  Toolbar.vue, ViewSwitcher.vue (1)
+  ViewSwitcher.vue , (0.5) 
 
+далее:
+..дописать передачу д-х из ViewSwitcher -> Toolbar -> Category,
+..компонентизировать ProductsList.vue
+..git commit
 
 перенести файлы?
 

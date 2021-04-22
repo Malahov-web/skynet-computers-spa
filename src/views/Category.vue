@@ -40,73 +40,11 @@
 
           <div class="row section-toolbar">
             <div class="mv_12 section__block">
-              <div class="toolbar">
-                <div class="toolbar__sort sort">
-                  <div class="sort">
-                    <div class="sort__item">
-                      <div class="sort__item-title">Сортировать</div>
-                      <div class="sort__item-field">
-                        <BaseSelect
-                          :options="filter.sort"
-                          v-on:change-sort="updateSort"
-                        ></BaseSelect>
-
-                        <!-- <select name="select-sort" class="select">
-                          <option value="">Новые</option>
-                          <option value="">Популярные</option>
-                          <option value="">Цена по возрастанию</option>
-                          <option value="">Цена по убыванию</option>
-                        </select> -->
-                        <!-- <div class="select select--closed">
-                                            <div class="select__title">Новые<i class="themify  themify-angle-right"></i></div>
-                                            <ul class="select__list">
-                                                <li class="select__list-item">Item 1</li>
-                                                <li class="select__list-item">Item 2</li>
-                                                <li class="select__list-item">Item 3</li>
-                                            </ul>
-                                        </div> -->
-                      </div>
-                    </div>
-                    <div class="sort__item sort__item--pagination">
-                      <div class="sort__item-title">Показывать по</div>
-                      <div class="sort__item-field">
-                        <BaseSelect
-                          :options="filter.show"
-                          v-on:change-sort="updateShow"
-                        ></BaseSelect>
-                        <!--select name="select-pages" class="select">
-                          <option value="" disabled>Показывать</option>
-                          <option value="">12</option>
-                          <option value="">24</option>
-                          <option value="">48</option>
-                        </select-->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="toolbar__view">
-                  <div class="view">
-                    <div class="view__item">
-                      <div class="view__item-button-outer">
-                        <a href="#" class="view__item-button button">
-                          <i class="themify themify-layout-grid2"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="view__item">
-                      <div class="view__item-button-outer">
-                        <a href="#" class="view__item-button button">
-                          <i class="themify themify-view-list"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Toolbar :filter="filter" @update-view="updateView"></Toolbar>
             </div>
           </div>
 
-          <div class="row section-products">
+          <div class="row section-products" v-if="activeView == 'ProductsGrid'">
             <div class="mv_12 section__title">
               <h2 class="h1">Products Grid</h2>
             </div>
@@ -116,214 +54,17 @@
             </div>
           </div>
 
-          <div class="row section-products" style="display: none">
+          <div
+            class="row section-products"
+            __style="display: none"
+            v-if="activeView == 'ProductsList'"
+          >
             <div class="mv_12 section__title">
               <h2 class="h1">Products List</h2>
             </div>
 
             <div class="mv_12">
-              <div class="row row-line top products-list">
-                <div class="mv_12 mh_12 tb_12 ds_12 product-outer">
-                  <div class="product">
-                    <a href="product.html" class="product__image"
-                      ><img src="uploads/products-grid/0185414_3.JPG" alt=""
-                    /></a>
-
-                    <div class="product__content">
-                      <div class="product__title-outer">
-                        <a href="product.html" class="product__title"
-                          >Материнская плата ASUS M5A78L-M LX3</a
-                        >
-                      </div>
-                      <div class="product__parameters">
-                        <ul class="product__parameters-list">
-                          <li>AMD 760G + SB710</li>
-                          <li>2*DDR3</li>
-                          <li>PCI-E16x</li>
-                          <li>SVGA</li>
-                        </ul>
-                      </div>
-
-                      <div class="product__rating--outer">
-                        <div class="product__rating rating"></div>
-                      </div>
-                      <div class="product__price-outer">
-                        <div class="product__price">
-                          <span class="product__price-value">3 530</span>
-                          <span class="product__price-currency">₽</span>
-                        </div>
-                      </div>
-                      <div class="product__button-outer">
-                        <a href="" class="product__button button button-buy"
-                          ><span>В корзину</span></a
-                        >
-                      </div>
-                    </div>
-
-                    <div class="product__meta">
-                      <div class="product__meta-inner">
-                        <div class="product__code">
-                          код: <span class="product__code-value">181350</span>
-                        </div>
-                        <div class="product__rating-outer">
-                          <div class="product__rating rating" data-value="4">
-                            <ul>
-                              <li class="on"><span></span></li>
-                              <li class="on"><span></span></li>
-                              <li class="on"><span></span></li>
-                              <li class="on"><span></span></li>
-                              <li class="off"><span></span></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div
-                          class="product__availability product__availability"
-                        >
-                          наличие:
-                          <span
-                            class="product__availability-value product__availability-value--in-stock"
-                            >в магазине</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="mv_12 mh_12 tb_12 ds_12 product-outer">
-                  <div class="product">
-                    <a href="product.html" class="product__image"
-                      ><img src="uploads/products-grid/0282409_4.jpg" alt=""
-                    /></a>
-
-                    <div class="product__content">
-                      <div class="product__title-outer">
-                        <a href="product.html" class="product__title"
-                          >Материнская плата ASUS M5A78L-M LX3</a
-                        >
-                      </div>
-                      <div class="product__parameters">
-                        <ul class="product__parameters-list">
-                          <li>AMD 760G + SB710</li>
-                          <li>2*DDR3</li>
-                          <li>PCI-E16x</li>
-                          <li>SVGA</li>
-                        </ul>
-                      </div>
-
-                      <div class="product__rating--outer">
-                        <div class="product__rating rating"></div>
-                      </div>
-                      <div class="product__price-outer">
-                        <div class="product__price">
-                          <span class="product__price-value">3 530</span>
-                          <span class="product__price-currency">₽</span>
-                        </div>
-                      </div>
-                      <div class="product__button-outer">
-                        <a href="" class="product__button button button-buy"
-                          ><span>В корзину</span></a
-                        >
-                      </div>
-                    </div>
-
-                    <div class="product__meta">
-                      <div class="product__meta-inner">
-                        <div class="product__code">
-                          код: <span class="product__code-value">181350</span>
-                        </div>
-                        <div class="product__rating-outer">
-                          <div class="product__rating rating" data-value="4">
-                            <ul>
-                              <li class="on"><span></span></li>
-                              <li class="on"><span></span></li>
-                              <li class="on"><span></span></li>
-                              <li class="on"><span></span></li>
-                              <li class="off"><span></span></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div
-                          class="product__availability product__availability"
-                        >
-                          наличие:
-                          <span
-                            class="product__availability-value product__availability-value--in-stock"
-                            >в магазине</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="mv_12 mh_12 tb_12 ds_12 product-outer">
-                  <div class="product">
-                    <a href="product.html" class="product__image"
-                      ><img src="uploads/products-grid/0647699_01.png" alt=""
-                    /></a>
-
-                    <div class="product__content">
-                      <div class="product__title-outer">
-                        <a href="product.html" class="product__title"
-                          >Материнская плата ASUS M5A78L-M LX3</a
-                        >
-                      </div>
-                      <div class="product__parameters">
-                        <ul class="product__parameters-list">
-                          <li>AMD 760G + SB710</li>
-                          <li>2*DDR3</li>
-                          <li>PCI-E16x</li>
-                          <li>SVGA</li>
-                        </ul>
-                      </div>
-
-                      <div class="product__rating--outer">
-                        <div class="product__rating rating"></div>
-                      </div>
-                      <div class="product__price-outer">
-                        <div class="product__price">
-                          <span class="product__price-value">3 530</span>
-                          <span class="product__price-currency">₽</span>
-                        </div>
-                      </div>
-                      <div class="product__button-outer">
-                        <a href="" class="product__button button button-buy"
-                          ><span>В корзину</span></a
-                        >
-                      </div>
-                    </div>
-
-                    <div class="product__meta">
-                      <div class="product__meta-inner">
-                        <div class="product__code">
-                          код: <span class="product__code-value">181350</span>
-                        </div>
-                        <div class="product__rating-outer">
-                          <div class="product__rating rating" data-value="4">
-                            <ul>
-                              <li class="on"><span></span></li>
-                              <li class="on"><span></span></li>
-                              <li class="on"><span></span></li>
-                              <li class="on"><span></span></li>
-                              <li class="off"><span></span></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div
-                          class="product__availability product__availability"
-                        >
-                          наличие:
-                          <span
-                            class="product__availability-value product__availability-value--in-stock"
-                            >в магазине</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <ProductsList class="asd"></ProductsList>
             </div>
           </div>
 
@@ -489,6 +230,8 @@
 import CategoryBlock from "@/components/CategoryBlock.vue";
 import CategorySubcategoriesList from "@/components/CategorySubcategoriesList.vue";
 import ProductsGrid from "@/components/ProductsGrid.vue";
+import Toolbar from "@/components/Toolbar.vue";
+import ProductsList from "@/components/ProductsList.vue";
 
 export default {
   name: "Category",
@@ -497,6 +240,8 @@ export default {
     CategoryBlock,
     CategorySubcategoriesList,
     ProductsGrid,
+    Toolbar,
+    ProductsList,
   },
 
   data() {
@@ -512,6 +257,7 @@ export default {
         state: {
           sort: 1,
           show: 0,
+          view: 0,
         },
 
         // sort: [
@@ -570,6 +316,17 @@ export default {
           {
             title: "48",
             value: "48",
+          },
+        ],
+
+        view: [
+          {
+            component: "ProductsGrid",
+            value: "0",
+          },
+          {
+            component: "ProductsList",
+            value: "1",
           },
         ],
       },
@@ -706,6 +463,8 @@ export default {
         },
       },
 
+      activeView: "ProductsGrid",
+
       subcategories: [
         {
           id: 11,
@@ -731,15 +490,21 @@ export default {
     };
   },
 
-  methods: {
-    updateSort(activeOption) {
-      console.log("activeOption");
-      console.log(activeOption);
-      this.filter.state.sort = activeOption;
-    },
+  //   methods: {
+  //     updateSort(activeOption) {
+  //       console.log("activeOption");
+  //       console.log(activeOption);
+  //       this.filter.state.sort = activeOption;
+  //     },
 
-    updateShow(activeOption) {
-      this.filter.state.show = activeOption;
+  //     updateShow(activeOption) {
+  //       this.filter.state.show = activeOption;
+  //     },
+  //   },
+
+  methods: {
+    updateView(activeView) {
+      this.activeView = activeView;
     },
   },
 };
