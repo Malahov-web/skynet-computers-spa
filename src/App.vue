@@ -1,20 +1,19 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <!-- <router-link to="/">Home</router-link> | -->
-      <router-link :to="{ name: 'Category' }">Category</router-link> |
-      <router-link :to="{ name: 'Product' }">Product</router-link>
-      <!-- <router-link to="/about">About</router-link> -->
-    </div>
+    <NavMenu class="asd"></NavMenu>
+
     <router-view />
   </div>
 </template>
 
 <script>
+import NavMenu from "@/components/NavMenu.vue";
+
 export default {
   components: {
     // Category: Category,
     // Product: Product,
+    NavMenu: NavMenu,
   },
 };
 </script>
@@ -33,16 +32,46 @@ export default {
   //   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+// #nav {
+//   padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+//   a {
+//     font-weight: bold;
+//     color: #2c3e50;
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+//     &.router-link-exact-active {
+//       color: #42b983;
+//     }
+//   }
+// }
+
+a.menu-main__item--active {
+  background-color: $accent_dark;
+}
+
+.products-list .product__parameters-list li {
+  position: relative;
+
+  &::before {
+    z-index: 200;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50% 100%);
+    width: auto;
+    height: auto;
+    padding: 0.5em 1em;
+    border: 1px solid $accent;
+    border-radius: 0;
+    background-color: #fff;
+    background-color: $grey_super_light;
+    font-size: 90%;
+    // content: "(title)"=
+    content: attr(title);
+    white-space: nowrap;
+  }
+  &:hover:before {
+    display: block;
   }
 }
 </style>

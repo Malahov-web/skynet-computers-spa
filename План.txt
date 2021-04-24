@@ -38,9 +38,18 @@
   ViewSwitcher.vue , (0.5) 
 
 далее:
-..дописать передачу д-х из ViewSwitcher -> Toolbar -> Category,
++ дописать передачу д-х из ViewSwitcher -> Toolbar -> Category,
 ..компонентизировать ProductsList.vue
 ..git commit
+
+ср  
+  ViewSwitcher.vue : update, Toolbar :update, Category.vue :update (1)
+  NavMenu.vue, router :update (1)
+
+чт
+
+
+
 
 перенести файлы?
 

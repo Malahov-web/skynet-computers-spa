@@ -1,7 +1,11 @@
 <template>
   <div class="product__parameters">
     <ul class="product__parameters-list">
-      <li v-for="item in productParameters" :key="item.title">
+      <li
+        v-for="item in productParameters"
+        :key="item.title"
+        :title="item.title"
+      >
         {{ item.value }}
       </li>
     </ul>

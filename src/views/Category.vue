@@ -57,14 +57,14 @@
           <div
             class="row section-products"
             __style="display: none"
-            v-if="activeView == 'ProductsList'"
+            _v-if="activeView == 'ProductsList'"
           >
             <div class="mv_12 section__title">
               <h2 class="h1">Products List</h2>
             </div>
 
             <div class="mv_12">
-              <ProductsList class="asd"></ProductsList>
+              <ProductsList v-bind:products="products"></ProductsList>
             </div>
           </div>
 

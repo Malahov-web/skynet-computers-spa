@@ -3,9 +3,10 @@
     <!-- Это ViewSwitcher -->
     <div
       class="view__item"
+      v-bind:class="{ active: activeTab == tab.name }"
       v-for="(tab, index) in tabs"
       :key="tab.name + index"
-      @click="changeView(index)"
+      v-on:click="[changeView(index), changeItemClass(index)]"
     >
       <div class="view__item-button-outer">
         <a _href="#" class="view__item-button button">
@@ -58,14 +59,43 @@ export default {
 
   methods: {
     changeView(index) {
-      this.activeTab = index;
+      //   this.activeTab = index;
+      this.activeTab = this.tabs[index]["name"];
       //   alert(this.activeTab);
 
       //   this.$emit("change-view", this.activeTab);
       this.$emit("change-view", this.tabs[index]["name"]);
     },
+
+    changeItemClass(index) {
+      //   alert(index);
+      console.log(index);
+    },
   },
 };
+
+// v-on:click="changeView(index), changeItemClass(index)"
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import "../assets/src/scss/vars";
+
+.view {
+  &__item {
+    &-button {
+      //   cursor: pointer;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &__item.active {
+    .button {
+      color: $accent_dark;
+      &:hover {
+        cursor: default;
+      }
+    }
+  }
+}
+</style>

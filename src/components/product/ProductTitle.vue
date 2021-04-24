@@ -1,6 +1,11 @@
 <template>
   <div class="product__title-outer">
-    <a href="product.html" class="product__title"> {{ productTitle }} </a>
+    <router-link
+      class="product__title"
+      :to="{ name: 'ProductPage', params: { productid: productID } }"
+      >{{ productTitle }}</router-link
+    >
+    <!-- <a href="product.html" class="product__title"> {{ productTitle }} </a> -->
   </div>
 </template>
 
@@ -11,6 +16,9 @@ export default {
     productTitle: {
       type: String,
       default: "Product without title",
+    },
+    productID: {
+      type: String,
     },
   },
 };

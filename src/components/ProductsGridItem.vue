@@ -5,7 +5,10 @@
       :productTitle="product.title"
     ></ProductImage>
 
-    <ProductTitle :productTitle="product.title"></ProductTitle>
+    <ProductTitle
+      :productTitle="product.title"
+      :productID="product.id"
+    ></ProductTitle>
 
     <ProductParameters
       :productParameters="product.specificationsShort"
