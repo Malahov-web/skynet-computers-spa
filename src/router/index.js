@@ -3,6 +3,8 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Category from "@/views/Category.vue";
 import ProductPage from "@/views/ProductPage.vue";
+import NewsPage from "@/views/NewsPage.vue";
+import NewFullPage from "@/views/NewFullPage.vue";
 
 Vue.use(VueRouter);
 
@@ -55,7 +57,19 @@ const routes = [
     name: 'ProductPage',
     component: ProductPage,
     props: true   
-},   
+  },  
+
+  {
+    path: "/news",
+    name: "NewsPage",
+    component: NewsPage,
+  },  
+  {
+    path: '/news/:newid',
+    name: 'NewFullPage',
+    component: NewFullPage,
+    props: true   
+  }, 
 
 
 ];

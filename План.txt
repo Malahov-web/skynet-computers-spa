@@ -50,13 +50,34 @@
   ViewSwitcher.vue :update, (1)
   ProductsListItem.vue (1)
 
-пт
+пт 23.04
   add: axios, install: json-server; Edges.vue (1)
 
 ..далее
 Дописать компоненты для главной Home,
 Набить еще несколько товаров и категорий в db.json
 Refact: axios - сделать сервис.js
+
+
+пт 30.04
+  NewsPage, News, NewsItem, store (1)
+  NewsServices.js, NewFullPage, NewFull, update: store  (1)
+
++ create components .vue files
++ add pages to Router
++ add data to json + images fiels
++- add services for API
++- add mutations to Store
++- add actions to Store
++- add methods, who calls actions
+
+
+
+..далее
+? комментарии ? или товар и отзывы ? товары в категории, корзину, также сделать через API
+
+
+
 
 
 перенести файлы?
