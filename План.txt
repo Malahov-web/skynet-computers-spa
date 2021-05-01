@@ -47,8 +47,16 @@
   NavMenu.vue, router :update (1)
 
 чт
+  ViewSwitcher.vue :update, (1)
+  ProductsListItem.vue (1)
 
+пт
+  add: axios, install: json-server; Edges.vue (1)
 
+..далее
+Дописать компоненты для главной Home,
+Набить еще несколько товаров и категорий в db.json
+Refact: axios - сделать сервис.js
 
 
 перенести файлы?

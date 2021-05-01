@@ -1,10 +1,10 @@
 <template>
-  <div>Base Rating</div>
+  <div></div>
 </template>
 
 <script>
 export default {
-  name: "BaseRating",
+  name: "Actions",
 };
 </script>
 

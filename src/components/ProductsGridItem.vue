@@ -18,6 +18,8 @@
 
     <ProductRating :productRating="product.rating"></ProductRating>
 
+    <BaseRating class="asd"></BaseRating>
+
     <ProductPrice
       :price="product.price"
       :priceSale="product.priceSale"
@@ -40,6 +42,7 @@ import ProductRating from "@/components/product/ProductRating.vue";
 import ProductPrice from "@/components/product/ProductPrice.vue";
 import ProductButton from "@/components/product/ProductButton.vue";
 import ProductAvailability from "@/components/product/ProductAvailability.vue";
+// import BaseRating from "@/components/BaseRating.vue";
 
 export default {
   name: "ProductsGridItem",
@@ -60,6 +63,7 @@ export default {
     ProductPrice,
     ProductButton,
     ProductAvailability,
+    // BaseRating,
   },
   computed: {
     productLink() {
