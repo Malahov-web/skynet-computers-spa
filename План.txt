@@ -71,7 +71,50 @@ Refact: axios - сделать сервис.js
 +- add actions to Store
 +- add methods, who calls actions
 
+ср
+  NewAdd.vue (0.5)
+  NewAdd.vue, update: store (1)
 
+  NewAdd.vue: update, NewFullPAge.vue :update, (2)
+    (how to refresh page comp, when we swith similar page with params by router)
+     Dynamic Route Matching -  Programmatic Navigation - Navigation Guards 
+       google s key: vue how to use beforeRouteUpdate example - https://stackoverflow.com/questions/47184331/difference-between-beforerouteupdate-and-watching-route-vue-js
+         - Fetching After Navigation !
+
+..см как сделано в real-world..
++ добавить template формы
++ добавить обработчик
++ метод вызывающий action
++ add action
++ add mutations
++ add NewsService API method 
+and more:
++ add router=link to new page
+Не показывает новость после перехода, - url меняется, страница нет ? ( т.к. в комп-те NewFullPage д-е передаются из родителя)
+  Ни через добавление кнопки router-link ссылки на новую статью
+  Ни через динамическое $router.push
+
+    NewFullPage.vue:
+    В data.$route правильный id
+    В props Через router Передается правильный id
+    В computed id НЕ правильный
+= см. Док-ю https://router.vuejs.org/guide/essentials/navigation.html#router-push-location-oncomplete-onabort
+  материаалы:
+  s key: vue how to use beforeRouteUpdate example
+    https://stackoverflow.com/questions/47184331/difference-between-beforerouteupdate-and-watching-route-vue-js
+    https://router.vuejs.org/guide/advanced/data-fetching.html#fetching-after-navigation
+  https://router.vuejs.org/ru/guide/advanced/navigation-guards.html#%D0%B3n%D0%BE%D0%B1%D0%B0n%D1%8C%D0%BD%D1%8B%D0%B5-%D1%85%D1%83%D0%BA%D0%B8-%D0%B4%D0%BE-%D0%BD%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85-%D1%85%D1%83%D0%BA%D0%BE%D0%B2
+
+Пир этом С переходом на стр-цу Category работает правильно
+А что если передать статич. id
+  
+  
+
+add 
+
+далее:
+add комп-т, кот-й выведет текст уведомление о добавленной новости  вывести
+  и  ссылку на стр-цу этой новости
 
 ..далее
 ? комментарии ? или товар и отзывы ? товары в категории, корзину, также сделать через API

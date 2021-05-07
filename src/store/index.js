@@ -14,11 +14,16 @@ export default new Vuex.Store({
   mutations: {
     SET_NEWS(state, news) {
         state.news = news
-      },
+    },
       
-      SET_NEW_FULL(state, newFull) {
+    SET_NEW_FULL(state, newFull) {
         state.newFull = newFull
-      }        
+    },
+    
+    ADD_NEWS_ITEM(state, newItem) {
+        // state
+        state.news.push(newItem)
+    }
   },
   actions: {
 
@@ -34,7 +39,27 @@ export default new Vuex.Store({
         .then(response => {
             commit('SET_NEW_FULL', response.data)
         } )
-    }    
+    },
+
+
+    // addTask({ commit}, task  ) {
+    //     // this.$store.commit('INCREMENT_COUNT', this.incrementBy)        
+
+    //     // ДЗапустим мутаицю, когда с сервера придет ответ ОК
+    //     return  TaskService.postTask(task).then( ()=> {
+    //         commit('ADD_TASK', task) 
+    //     } )
+    //     // TaskService.postTask(task);
+    //     // commit('ADD_TASK', task)        
+    // }
+
+    addNewsItem( { commit }, item  ) {
+        return NewsServices.postNewsItem(item)
+        .then( () => {
+            commit('ADD_NEWS_ITEM', item) 
+        } )
+        
+    },
 
     
     
@@ -48,6 +73,8 @@ export default new Vuex.Store({
     //         console.log('There was an error:', error.response)
     //       })
     //   }
+
+
 
   },
   modules: {},

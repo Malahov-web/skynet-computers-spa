@@ -423,7 +423,8 @@ export default {
   props: ["newid"],
 
   created() {
-    this.$store.dispatch("fetchNewsItem", this.newid);
+    // this.$store.dispatch("fetchNewsItem", this.newid);
+    this.fetchData();
   },
 
   computed: {
@@ -431,6 +432,53 @@ export default {
       return this.$store.state.newFull;
     },
   },
+
+  methods: {
+    fetchData() {
+      this.$store.dispatch("fetchNewsItem", this.newid);
+    },
+  },
+
+  //   // Хакаем роутер)
+  //   watch: {
+  //     $route(to, from) {
+  //       console.log("after", this.$route.path);
+  //       console.log("to", to);
+  //       console.log("from", from);
+  //     },
+  //   },
+
+  //   beforeRouteUpdate(to, from, next) {
+  //     console.log("before", this.$route.path);
+  //     console.log("to", to);
+  //     console.log("from", from);
+  //     next();
+  //   },
+
+  //   Не зашло
+  //   watch: {
+  //     // call again the method if the route changes
+  //     // $route: "newsItemFull",
+  //     //   $route: this.newsItemFull,
+
+  //     $route: "fetchData",
+  //   },
+
+  // Зашло!
+  // hint: https://stackoverflow.com/questions/47184331/difference-between-beforerouteupdate-and-watching-route-vue-js
+  watch: {
+    $route: "fetchData",
+  },
+
+  //   beforeRouteUpdate(to, from, next) {
+  //     console.log("before", this.$route.path);
+  //     console.log("to", to);
+  //     console.log("from", from);
+  //     console.log("next", next);
+
+  //     this.$store.dispatch("fetchNewsItem", this.newid);
+  //     next();
+  //   },
 };
 </script>
 

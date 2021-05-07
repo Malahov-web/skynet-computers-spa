@@ -29,12 +29,23 @@
         </article>
       </div>
     </div>
+
+    <div class="row">
+      <div class="mv_12">
+        <NewAdd class=""></NewAdd>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import NewAdd from "@/components/news/NewAdd.vue";
+
 export default {
   name: "NewFull",
+  components: {
+    NewAdd,
+  },
 
   props: {
     item: {
