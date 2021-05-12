@@ -23,7 +23,14 @@
         <div class="row section-pagination">
           <div class="mv_12">
             <div class="pagination-outer">
-              <ul class="pagination">
+              <BasePagination
+                class="asd"
+                :per_page="perPage"
+                :posts_total="postsTotal"
+                :page_current="pageNumber"
+              ></BasePagination>
+
+              <!-- <ul class="pagination">
                 <li class="pagination__item pagination__item--active">
                   <span>1</span>
                 </li>
@@ -33,7 +40,7 @@
                 <li class="pagination__item pagination__item--next">
                   <a href="#"></a>
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
         </div>
@@ -44,20 +51,48 @@
 
 <script>
 import News from "@/components/news/News.vue";
+import BasePagination from "@/components/BasePagination.vue";
 
 export default {
   name: "NewsPage",
   components: {
     News,
+    BasePagination,
+  },
+
+  data() {
+    return {
+      perPage: 3,
+      //   pagesTotal: 4,
+    };
   },
 
   created() {
-    this.$store.dispatch("fetchNews");
+    // this.$store.dispatch("fetchNews");
+
+    this.$store.dispatch("fetchNewsWithPagination", {
+      perPage: this.perPage,
+      pageNumber: this.pageNumber,
+      //   pageNumber: 2,
+    });
   },
 
   computed: {
     news() {
       return this.$store.state.news;
+    },
+
+    pageNumber() {
+      //   return parseInt(this.$route.query.page);
+      return parseInt(this.$route.query._page) || 1;
+    },
+
+    // pagesTotal() {
+    //   return parseInt(this.$store.state.paginationPostsTotal);
+    // },
+
+    postsTotal() {
+      return parseInt(this.$store.state.paginationPostsTotal);
     },
 
     //     userFullName() {

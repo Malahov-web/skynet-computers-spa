@@ -2,7 +2,7 @@
   <div id="app">
     <NavMenu class="asd"></NavMenu>
 
-    <router-view />
+    <router-view :key="$route.fullPath" />
   </div>
 </template>
 
@@ -72,6 +72,16 @@ a.menu-main__item--active {
   }
   &:hover:before {
     display: block;
+  }
+}
+
+.pagination__item--active {
+  a {
+    background-color: $accent_dark;
+    &:hover {
+      cursor: default;
+      background-color: $accent_dark;
+    }
   }
 }
 </style>

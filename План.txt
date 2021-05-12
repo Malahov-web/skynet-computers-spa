@@ -120,6 +120,12 @@ add комп-т, кот-й выведет текст уведомление о �
 ? комментарии ? или товар и отзывы ? товары в категории, корзину, также сделать через API
 
 
+пт
+  skynet-computers-app - update: NewsPage (pagination query settings)  (0.5)
+  skynet-computers-app - BasePagination.vue (1)
+
+  skynet-computers-app - BasePagination.vue (0.5)
+
 
 
 

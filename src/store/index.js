@@ -9,7 +9,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
       news: [],
-      newFull: {}
+      newFull: {},
+      paginationPostsTotal: 1,
   },
   mutations: {
     SET_NEWS(state, news) {
@@ -23,6 +24,9 @@ export default new Vuex.Store({
     ADD_NEWS_ITEM(state, newItem) {
         // state
         state.news.push(newItem)
+    },
+    SET_PAGINATION_POSTS_TOTAL(state, postsTotal) {
+        state.paginationPostsTotal = postsTotal;
     }
   },
   actions: {
@@ -33,6 +37,20 @@ export default new Vuex.Store({
             commit('SET_NEWS', response.data)
         } )
     },
+
+    fetchNewsWithPagination( { commit }, { perPage, pageNumber } ) {
+        NewsServices.getNewsWithPagination(perPage, pageNumber)
+        .then(response => {
+
+            console.log('Totals posts are: ' )
+            console.log(response.headers)
+
+            commit('SET_PAGINATION_POSTS_TOTAL', response.headers["x-total-count"])
+            commit('SET_NEWS', response.data)
+            
+        } )
+    },
+    
 
     fetchNewsItem( { commit }, id ) {
         NewsServices.getNewsItemById(id)
