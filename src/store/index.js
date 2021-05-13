@@ -6,6 +6,9 @@ import NewsServices from '@/services/NewsServices.js'
 
 import products from "@/store/modules/products.js";
 import categories from "@/store/modules/categories.js";
+// import notifications from "@/store/modules/notifications.js";
+// import * from "@/store/modules/notifications.js";
+import * as notifications from '@/store/modules/notifications.js' // <-- import it
 
 Vue.use(Vuex);
 
@@ -15,8 +18,10 @@ export default new Vuex.Store({
     // products_modules: products
     products_module: products,
     // products: products // v3
-    categories: categories
-  }   , 
+    categories: categories,
+    notifications    
+    
+}   , 
   
   state: {
       news: [],
