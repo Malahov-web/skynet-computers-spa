@@ -57,7 +57,7 @@
           <div
             class="row section-products"
             __style="display: none"
-            _v-if="activeView == 'ProductsList'"
+            v-if="activeView == 'ProductsList'"
           >
             <div class="mv_12 section__title">
               <h2 class="h1">Products List</h2>
@@ -321,176 +321,46 @@ export default {
         ],
       },
 
-      //   products: {
-      //     1: {
-      //       id: "01910527",
-      //       title: 'Монитор 23.8" DELL S2421HN',
-      //       image: "uploads/productfull/DELL-S2421HN-black.jpg",
-      //       diagonal: 23.8,
-      //       brand: "dell",
-      //       brandImage: "uploads/brands/dell.webp",
-      //       availability: 1, // в магазине || ожидается || нет
-      //       description:
-      //         "Элегантный дизайн с тонкой рифленой текстурой на задней панели придает монитору Dell S2421HN неповторимый внешний вид. Он привносит гармоничное сочетание великолепного стиля и качества в любое пространство. <br>Благодаря трехсторонней сверхтонкой рамке вы можете наслаждаться превосходной четкостью изображения на 23,8-дюймовом мониторе с разрешением <b>Full HD</b> (1920 x 1080).",
-      //       //   propery: 00000,
-      //       price: 9490,
-      //       priceSale: 7990,
-
-      //       quantity: 9,
-
-      //       specificationsShort: {
-      //         diagonal: {
-      //           title: "Диагональ",
-      //           value: 23.8,
-      //         },
-      //         dimension: {
-      //           title: "Разрешение экрана",
-      //           // value: '1920x1080 Full HD',
-      //           value: "1920x1080 ",
-      //         },
-      //         matrixType: {
-      //           title: "Тип матрицы",
-      //           value: "IPS",
-      //         },
-      //         backlight: {
-      //           title: "Подсветка",
-      //           value: "WLED",
-      //         },
-      //         responseTime: {
-      //           title: "Время отклика",
-      //           value: 4,
-      //         },
-      //       },
-
-      //       variants: [
-      //         {
-      //           variantId: 119105271,
-      //           variantColor: "black",
-      //           variantColorValue: "#41b883",
-      //           variantImage: "uploads/productfull/DELL-S2421HN-black.jpg",
-      //         },
-      //         {
-      //           variantId: 119105272,
-      //           variantColor: "silver",
-      //           variantColorValue: "#41b883",
-      //           variantImage: "uploads/productfull/DELL-S2421HN-silver.jpg",
-      //         },
-      //         {
-      //           variantId: 119105271,
-      //           variantColor: "white",
-      //           variantColorValue: "#41b883",
-      //           variantImage:
-      //             "uploads/productfull/product_full_image_dell_08_image_1.jpg",
-      //         },
-      //       ],
-
-      //       rating: 4.7,
-      //       reviews: [{}, {}],
-      //     },
-      //     2: {
-      //       id: "01910538",
-      //       title: 'Монитор ASUS VG258QR 24.5"',
-      //       diagonal: 24.5,
-      //       brand: "ASUS",
-      //       brandImage: "uploads/brands/asus.webp",
-      //       availability: 2, // в магазине || ожидается || нет
-      //       description:
-      //         "Asus VG258QR – модель для офиса и дома. 24,5-дюймовый экран поддерживает разрешение 1920х1080 пикселей (стандарт Full HD) и отображает четкую, детализированную картинку, которая имеет реалистичные цвета. Время отклика матрицы составляет 165 Гц, за счет чего изображение не мерцает, и не создается большая нагрузка на зрение.<br>Широкоформатный Asus VG258QR поставляется на устойчивой пластиковой подставке, которую можно регулировать по наклону и высоте, а также вращать, переводя монитор в портретный режим. Модель оснащена акустической системой и внутренним блоком питания. В корпусе есть монтажные отверстия для крепления VESA.",
-      //       //   propery: 00000,
-      //       price: 23000,
-      //       priceSale: 21990,
-
-      //       quantity: 20,
-
-      //       specificationsShort: {
-      //         diagonal: {
-      //           title: "Диагональ",
-      //           value: 24.5,
-      //         },
-      //         dimension: {
-      //           title: "Разрешение экрана",
-      //           // value: '1920x1080 Full HD',
-      //           value: "1920x1080 ",
-      //         },
-      //         matrixType: {
-      //           title: "Тип матрицы",
-      //           value: "TN",
-      //         },
-      //         backlight: {
-      //           title: "Подсветка",
-      //           value: "Flicker-Free",
-      //         },
-      //         responseTime: {
-      //           title: "Время отклика",
-      //           value: 1,
-      //         },
-      //       },
-
-      //       variants: [
-      //         {
-      //           variantId: 219105271,
-      //           variantColor: "black",
-      //           variantColorValue: "#41b883",
-      //           variantImage: "uploads/productfull/DELL-S2421HN-black.jpg",
-      //         },
-      //         {
-      //           variantId: 219105272,
-      //           variantColor: "silver",
-      //           variantColorValue: "#41b883",
-      //           variantImage: "uploads/productfull/DELL-S2421HN-silver.jpg",
-      //         },
-      //         {
-      //           variantId: 219105271,
-      //           variantColor: "white",
-      //           variantColorValue: "#41b883",
-      //           variantImage:
-      //             "uploads/productfull/product_full_image_dell_08_image_1.jpg",
-      //         },
-      //       ],
-
-      //       rating: 4.2,
-      //       reviews: [{}, {}],
-      //     },
-      //   },
-
       activeView: "ProductsGrid",
-
-      //   subcategories: [
-      //     {
-      //       id: 11,
-      //       title: "Компьютеры",
-      //       image: "uploads/categories/comp.png",
-      //     },
-      //     {
-      //       id: 12,
-      //       title: "Ноутбуки",
-      //       image: "uploads/categories/nout.png",
-      //     },
-      //     {
-      //       id: 14,
-      //       title: "Наушники",
-      //       image: "uploads/categories/phone.png",
-      //     },
-      //     {
-      //       id: 15,
-      //       title: "Принтеры, Сканеры, МФУ",
-      //       image: "uploads/categories/mfu.png",
-      //     },
-      //   ],
     };
   },
 
-  //   methods: {
-  //     updateSort(activeOption) {
-  //       console.log("activeOption");
-  //       console.log(activeOption);
-  //       this.filter.state.sort = activeOption;
-  //     },
+  // this.$store.dispatch('fetchTasksWithPagination', {
+  created() {
+    this.$store.dispatch("fetchProducts");
+    this.$store.dispatch("fetchSubcategories");
+  },
 
-  //     updateShow(activeOption) {
-  //       this.filter.state.show = activeOption;
-  //     },
-  //   },
+  computed: {
+    products_module() {
+      //   return this.$store.products_modules;
+      //   return this.$store.state.products_modules;
+      return this.$store.state.products_module;
+      //   return this.$store.state.products; // v3
+    },
+
+    // direct request to store
+    // products() {
+    //   return this.products_module.products;
+    // },
+
+    // getter request to store
+    products() {
+      //   console.log("this.$store: ");
+      //   console.log(this.$store);
+      //   return this.$store.getters.products_module.getProducts; // WRONG !
+      return this.$store.getters.getProducts; // RIGHT!!!
+    },
+
+    // getter request to store
+    subcategories() {
+      return this.$store.getters.getSubcategories; // RIGHT!!!
+    },
+
+    //   computed: mapState({
+    //     task: (state) => state.tasks.task,
+    //   }),
+  },
 
   methods: {
     updateView(activeView) {

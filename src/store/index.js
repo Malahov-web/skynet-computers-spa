@@ -4,9 +4,20 @@ import Vuex from "vuex";
 // import TaskService from '@/services/TaskService.js'
 import NewsServices from '@/services/NewsServices.js'
 
+import products from "@/store/modules/products.js";
+import categories from "@/store/modules/categories.js";
+
 Vue.use(Vuex);
 
 export default new Vuex.Store({
+
+  modules: {
+    // products_modules: products
+    products_module: products,
+    // products: products // v3
+    categories: categories
+  }   , 
+  
   state: {
       news: [],
       newFull: {},
@@ -95,5 +106,4 @@ export default new Vuex.Store({
 
 
   },
-  modules: {},
 });
