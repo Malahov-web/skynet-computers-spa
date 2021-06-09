@@ -429,7 +429,8 @@ export default {
 
   computed: {
     newsItemFull() {
-      return this.$store.state.newFull;
+      //   return this.$store.state.newFull;
+      return this.$store.state.news.newFull; // refact: module news.jsws
     },
   },
 
@@ -466,9 +467,9 @@ export default {
 
   // Зашло!
   // hint: https://stackoverflow.com/questions/47184331/difference-between-beforerouteupdate-and-watching-route-vue-js
-  watch: {
-    $route: "fetchData",
-  },
+  //   watch: {
+  //     $route: "fetchData",
+  //   },
 
   //   beforeRouteUpdate(to, from, next) {
   //     console.log("before", this.$route.path);

@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <NavMenu class="asd"></NavMenu>
+    <Notifications class="asd"></Notifications>
 
     <router-view :key="$route.fullPath" />
   </div>
@@ -8,12 +9,14 @@
 
 <script>
 import NavMenu from "@/components/NavMenu.vue";
+import Notifications from "@/components/notifications/Notifications.vue";
 
 export default {
   components: {
     // Category: Category,
     // Product: Product,
     NavMenu: NavMenu,
+    Notifications: Notifications,
   },
 };
 </script>

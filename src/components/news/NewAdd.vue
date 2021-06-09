@@ -290,8 +290,7 @@ export default {
             // name: "Category",
 
             name: "NewFullPage",
-            // params: { newid: this.item.id },
-            params: { newid: 1 },
+            params: { newid: this.item.id },
           });
 
           // this.event = this.resetTaskObject()
@@ -300,7 +299,7 @@ export default {
         .catch(() => {
           this.hasSent = 1;
           this.addedSuccessfull = 0;
-          console.log("There was a problem creating your new.");
+          console.log("NewAdd: There was a problem creating your new.");
         });
     },
   },

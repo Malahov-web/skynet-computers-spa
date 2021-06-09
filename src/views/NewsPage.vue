@@ -52,6 +52,8 @@
 <script>
 import News from "@/components/news/News.vue";
 import BasePagination from "@/components/BasePagination.vue";
+//
+// import { mapState } from "vuex";
 
 export default {
   name: "NewsPage",
@@ -78,8 +80,27 @@ export default {
   },
 
   computed: {
+    // v1 HardCoding / Static
+    // // v2 Computed Var
+    // news() {
+    //   return this.$store.state.news.news; //
+    // },
+    // // v3
+    // mapState({
+    //   userName: state => state.user.name,
+    //   categories: state => state.categories
+    // })
+
+    // // v6
+    // someProp() {
+    //   // ...
+    // },
+    // ...mapState(["user", "categories"]),
+
     news() {
-      return this.$store.state.news;
+      //   return this.$store.state.news;
+      return this.$store.state.news.news; // refact: module news.js
+      //   return "";
     },
 
     pageNumber() {
@@ -87,18 +108,33 @@ export default {
       return parseInt(this.$route.query._page) || 1;
     },
 
-    // pagesTotal() {
-    //   return parseInt(this.$store.state.paginationPostsTotal);
-    // },
-
     postsTotal() {
-      return parseInt(this.$store.state.paginationPostsTotal);
+      //   return parseInt(this.$store.state.paginationPostsTotal);
+      return parseInt(this.$store.state.news.paginationPostsTotal); // refact: module news.js
     },
-
-    //     userFullName() {
-    //       return this.$store.state.user.name + ' ' + this.$store.state.user.surname
-    //     },
   },
+
+  // v3
+  // v4
+  // v5
+  // v3 -
+  //   computed:
+  //     mapState({
+  //       userName: state => state.user.name,
+  //       categories: state => state.categories
+  //     })
+  //   },
+  // v4  -
+  //   computed:
+  //     mapState({
+  //       user: 'user',
+  //       categories: 'categories'
+  //     })
+  //   },
+  // v5 -
+  //   computed:
+  //     mapState( [ 'user', 'categories' ] )
+  //   },
 };
 </script>
 
