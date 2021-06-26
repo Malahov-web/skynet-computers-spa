@@ -19,12 +19,6 @@ export default {
     NotificationsItem,
   },
 
-  //   computed: {
-  //       name() {
-  //           return this.data
-  //       }
-  //   },
-
   computed: mapState("notifications", ["notifications"]),
 };
 </script>

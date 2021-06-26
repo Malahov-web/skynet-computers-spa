@@ -87,4 +87,28 @@ a.menu-main__item--active {
     }
   }
 }
+
+.notifications__item {
+  &.status-success {
+    border-color: $success_color;
+    .product__remove {
+      &:hover {
+        color: $success_color;
+      }
+    }
+  }
+  &.status-error {
+    border-color: $error_color;
+    .product__remove {
+      &:hover {
+        color: $error_color;
+      }
+    }
+  }
+
+  .product__remove {
+    // color: $text;
+    color: $grey_super_dark;
+  }
+}
 </style>

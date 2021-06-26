@@ -46,6 +46,7 @@ export default {
     },
   },
 
+
   data() {
     return {
       toolbarFilter: this.filter, // Обновляются оба, т.к. здесь происходит передача по ссылке?

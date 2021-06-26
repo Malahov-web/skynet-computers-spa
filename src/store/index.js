@@ -22,10 +22,10 @@ export default new Vuex.Store({
     products_module: products,
     // products: products // v3
     categories: categories,
-    notifications    
-    
-}   , 
-  
+    notifications
+
+  },
+
   state: {
     //   news: [],
     //   newFull: {},
@@ -35,11 +35,11 @@ export default new Vuex.Store({
     // SET_NEWS(state, news) {
     //     state.news = news
     // },
-      
+
     // SET_NEW_FULL(state, newFull) {
     //     state.newFull = newFull
     // },
-    
+
     // ADD_NEWS_ITEM(state, newItem) {
     //     // state
     //     state.news.push(newItem)
@@ -66,10 +66,10 @@ export default new Vuex.Store({
 
     //         commit('SET_PAGINATION_POSTS_TOTAL', response.headers["x-total-count"])
     //         commit('SET_NEWS', response.data)
-            
+
     //     } )
     // },
-    
+
 
     // fetchNewsItem( { commit }, id ) {
     //     NewsServices.getNewsItemById(id)
@@ -95,12 +95,12 @@ export default new Vuex.Store({
     //     .then( () => {
     //         commit('ADD_NEWS_ITEM', item) 
     //     } )
-        
+
     // },
 
-    
-    
-    
+
+
+
     // fetchEvents({ commit }) {
     //     EventService.getEvents()
     //       .then(response => {

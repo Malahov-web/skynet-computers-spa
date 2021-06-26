@@ -6,4 +6,14 @@
 ----
 
 пн 07.0.
+
+  update  NotificationsItem.vue - removeNotification(), styles (0.5)
   
+
+вт 23.0
+  Deploy - re-create app in hello-world dir (for fix editor bug with formatting highlights) (1)
+  ProductPage.vue, update: modules - products.js, services - productsServices (2)
+
+чт
+  Проблема .txt - дописать здесь (1)
+  ProductPage.vue, Productfull.vue, ProductSpecifications.vue (1)
