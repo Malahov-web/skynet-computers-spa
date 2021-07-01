@@ -1,4 +1,6 @@
 <template>
+  <!-- Эта страница хранит исходный код верстки, который мы копируемв компоненты -->
+
   <!-- <div>Product Full page, ID: {{ productid }}</div> -->
 
   <section class="section">

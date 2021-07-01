@@ -1,287 +1,305 @@
 {
-  "edges": [
-    {
-      "item-title": "Подарки к каждой покупке ",
-      "item-icon": "gift"
-    },
-    {
-      "item-title": "Доставка в кратчайшие сроки",
-      "item-icon": "truck"
-    },
-    {
-      "item-title": "Скидка 10% при оплате картой",
-      "item-icon": "credit-card"
-    },
-    {
-      "item-title": "Круглосуточная техподдержка",
-      "item-icon": "comments-smiley"
-    }
-  ],
-  "actions": [
-    {
-      "item-title": "Latest Mi LED TV",
-      "item-image": "actions-item-img-1.jpg",
-      "item-date": "25.06.2019",
-      "item-datetime": "2019-06-25",
-      "item-text": "Big Sale 20% <br>on new models",
-      "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
-      "item-promocode": "skynet20",
-      "item-link": "#"
-    },
-    {
-      "item-title": "Big Great Offer",
-      "item-image": "actions-item-img-2.jpg",
-      "item-date": "06.06.2019",
-      "item-datetime": "2019-06-06",
-      "item-text": "St. Louis Blues Audio shortcode: “Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-      "item-text-long": "St. Louis Blues Audio shortcode: “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in rep.,  ",
-      "item-promocode": "skynet",
-      "item-link": "#"
-    }
-  ],
-  "subcategories": [
-    {
-      "id": 11,
-      "title": "Компьютеры",
-      "image": "uploads/categories/comp.png"
-    },
-    {
-      "id": 12,
-      "title": "Ноутбуки",
-      "image": "uploads/categories/nout.png"
-    },
-    {
-      "id": 14,
-      "title": "Наушники",
-      "image": "uploads/categories/phone.png"
-    },
-    {
-      "id": 15,
-      "title": "Принтеры, Сканеры, МФУ",
-      "image": "uploads/categories/mfu.png"
-    }
-  ],
-  "products": {
-    "1": {
-      "id": "01910527",
-      "title": "Монитор 23.8\" DELL S2421HN",
-      "image": "uploads/productfull/DELL-S2421HN-black.jpg",
-      "diagonal": 23.8,
-      "brand": "dell",
-      "brandImage": "uploads/brands/dell.webp",
-      "availability": 1,
-      "description": "Элегантный дизайн с тонкой рифленой текстурой на задней панели придает монитору Dell S2421HN неповторимый внешний вид. Он привносит гармоничное сочетание великолепного стиля и качества в любое пространство. <br>Благодаря трехсторонней сверхтонкой рамке вы можете наслаждаться превосходной четкостью изображения на 23,8-дюймовом мониторе с разрешением <b>Full HD</b> (1920 x 1080).",
-      "price": 9490,
-      "priceSale": 7990,
-      "quantity": 9,
-      "specificationsShort": {
-        "diagonal": {
-          "title": "Диагональ",
-          "value": 23.8
+    "edges": [
+        {
+            "item-title": "Подарки к каждой покупке ",
+            "item-icon": "gift"
         },
-        "dimension": {
-          "title": "Разрешение экрана",
-          "value": "1920x1080 "
+        {
+            "item-title": "Доставка в кратчайшие сроки",
+            "item-icon": "truck"
         },
-        "matrixType": {
-          "title": "Тип матрицы",
-          "value": "IPS"
+        {
+            "item-title": "Скидка 10% при оплате картой",
+            "item-icon": "credit-card"
         },
-        "backlight": {
-          "title": "Подсветка",
-          "value": "WLED"
-        },
-        "responseTime": {
-          "title": "Время отклика",
-          "value": 4
+        {
+            "item-title": "Круглосуточная техподдержка",
+            "item-icon": "comments-smiley"
         }
-      },
-      "variants": [
+    ],
+    "actions": [
         {
-          "variantId": 119105271,
-          "variantColor": "black",
-          "variantColorValue": "#41b883",
-          "variantImage": "uploads/productfull/DELL-S2421HN-black.jpg"
+            "item-title": "Latest Mi LED TV",
+            "item-image": "actions-item-img-1.jpg",
+            "item-date": "25.06.2019",
+            "item-datetime": "2019-06-25",
+            "item-text": "Big Sale 20% <br>on new models",
+            "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
+            "item-promocode": "skynet20",
+            "item-link": "#"
         },
         {
-          "variantId": 119105272,
-          "variantColor": "silver",
-          "variantColorValue": "#41b883",
-          "variantImage": "uploads/productfull/DELL-S2421HN-silver.jpg"
-        },
-        {
-          "variantId": 119105271,
-          "variantColor": "white",
-          "variantColorValue": "#41b883",
-          "variantImage": "uploads/productfull/product_full_image_dell_08_image_1.jpg"
+            "item-title": "Big Great Offer",
+            "item-image": "actions-item-img-2.jpg",
+            "item-date": "06.06.2019",
+            "item-datetime": "2019-06-06",
+            "item-text": "St. Louis Blues Audio shortcode: “Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
+            "item-text-long": "St. Louis Blues Audio shortcode: “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in rep.,  ",
+            "item-promocode": "skynet",
+            "item-link": "#"
         }
-      ],
-      "rating": 4.7,
-      "reviews": [
-        {},
-        {}
-      ]
-    },
-    "2": {
-      "id": "01910538",
-      "title": "Монитор ASUS VG258QR 24.5\"",
-      "diagonal": 24.5,
-      "brand": "ASUS",
-      "brandImage": "uploads/brands/asus.webp",
-      "availability": 2,
-      "description": "Asus VG258QR – модель для офиса и дома. 24,5-дюймовый экран поддерживает разрешение 1920х1080 пикселей (стандарт Full HD) и отображает четкую, детализированную картинку, которая имеет реалистичные цвета. Время отклика матрицы составляет 165 Гц, за счет чего изображение не мерцает, и не создается большая нагрузка на зрение.<br>Широкоформатный Asus VG258QR поставляется на устойчивой пластиковой подставке, которую можно регулировать по наклону и высоте, а также вращать, переводя монитор в портретный режим. Модель оснащена акустической системой и внутренним блоком питания. В корпусе есть монтажные отверстия для крепления VESA.",
-      "price": 23000,
-      "priceSale": 21990,
-      "quantity": 20,
-      "specificationsShort": {
-        "diagonal": {
-          "title": "Диагональ",
-          "value": 24.5
+    ],
+    "subcategories": [
+        {
+            "id": 11,
+            "title": "Компьютеры",
+            "image": "uploads/categories/comp.png"
         },
-        "dimension": {
-          "title": "Разрешение экрана",
-          "value": "1920x1080 "
+        {
+            "id": 12,
+            "title": "Ноутбуки",
+            "image": "uploads/categories/nout.png"
         },
-        "matrixType": {
-          "title": "Тип матрицы",
-          "value": "TN"
+        {
+            "id": 14,
+            "title": "Наушники",
+            "image": "uploads/categories/phone.png"
         },
-        "backlight": {
-          "title": "Подсветка",
-          "value": "Flicker-Free"
-        },
-        "responseTime": {
-          "title": "Время отклика",
-          "value": 1
+        {
+            "id": 15,
+            "title": "Принтеры, Сканеры, МФУ",
+            "image": "uploads/categories/mfu.png"
         }
-      },
-      "variants": [
-        {
-          "variantId": 219105271,
-          "variantColor": "black",
-          "variantColorValue": "#41b883",
-          "variantImage": "uploads/productfull/DELL-S2421HN-black.jpg"
+    ],
+    "products": {
+        "1": {
+            "id": "01910527",
+            "title": "Монитор 23.8\" DELL S2421HN",
+            "image": "uploads/productfull/DELL-S2421HN-black.jpg",
+            "gallery": [
+                {
+                    "title": "DELL-S2421HN-black",
+                    "image": "uploads/productfull/DELL-S2421HN-black.jpg"
+                },
+                {
+                    "title": "DELL-S2421HN-silver",
+                    "image": "uploads/productfull/DELL-S2421HN-silver.jpg"
+                },
+                {
+                    "title": "DELL S2421HN Black and White",
+                    "image": "uploads/productfull/product_full_image_dell_08_image_4.jpg"
+                },
+                {
+                    "title": "DELL S2421HN White",
+                    "image": "uploads/productfull/product_full_image_dell_08_image_1.jpg"
+                }
+            ],
+            "diagonal": 23.8,
+            "brand": "dell",
+            "brandImage": "uploads/brands/dell.webp",
+            "availability": 1,
+            "description": "Элегантный дизайн с тонкой рифленой текстурой на задней панели придает монитору Dell S2421HN неповторимый внешний вид. Он привносит гармоничное сочетание великолепного стиля и качества в любое пространство. <br>Благодаря трехсторонней сверхтонкой рамке вы можете наслаждаться превосходной четкостью изображения на 23,8-дюймовом мониторе с разрешением <b>Full HD</b> (1920 x 1080).",
+            "price": 9490,
+            "priceSale": 7990,
+            "quantity": 9,
+            "specificationsShort": {
+                "diagonal": {
+                    "title": "Диагональ",
+                    "value": 23.8
+                },
+                "dimension": {
+                    "title": "Разрешение экрана",
+                    "value": "1920x1080 "
+                },
+                "matrixType": {
+                    "title": "Тип матрицы",
+                    "value": "IPS"
+                },
+                "backlight": {
+                    "title": "Подсветка",
+                    "value": "WLED"
+                },
+                "responseTime": {
+                    "title": "Время отклика",
+                    "value": 4
+                }
+            },
+            "variants": [
+                {
+                    "variantId": 119105271,
+                    "variantColor": "black",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/DELL-S2421HN-black.jpg"
+                },
+                {
+                    "variantId": 119105272,
+                    "variantColor": "silver",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/DELL-S2421HN-silver.jpg"
+                },
+                {
+                    "variantId": 119105271,
+                    "variantColor": "white",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/product_full_image_dell_08_image_1.jpg"
+                }
+            ],
+            "rating": 4.7,
+            "reviews": [
+                {},
+                {}
+            ]
         },
-        {
-          "variantId": 219105272,
-          "variantColor": "silver",
-          "variantColorValue": "#41b883",
-          "variantImage": "uploads/productfull/DELL-S2421HN-silver.jpg"
-        },
-        {
-          "variantId": 219105271,
-          "variantColor": "white",
-          "variantColorValue": "#41b883",
-          "variantImage": "uploads/productfull/product_full_image_dell_08_image_1.jpg"
+        "2": {
+            "id": "01910538",
+            "title": "Монитор ASUS VG258QR 24.5\"",
+            "diagonal": 24.5,
+            "brand": "ASUS",
+            "brandImage": "uploads/brands/asus.webp",
+            "availability": 2,
+            "description": "Asus VG258QR – модель для офиса и дома. 24,5-дюймовый экран поддерживает разрешение 1920х1080 пикселей (стандарт Full HD) и отображает четкую, детализированную картинку, которая имеет реалистичные цвета. Время отклика матрицы составляет 165 Гц, за счет чего изображение не мерцает, и не создается большая нагрузка на зрение.<br>Широкоформатный Asus VG258QR поставляется на устойчивой пластиковой подставке, которую можно регулировать по наклону и высоте, а также вращать, переводя монитор в портретный режим. Модель оснащена акустической системой и внутренним блоком питания. В корпусе есть монтажные отверстия для крепления VESA.",
+            "price": 23000,
+            "priceSale": 21990,
+            "quantity": 20,
+            "specificationsShort": {
+                "diagonal": {
+                    "title": "Диагональ",
+                    "value": 24.5
+                },
+                "dimension": {
+                    "title": "Разрешение экрана",
+                    "value": "1920x1080 "
+                },
+                "matrixType": {
+                    "title": "Тип матрицы",
+                    "value": "TN"
+                },
+                "backlight": {
+                    "title": "Подсветка",
+                    "value": "Flicker-Free"
+                },
+                "responseTime": {
+                    "title": "Время отклика",
+                    "value": 1
+                }
+            },
+            "variants": [
+                {
+                    "variantId": 219105271,
+                    "variantColor": "black",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/DELL-S2421HN-black.jpg"
+                },
+                {
+                    "variantId": 219105272,
+                    "variantColor": "silver",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/DELL-S2421HN-silver.jpg"
+                },
+                {
+                    "variantId": 219105271,
+                    "variantColor": "white",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/product_full_image_dell_08_image_1.jpg"
+                }
+            ],
+            "rating": 4.2,
+            "reviews": [
+                {},
+                {}
+            ]
         }
-      ],
-      "rating": 4.2,
-      "reviews": [
-        {},
-        {}
-      ]
-    }
-  },
-  "news": [
-    {
-      "id": 1,
-      "item-title": "QCYBER MOBILE: оторвись от проводов! QCYBER MOBILE: оторвись от проводов!",
-      "item-image": "news_item_image_1.jpg",
-      "item-date": "29.04.2021",
-      "item-datetime": "2021-04-29",
-      "item-text": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea",
-      "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
-      "item-link": "#"
     },
-    {
-      "id": 2,
-      "item-title": "10 удивительных ноутбуков с выставки CES 2019",
-      "item-image": "news_item_image_2.jpg",
-      "item-date": "25.03.2021",
-      "item-datetime": "2021-03-25",
-      "item-text": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea",
-      "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
-      "item-link": "#"
-    },
-    {
-      "id": 3,
-      "item-title": "HUAWEI получила более двадцати наград на международной выставке IFA-2019",
-      "item-image": "news_item_image_3.jpg",
-      "item-date": "29.10.2019",
-      "item-datetime": "2019-10-29",
-      "item-text": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea",
-      "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
-      "item-link": "#"
-    },
-    {
-      "id": 4,
-      "item-title": "123 Going Green Is So Much Simpler Than Most People",
-      "item-image": "news_item_image_4.jpg",
-      "item-date": "29.10.2019",
-      "item-datetime": "2019-10-29",
-      "item-text": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea",
-      "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
-      "item-link": "#"
-    },
-    {
-      "id": 5,
-      "item-title": "Duis aute irure dolor in reprehenderit in voluptate",
-      "item-image": "news_item_image_5.jpg",
-      "item-date": "29.10.2019",
-      "item-datetime": "2019-10-29",
-      "item-text": "St. Louis Blues Audio shortcode: “Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-      "item-text-long": "St. Louis Blues Audio shortcode: “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in rep.,  ",
-      "item-link": "#"
-    },
-    {
-      "id": 6,
-      "item-title": "occaecat cupidatat non proident, sunt in",
-      "item-image": "news_item_image_6.jpg",
-      "item-date": "29.10.2019",
-      "item-datetime": "2019-10-29",
-      "item-text": "Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. ",
-      "item-text-long": "Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. ",
-      "item-link": "#"
-    },
-    {
-      "item-title": "Toyota не исключает, что электрический Land Cruiser может стать серийным",
-      "item-text": "Общая инженерная консервативность автоконцерна Toyota Motor привела к тому, что в ассортименте её продукции сохраняются рамные внедорожники с восьмицилиндровыми моторами. Выпускать батарейные электромобили японский гигант пока тоже не особо торопится, но существующий в единственном варианте электрический вариант Land Cruiser может сделать серийным.",
-      "item-author": "Кирилл Малахов",
-      "id": 4642606
-    },
-    {
-      "item-title": "Превью изображений в постах Twitter теперь отображаются целиком",
-      "item-text": "Социальная сеть Twitter сделала обновлённый дизайн постов с прикреплёнными изображениями доступным для всех пользователей платформы. Теперь превью изображений в постах, которые отображаются в ленте, будут демонстрироваться полностью, а не частично. Информация об этом была опубликована в официальном аккаунте разработчиков соцсети.",
-      "item-author": "Кирилл Малахов",
-      "id": 9050810
-    },
-    {
-      "item-title": "Сервис коротких видео YouTube Shorts стал доступен всем пользователям в США",
-      "item-text": "Сервис коротких видео YouTube Shorts стал доступен всем пользователям в США",
-      "id": 1415759
-    },
-    {
-      "item-title": "fetchData",
-      "item-text": "fetchData",
-      "id": 9213838
-    },
-    {
-      "item-title": "Запустили Modular Scale Viewer",
-      "item-text": "asdas asd as das das as as as das",
-      "item-author": "Kirill",
-      "id": 6320802
-    },
-    {
-      "item-title": "Новость",
-      "item-text": "фыв ффы вфы фы вфы в",
-      "item-author": "Kirill",
-      "id": 5426021
-    },
-    {
-      "item-title": "На gh-pages стал доступен сервис для дизайнеров",
-      "item-text": "Modular ..",
-      "item-author": "Kirill",
-      "id": 4435518
-    }
-  ]
+    "news": [
+        {
+            "id": 1,
+            "item-title": "QCYBER MOBILE: оторвись от проводов! QCYBER MOBILE: оторвись от проводов!",
+            "item-image": "news_item_image_1.jpg",
+            "item-date": "29.04.2021",
+            "item-datetime": "2021-04-29",
+            "item-text": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea",
+            "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
+            "item-link": "#"
+        },
+        {
+            "id": 2,
+            "item-title": "10 удивительных ноутбуков с выставки CES 2019",
+            "item-image": "news_item_image_2.jpg",
+            "item-date": "25.03.2021",
+            "item-datetime": "2021-03-25",
+            "item-text": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea",
+            "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
+            "item-link": "#"
+        },
+        {
+            "id": 3,
+            "item-title": "HUAWEI получила более двадцати наград на международной выставке IFA-2019",
+            "item-image": "news_item_image_3.jpg",
+            "item-date": "29.10.2019",
+            "item-datetime": "2019-10-29",
+            "item-text": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea",
+            "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
+            "item-link": "#"
+        },
+        {
+            "id": 4,
+            "item-title": "123 Going Green Is So Much Simpler Than Most People",
+            "item-image": "news_item_image_4.jpg",
+            "item-date": "29.10.2019",
+            "item-datetime": "2019-10-29",
+            "item-text": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea",
+            "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
+            "item-link": "#"
+        },
+        {
+            "id": 5,
+            "item-title": "Duis aute irure dolor in reprehenderit in voluptate",
+            "item-image": "news_item_image_5.jpg",
+            "item-date": "29.10.2019",
+            "item-datetime": "2019-10-29",
+            "item-text": "St. Louis Blues Audio shortcode: “Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
+            "item-text-long": "St. Louis Blues Audio shortcode: “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in rep.,  ",
+            "item-link": "#"
+        },
+        {
+            "id": 6,
+            "item-title": "occaecat cupidatat non proident, sunt in",
+            "item-image": "news_item_image_6.jpg",
+            "item-date": "29.10.2019",
+            "item-datetime": "2019-10-29",
+            "item-text": "Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. ",
+            "item-text-long": "Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. ",
+            "item-link": "#"
+        },
+        {
+            "item-title": "Toyota не исключает, что электрический Land Cruiser может стать серийным",
+            "item-text": "Общая инженерная консервативность автоконцерна Toyota Motor привела к тому, что в ассортименте её продукции сохраняются рамные внедорожники с восьмицилиндровыми моторами. Выпускать батарейные электромобили японский гигант пока тоже не особо торопится, но существующий в единственном варианте электрический вариант Land Cruiser может сделать серийным.",
+            "item-author": "Кирилл Малахов",
+            "id": 4642606
+        },
+        {
+            "item-title": "Превью изображений в постах Twitter теперь отображаются целиком",
+            "item-text": "Социальная сеть Twitter сделала обновлённый дизайн постов с прикреплёнными изображениями доступным для всех пользователей платформы. Теперь превью изображений в постах, которые отображаются в ленте, будут демонстрироваться полностью, а не частично. Информация об этом была опубликована в официальном аккаунте разработчиков соцсети.",
+            "item-author": "Кирилл Малахов",
+            "id": 9050810
+        },
+        {
+            "item-title": "Сервис коротких видео YouTube Shorts стал доступен всем пользователям в США",
+            "item-text": "Сервис коротких видео YouTube Shorts стал доступен всем пользователям в США",
+            "id": 1415759
+        },
+        {
+            "item-title": "fetchData",
+            "item-text": "fetchData",
+            "id": 9213838
+        },
+        {
+            "item-title": "Запустили Modular Scale Viewer",
+            "item-text": "asdas asd as das das as as as das",
+            "item-author": "Kirill",
+            "id": 6320802
+        },
+        {
+            "item-title": "Новость",
+            "item-text": "фыв ффы вфы фы вфы в",
+            "item-author": "Kirill",
+            "id": 5426021
+        },
+        {
+            "item-title": "На gh-pages стал доступен сервис для дизайнеров",
+            "item-text": "Modular ..",
+            "item-author": "Kirill",
+            "id": 4435518
+        }
+    ]
 }

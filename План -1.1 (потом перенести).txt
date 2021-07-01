@@ -15,5 +15,23 @@
   ProductPage.vue, update: modules - products.js, services - productsServices (2)
 
 чт
-  Проблема .txt - дописать здесь (1)
+  Проблемы.txt - п.1 - v.2 (1)
   ProductPage.vue, Productfull.vue, ProductSpecifications.vue (1)
+  git commit, merge, push; ProductfullDescription.vue, ProductfullReviewsCounter.vue (1)
+
+  ProductfullSlider.vue, vue-owl-carousel (0.5)
+
+
+--
+
+вт
+  ProductfullBrand.vue (0.5-1)
+  ProductfullGallery.vue (0.5)
+
+ProductFull Tabs
+сделать Base Comp  - BaseTabs
+добавить д-е
+  description full - в product
+  specifications full - В продукт
+  reviews - в reviews
+  доставкаи оплата - ?

@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: "ProductSpecifications",
+  name: "ProductfullSpecifications",
 
   props: {
     specifications: {
