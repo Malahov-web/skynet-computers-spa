@@ -63,7 +63,7 @@
     ],
     "products": {
         "1": {
-            "id": "01910527",
+            "id": "1",
             "title": "Монитор 23.8\" DELL S2421HN",
             "image": "uploads/productfull/DELL-S2421HN-black.jpg",
             "gallery": [
@@ -93,6 +93,48 @@
             "priceSale": 7990,
             "quantity": 9,
             "specificationsShort": {
+                "diagonal": {
+                    "title": "Диагональ",
+                    "value": 23.8
+                },
+                "dimension": {
+                    "title": "Разрешение экрана",
+                    "value": "1920x1080 "
+                },
+                "matrixType": {
+                    "title": "Тип матрицы",
+                    "value": "IPS"
+                },
+                "backlight": {
+                    "title": "Подсветка",
+                    "value": "WLED"
+                },
+                "responseTime": {
+                    "title": "Время отклика",
+                    "value": 4
+                }
+            },
+            "specificationsFull": {
+                "brand": {
+                    "title": "Производитель",
+                    "value": "dell"
+                },
+                "producingСountry ": {
+                    "title": "Страна производитель",
+                    "value": "Китай"
+                },
+                "operatingSystem ": {
+                    "title": "Операционная система",
+                    "value": "Mac OS"
+                },
+                "ram": {
+                    "title": "Оперативная память",
+                    "value": "8 Гб"
+                },
+                "rom": {
+                    "title": "Постоянная память",
+                    "value": "1 Тб HDD + 512 Гб SSD"
+                },
                 "diagonal": {
                     "title": "Диагональ",
                     "value": 23.8
@@ -300,6 +342,138 @@
             "item-text": "Modular ..",
             "item-author": "Kirill",
             "id": 4435518
+        }
+    ],
+    "reviews": [
+        {
+            "city": "Many",
+            "date": "2068-11-13",
+            "email": "corporis@outlook.com",
+            "firstname": "Raleigh",
+            "phone": "(807) 481-9570 x827",
+            "productId": 2,
+            "rating": 4,
+            "surname": "Lera",
+            "textAdvantages": "stop sint mine though death facilis accusamus consequatur long doctor fill parent laugh gun minima opposite cell print climb wind",
+            "textDefects": "illo inventore story heart corner done paint offer need middle ipsam method shoulder error probable wait",
+            "textGeneral": "father fruit strange expedita agree quia quis night dog ago voluptatum his felt molestiae stood enemy woman watch heat and two inch"
+        },
+        {
+            "city": "Picture Butte",
+            "date": "2043-12-13",
+            "email": "collin@gmail.com",
+            "firstname": "Destiney",
+            "phone": "611.268.4817",
+            "productId": 3,
+            "rating": 5,
+            "surname": "Jerrod",
+            "textAdvantages": "populate yellow captain if count sail pick came liquid fuga soldier party modi et middle I ab decide would segment",
+            "textDefects": "danger soft young cent sight time fruit explicabo sun weight hurry sapiente century sed separate walk",
+            "textGeneral": "fugit non fair particular piece for nihil led chair tell this between much select broke a experiment cut hic less reprehenderit climb"
+        },
+        {
+            "city": "Clovis",
+            "date": "2016-08-29",
+            "email": "wear_wilfredo@yahoo.com",
+            "firstname": "Ivory",
+            "phone": "(040) 791-3845",
+            "productId": 3,
+            "rating": 5,
+            "surname": "Marcella",
+            "textAdvantages": "north went repellendus cow some et illum excite indicate dignissimos get twenty position practice move fun blow hill organ window",
+            "textDefects": "thin non thing segment similar women figure occur surprise meant locate general est porro had finish",
+            "textGeneral": "feet is quas produce shall see prove autem yellow million ab sound chief hot long some experience general just fact window leg"
+        },
+        {
+            "city": "West Babylon",
+            "date": "2119-08-24",
+            "email": "determine_bridget@hotmail.com",
+            "firstname": "Bertrand",
+            "phone": "089-895-8980 x0593",
+            "productId": 3,
+            "rating": 4,
+            "surname": "Leola",
+            "textAdvantages": "mix success plant porro qui seem should qui view dolorem aut salt me machine chart quo molestiae anger totam sing",
+            "textDefects": "chart road ring clock hole wife ipsa mind level exact say verb yard him north under",
+            "textGeneral": "receive dry huge throw been et tall fat money among arrive sit behind quaerat late place architecto off law poor there officiis"
+        },
+        {
+            "city": "Chevery",
+            "date": "1970-10-26",
+            "email": "est@yahoo.com",
+            "firstname": "Dedric",
+            "phone": "955.461.2935",
+            "productId": 2,
+            "rating": 4,
+            "surname": "Sid",
+            "textAdvantages": "fear clothe ut music subject tiny aspernatur voluptatem work discuss certain fresh sapiente felt voluptatibus neque veniam step next in",
+            "textDefects": "count row shine low electric voluptas even eaque high stead front save able us aut foot",
+            "textGeneral": "winter raise atom such interest pariatur shop minima broad east melody wire show brought numeral finish men glass answer evening condition cent"
+        },
+        {
+            "city": "Coaling",
+            "date": "2007-06-21",
+            "email": "voluptas@gmail.com",
+            "firstname": "Ted",
+            "phone": "701.506.9196",
+            "productId": 3,
+            "rating": 1,
+            "surname": "Shane",
+            "textAdvantages": "warm never land wild water them will straight that weight bird quo soft study non by pair numeral job record",
+            "textDefects": "laudantium nihil tone leave lie play culpa sit band guide pass root doloremque held prove id",
+            "textGeneral": "noon sudden fill practice cook hit seem use large soft told took temporibus summer line clear laborum skill busy length meat rich"
+        },
+        {
+            "city": "Potosi",
+            "date": "2023-09-15",
+            "email": "armand@hotmail.com",
+            "firstname": "Kristin",
+            "phone": "1-997-590-6076 x9922",
+            "productId": 1,
+            "rating": 2,
+            "surname": "Saige",
+            "textAdvantages": "omnis men way give dolor don't support fell hundred hard fair locate melody instrument note rich chief sentence big off",
+            "textDefects": "property measure city sunt begin take port doctor took describe ducimus dad ad voluptas ride complete",
+            "textGeneral": "perspiciatis doctor else quisquam better guide page chart electric third modern save product are call snow reach grew only morning sure slow"
+        },
+        {
+            "city": "Northfield Falls",
+            "date": "2112-07-31",
+            "email": "brought_myra@outlook.com",
+            "firstname": "Eliane",
+            "phone": "716.304.1400 x61697",
+            "productId": 1,
+            "rating": 3,
+            "surname": "Eryn",
+            "textAdvantages": "sit especially tail silent answer fig art order son ipsam quotient women et yes sunt done aut create story grew",
+            "textDefects": "forward settle shall more off continue quite smell esse yellow will brought supply show late were",
+            "textGeneral": "also cross card black sight degree turn rail incidunt decimal operate omnis hand recusandae order quidem own star him pose cause character"
+        },
+        {
+            "city": "Dennisville",
+            "date": "2006-06-29",
+            "email": "rerum_tavares@outlook.com",
+            "firstname": "Louisa",
+            "phone": "636.776.7731",
+            "productId": 2,
+            "rating": 2,
+            "surname": "Karina",
+            "textAdvantages": "once even case egg solution jump with my moment quidem plain product rule learn ran main complete energy compare enim",
+            "textDefects": "stop oil hill chick master kept rain incidunt same length turn try dictionary print amet music",
+            "textGeneral": "top mollitia fear he group of asperiores invent rerum ipsum rock present race old est insect week come sun note sed sense"
+        },
+        {
+            "city": "Iskut",
+            "date": "2083-12-13",
+            "email": "explicabo@yahoo.com",
+            "firstname": "Avery",
+            "phone": "(115) 843-8007 x8057",
+            "productId": 3,
+            "rating": 4,
+            "surname": "Wanda",
+            "textAdvantages": "add repudiandae nature why on leave nation town grand science milk mass room arrive heard join man great magnam rub",
+            "textDefects": "them thick exercitationem laborum lot dark delectus miss insect atom rather wide fight white noon second",
+            "textGeneral": "imagine inventore south port spell dad nothing maiores post ready picture measure my touch perferendis eos unit forward thought before moon accusantium"
         }
     ]
 }

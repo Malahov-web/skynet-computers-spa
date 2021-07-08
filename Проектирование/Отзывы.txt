@@ -1,0 +1,13 @@
+
+
+Модуль отзывы.
+
+Данные.
+Объект reviews {}
+
+modules
+  reviews.js
+
+services
+  ReviewsServies.js
+

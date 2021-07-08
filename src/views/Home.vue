@@ -67,6 +67,7 @@ export default {
     Edges,
     // Categories,
     ProductsGrid,
+
     Actions,
   },
 };

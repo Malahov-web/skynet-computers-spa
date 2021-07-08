@@ -28,6 +28,12 @@
   ProductfullBrand.vue (0.5-1)
   ProductfullGallery.vue (0.5)
 
+
+  Проблемы.txt - п.1 - v.3 (1)
+  BaseTabs.vue (1)
+  BaseTabs.vue (1)
+  BaseTabs.vue (0.5)
+
 ProductFull Tabs
 сделать Base Comp  - BaseTabs
 добавить д-е
@@ -35,3 +41,12 @@ ProductFull Tabs
   specifications full - В продукт
   reviews - в reviews
   доставкаи оплата - ?
+
+
+
+----
+
+пн
+  ProductfullSpecificationsTable.vue (0.5)
+  modules - revies.js, services - ReviewsServies.js; fakeJson.com - :register, docs (1)
+  services - ReviewsServies.js :update, (1)

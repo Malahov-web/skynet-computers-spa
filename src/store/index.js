@@ -7,6 +7,7 @@ import Vuex from "vuex";
 import news from "@/store/modules/news.js";
 import products from "@/store/modules/products.js";
 import categories from "@/store/modules/categories.js";
+import reviews from "@/store/modules/reviews.js";
 
 // import notifications from "@/store/modules/notifications.js";
 // import * from "@/store/modules/notifications.js";
@@ -16,102 +17,103 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
 
-  modules: {
-    news,
-    // products_modules: products
-    products_module: products,
-    // products: products // v3
-    categories: categories,
-    notifications
+    modules: {
+        news,
+        // products_modules: products
+        products_module: products,
+        // products: products // v3
+        categories: categories,
+        notifications,
+        reviews
 
-  },
+    },
 
-  state: {
-    //   news: [],
-    //   newFull: {},
-    //   paginationPostsTotal: 1,
-  },
-  mutations: {
-    // SET_NEWS(state, news) {
-    //     state.news = news
-    // },
+    state: {
+        //   news: [],
+        //   newFull: {},
+        //   paginationPostsTotal: 1,
+    },
+    mutations: {
+        // SET_NEWS(state, news) {
+        //     state.news = news
+        // },
 
-    // SET_NEW_FULL(state, newFull) {
-    //     state.newFull = newFull
-    // },
+        // SET_NEW_FULL(state, newFull) {
+        //     state.newFull = newFull
+        // },
 
-    // ADD_NEWS_ITEM(state, newItem) {
-    //     // state
-    //     state.news.push(newItem)
-    // },
-    // SET_PAGINATION_POSTS_TOTAL(state, postsTotal) {
-    //     state.paginationPostsTotal = postsTotal;
-    // }
-  },
-  actions: {
+        // ADD_NEWS_ITEM(state, newItem) {
+        //     // state
+        //     state.news.push(newItem)
+        // },
+        // SET_PAGINATION_POSTS_TOTAL(state, postsTotal) {
+        //     state.paginationPostsTotal = postsTotal;
+        // }
+    },
+    actions: {
 
-    // fetchNews( { commit } ) {
-    //     NewsServices.getNews()
-    //     .then(response => {
-    //         commit('SET_NEWS', response.data)
-    //     } )
-    // },
+        // fetchNews( { commit } ) {
+        //     NewsServices.getNews()
+        //     .then(response => {
+        //         commit('SET_NEWS', response.data)
+        //     } )
+        // },
 
-    // fetchNewsWithPagination( { commit }, { perPage, pageNumber } ) {
-    //     NewsServices.getNewsWithPagination(perPage, pageNumber)
-    //     .then(response => {
+        // fetchNewsWithPagination( { commit }, { perPage, pageNumber } ) {
+        //     NewsServices.getNewsWithPagination(perPage, pageNumber)
+        //     .then(response => {
 
-    //         console.log('Totals posts are: ' )
-    //         console.log(response.headers)
+        //         console.log('Totals posts are: ' )
+        //         console.log(response.headers)
 
-    //         commit('SET_PAGINATION_POSTS_TOTAL', response.headers["x-total-count"])
-    //         commit('SET_NEWS', response.data)
+        //         commit('SET_PAGINATION_POSTS_TOTAL', response.headers["x-total-count"])
+        //         commit('SET_NEWS', response.data)
 
-    //     } )
-    // },
-
-
-    // fetchNewsItem( { commit }, id ) {
-    //     NewsServices.getNewsItemById(id)
-    //     .then(response => {
-    //         commit('SET_NEW_FULL', response.data)
-    //     } )
-    // },
+        //     } )
+        // },
 
 
-    // // addTask({ commit}, task  ) {
-    // //     // this.$store.commit('INCREMENT_COUNT', this.incrementBy)        
-
-    // //     // ДЗапустим мутаицю, когда с сервера придет ответ ОК
-    // //     return  TaskService.postTask(task).then( ()=> {
-    // //         commit('ADD_TASK', task) 
-    // //     } )
-    // //     // TaskService.postTask(task);
-    // //     // commit('ADD_TASK', task)        
-    // // }
-
-    // addNewsItem( { commit }, item  ) {
-    //     return NewsServices.postNewsItem(item)
-    //     .then( () => {
-    //         commit('ADD_NEWS_ITEM', item) 
-    //     } )
-
-    // },
+        // fetchNewsItem( { commit }, id ) {
+        //     NewsServices.getNewsItemById(id)
+        //     .then(response => {
+        //         commit('SET_NEW_FULL', response.data)
+        //     } )
+        // },
 
 
+        // // addTask({ commit}, task  ) {
+        // //     // this.$store.commit('INCREMENT_COUNT', this.incrementBy)        
 
+        // //     // ДЗапустим мутаицю, когда с сервера придет ответ ОК
+        // //     return  TaskService.postTask(task).then( ()=> {
+        // //         commit('ADD_TASK', task) 
+        // //     } )
+        // //     // TaskService.postTask(task);
+        // //     // commit('ADD_TASK', task)        
+        // // }
 
-    // fetchEvents({ commit }) {
-    //     EventService.getEvents()
-    //       .then(response => {
-    //         commit('SET_EVENTS', response.data)
-    //       })
-    //       .catch(error => {
-    //         console.log('There was an error:', error.response)
-    //       })
-    //   }
+        // addNewsItem( { commit }, item  ) {
+        //     return NewsServices.postNewsItem(item)
+        //     .then( () => {
+        //         commit('ADD_NEWS_ITEM', item) 
+        //     } )
+
+        // },
 
 
 
-  },
+
+        // fetchEvents({ commit }) {
+        //     EventService.getEvents()
+        //       .then(response => {
+        //         commit('SET_EVENTS', response.data)
+        //       })
+        //       .catch(error => {
+        //         console.log('There was an error:', error.response)
+        //       })
+        //   }
+
+
+
+    },
 });
