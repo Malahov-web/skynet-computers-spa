@@ -39,8 +39,10 @@ export default {
             return state.reviews;
         },
         getProductReviews: (state) => (id) => {
-            return state.reviews.filter(
-                (item) => { item.productId == id })
+            // return state.reviews.filter(
+            //     (item) => { item.productId == id })
+
+            return state.reviews.filter(item => item.productId == id);
         }
 
 
