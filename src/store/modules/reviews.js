@@ -38,11 +38,12 @@ export default {
         getReviews: (state) => {
             return state.reviews;
         },
-        getProductReviews: (state) => (id) => {
+        // getProductReviews: (state) => (id) => {
+        getProductReviews: (state) => ({ id }) => {
             // return state.reviews.filter(
             //     (item) => { item.productId == id })
 
-            return state.reviews.filter(item => item.productId == id);
+            return state.reviews.filter(item => item.productId == parseInt(id));
         }
 
 

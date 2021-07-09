@@ -8,11 +8,15 @@ import store from "./store";
 // import BaseSelect from '@/components/BaseSelect.vue';
 // import BaseRating from "@/components/BaseRating.vue";
 import BaseTabs from "@/components/base/BaseTabs.vue";
+import BaseRating from "@/components/base/BaseRating.vue";
+import BaseSetRating from "@/components/base/BaseSetRating.vue";
 
 // Vue.component( 'BaseButtonBuy', BaseButtonBuy);
 // Vue.component( 'BaseSelect', BaseSelect);
 // Vue.component( 'BaseRating', BaseRating);
 Vue.component('BaseTabs', BaseTabs);
+Vue.component('BaseRating', BaseRating);
+Vue.component('BaseSetRating', BaseSetRating);
 
 
 // Automatic Global registration

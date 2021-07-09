@@ -50,3 +50,23 @@ ProductFull Tabs
   ProductfullSpecificationsTable.vue (0.5)
   modules - revies.js, services - ReviewsServies.js; fakeJson.com - :register, docs (1)
   services - ReviewsServies.js :update, (1)
+
+вт
+  modules - revies.js :update, services - ReviewsServies.js :update (1)
+  ProductfullReviews.vue, Reviews.vue, ReviewsHeader.vue, ReviewsItem.vue, (1)
+
+..далее:
+BaseRating
+..и ?
+
+ср
+..update ReviewsItem: rating, + date, + text, + name
+  services - ReviewsServies.js :update, ReviewsItem - computed (1)
+  BaseRating.vue (1)
+  BaseSetRating.vue (1)
+
+глобально:
+авторизация? 
+|| корзина?
+|| сравнение товаров?
+|| главная

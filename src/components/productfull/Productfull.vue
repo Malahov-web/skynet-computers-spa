@@ -122,7 +122,7 @@
     </div>
 
     <div class="bottomline">
-      <BaseTabs class="asd" :tabs="tabs" :initialActiveTab="tabs[1]['name']">
+      <BaseTabs class="asd" :tabs="tabs" :initialActiveTab="tabs[2]['name']">
         <template v-slot:description>
           <ProductfullDescription
             class="asd"
@@ -141,6 +141,10 @@
 
         <template v-slot:reviews>
           <p>Содержимое третьего динамического слота</p>
+          <ProductfullReviews
+            class="productfull__reviews"
+            :reviews="reviews"
+          ></ProductfullReviews>
         </template>
 
         <template v-slot:delivery>
@@ -165,6 +169,7 @@ import ProductfullSlider from "@/components/productfull/ProductfullSlider.vue";
 import ProductfullGallery from "@/components/productfull/ProductfullGallery.vue";
 import ProductfullBrand from "@/components/productfull/ProductfullBrand.vue";
 import ProductfullSpecificationsTable from "@/components/productfull/ProductfullSpecificationsTable.vue";
+import ProductfullReviews from "@/components/productfull/ProductfullReviews.vue";
 
 export default {
   name: "Productfull",
@@ -178,6 +183,7 @@ export default {
     ProductfullGallery,
     ProductfullBrand,
     ProductfullSpecificationsTable,
+    ProductfullReviews,
   },
 
   props: {
@@ -231,6 +237,7 @@ export default {
       //   return this.$store.getters.fetchReviews;
       //   return this.$store.getters.getReviews;
       return this.$store.getters.getProductReviews({ id: this.product.id });
+      //   return this.$store.getters.getProductReviews(1); // +
     },
   },
 

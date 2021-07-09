@@ -29,11 +29,13 @@ body{
 }
 
 a{
+    @extend %transition;
     text-decoration : none;
     &:hover{
         // color: $accent_dark; // Иконки в кнопках <a> задевает
     }
 }
+
 ul, ol{
     margin: 0 ; padding: 0;
     list-style: none;
