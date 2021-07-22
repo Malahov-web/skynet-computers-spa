@@ -2,12 +2,7 @@
   <div class="reviews__header">
     <div class="row-flex middle">
       <div class="reviews-left">
-        <div class="reviews__counter">
-          <span class="reviews__counter-value">
-            {{ this.reviewsQuantity }}
-          </span>
-          <span class="reviews__counter-text">отзыва</span>
-        </div>
+        <ReviewsCounter :reviewsQuantity="reviewsQuantity"></ReviewsCounter>
       </div>
 
       <div class="reviews-right">
@@ -15,7 +10,7 @@
           <div class="reviews__rating-average-title" :title="allVoicesTitle">
             Средняя оценка:
             <span class="reviews__rating-average-value">{{
-              averageRating
+              averageRatingRounded
             }}</span>
           </div>
           <div class="reviews__rating-average-rating">
@@ -34,8 +29,14 @@
 </template>
 
 <script>
+import ReviewsCounter from "@/components/reviews/ReviewsCounter.vue";
+
 export default {
   name: "ReviewsHeader",
+
+  components: {
+    ReviewsCounter,
+  },
 
   props: {
     reviewsQuantity: {
@@ -49,6 +50,14 @@ export default {
   },
 
   computed: {
+    averageRatingRounded() {
+      // return this.averageRating.toFixed(1) || "-";
+      //   return this.averageRating.toFixed(1) || "-";
+      if (!this.averageRating) {
+        return "-";
+      }
+      return this.averageRating.toFixed(1);
+    },
     allVoicesTitle() {
       return `Всего голосов ${this.reviewsQuantity}`;
     },

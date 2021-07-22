@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <ReviewsForm class="asd"></ReviewsForm>
+    <ReviewsForm class="asd" :productId="productId"></ReviewsForm>
   </div>
 </template>
 
@@ -41,6 +41,10 @@ export default {
       default: () => {
         return [];
       },
+    },
+    productId: {
+      type: Number,
+      default: 0,
     },
   },
 

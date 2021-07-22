@@ -65,6 +65,15 @@ BaseRating
   BaseRating.vue (1)
   BaseSetRating.vue (1)
 
+чт
+..ReviewsCounter.vue, ReviewsForm.vue, :styles (1.5)
+  ReviewsForm.vue :update, modules - revies.js :update, services - ReviewsServies.js :update (0.5)
+  ReviewsForm.vue :update, modules - revies.js :update, services - ReviewsServies.js :update (1)
+
+
+..далее:
+валидация формы отзывов
+
 глобально:
 авторизация? 
 || корзина?

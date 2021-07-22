@@ -280,3 +280,39 @@ input {
     cursor: not-allowed;
   }
 }
+
+
+
+
+/* skynet-computers-app Styles
+ * **********************************************************************
+ *  
+*/
+
+/* Reviews */
+.reviews__form  {
+  &-form {
+    max-width: 640px;
+    .textarea {
+      max-width: 100%;
+    }
+
+  }
+  .field-outer {
+    .reviews__item-title {
+      display: flex;
+      align-items: center;
+      // @include font_size_pro('base');
+      font-size: $fb; 
+      // margin-bottom: 0;
+      margin-bottom: 0.5em;
+
+      i {
+        position: static;
+        transform: none;
+        padding-right: 0.5em;
+      }
+    }
+  }
+}
+

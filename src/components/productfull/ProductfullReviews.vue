@@ -1,5 +1,5 @@
 <template>
-  <Reviews class="asd" :reviews="reviews"></Reviews>
+  <Reviews class="asd" :reviews="reviews" :productId="productId"></Reviews>
 </template>
 
 <script>
@@ -15,6 +15,12 @@ export default {
       type: Array,
       default: () => {
         return [];
+      },
+    },
+    productId: {
+      type: Number,
+      default: () => {
+        return 0;
       },
     },
   },

@@ -99,6 +99,8 @@ export default {
     setRating(value) {
       this.activeRating = value;
       this.cleanHoverRating();
+      //   this.$emit("myEvent");
+      this.$emit("set-rating", value);
     },
 
     hoverRating(value) {

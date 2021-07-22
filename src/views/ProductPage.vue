@@ -11,11 +11,11 @@
               <a href="category.html">компьютеры</a>
             </li>
             <li class="breadcrumbs__item">
-              <span>{{ product.title }}</span>
+              <span>{{ productTitle }}</span>
             </li>
           </ul>
         </div>
-        <h1 class="h1 page-title">{{ product.title }}</h1>
+        <h1 class="h1 page-title">{{ productTitle }}</h1>
       </div>
 
       <main class="main main--sidebar--right">
@@ -55,6 +55,12 @@ export default {
       return this.$store.getters.getProductFull(this.productid);
       //   return this.$store.state.products.productFull;
       //   return this.$store.state.products_module.productFull; // refact: module
+    },
+    productTitle() {
+      if (!this.product) {
+        return "";
+      }
+      return this.product.title;
     },
   },
 };

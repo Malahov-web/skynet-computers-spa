@@ -1,3 +1,9 @@
+Валидация форм
+https://ru.vuejs.org/v2/cookbook/form-validation.html
+https://habr.com/ru/post/444900/
+https://validatejs.org/
+https://github.com/ansman/validate.js
+
 https://app.fakejson.com/member
 
 fake json

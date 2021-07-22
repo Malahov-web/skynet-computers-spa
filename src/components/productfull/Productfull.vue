@@ -144,6 +144,7 @@
           <ProductfullReviews
             class="productfull__reviews"
             :reviews="reviews"
+            :productId="product.id"
           ></ProductfullReviews>
         </template>
 

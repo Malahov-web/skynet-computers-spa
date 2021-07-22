@@ -47,6 +47,10 @@ export default {
         //   return textPhrasesArray;
         return formattedText.trim();
     },
+
+    postReviewsItem(item) {
+        return axiosInstance.post('/reviews', item)
+    }
 };
 
 
