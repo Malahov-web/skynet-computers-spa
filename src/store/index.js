@@ -22,7 +22,8 @@ export default new Vuex.Store({
         // products_modules: products
         products_module: products,
         // products: products // v3
-        categories: categories,
+        // categories: categories,
+        categories,
         notifications,
         reviews
 

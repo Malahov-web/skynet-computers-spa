@@ -101,3 +101,7 @@ BaseRating
 
 ..далее:
 Создать комп-и BasePreloader
+
+вт
+..Error404.vue (0.5)
+  Error404.vue; CategoriesServices.js - fix; ErrorNetwork.vue (1)

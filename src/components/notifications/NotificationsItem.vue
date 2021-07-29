@@ -52,7 +52,7 @@ export default {
 <style lang="scss" scoped>
 .notifications__item {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
 
   margin-top: 1em;
   padding: 1em 1.5em;

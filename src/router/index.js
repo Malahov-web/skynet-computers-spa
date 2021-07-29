@@ -5,6 +5,8 @@ import Category from "@/views/Category.vue";
 import ProductPage from "@/views/ProductPage.vue";
 import NewsPage from "@/views/NewsPage.vue";
 import NewFullPage from "@/views/NewFullPage.vue";
+import Error404 from "@/views/Error404.vue";
+import ErrorNetwork from "@/views/ErrorNetwork.vue";
 
 Vue.use(VueRouter);
 
@@ -70,6 +72,25 @@ const routes = [
         component: NewFullPage,
         props: true,
     },
+
+    // Errors pages
+    {
+        path: '/error-network',
+        name: 'ErrorNetwork',
+        component: ErrorNetwork,
+    },
+
+    {
+        path: '/404',
+        name: 'Error404',
+        component: Error404,
+    },
+    {
+        path: '*', // All mismathces (all other paths)
+        redirect: Error404
+    },
+
+
 ];
 
 const router = new VueRouter({
