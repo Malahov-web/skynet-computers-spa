@@ -1,5 +1,8 @@
 <template>
   <section class="section">
+    <span class="preloader" :class="preloaderClass"
+      ><span>Loading..</span></span
+    >
     <div class="container">
       <div class="topline">
         <div class="breadcrumbs-outer">
@@ -413,6 +416,8 @@
 <script>
 import NewFull from "@/components/news/NewFull.vue";
 // src\components\news\NewFull.vue
+import NProgress from "nprogress"; // <--- Include the progress bar
+import store from "@/store/index"; // <--- Include our Vuex store
 
 export default {
   name: "NewFullPage",
@@ -422,9 +427,39 @@ export default {
   //   props: ['id'],
   props: ["newid"],
 
+  data() {
+    return {
+      preloaderClass: "",
+    };
+  },
+
+  // //   Use Route Guard to create progress-bar
+  //     beforeRouteEnter(routeTo, routeFrom, next) {
+  //       NProgress.start();
+  //       console.log("store");
+  //       console.log(store);
+  //       console.log("routeTo.params");
+  //       console.log(routeTo.params);
+
+  //       // store.dispatch("fetchNewsItem", "1").then(() => { // +
+  //       store.dispatch("fetchNewsItem", routeTo.params.newid).then(() => {
+  //         //
+  //         NProgress.done();
+  //         next();
+  //       });
+  //     },
+
+  // Make progress-bar use beforeMounted lch
+
+  beforeMount() {},
+
   created() {
     // this.$store.dispatch("fetchNewsItem", this.newid);
-    this.fetchData();
+    // this.fetchData();
+    // this.$store.dispatch("fetchNewsItem", this.newid);
+    this.$store.dispatch("fetchNewsItem", this.newid).then(() => {
+      this.hidePreloader();
+    });
   },
 
   computed: {
@@ -435,8 +470,12 @@ export default {
   },
 
   methods: {
-    fetchData() {
-      this.$store.dispatch("fetchNewsItem", this.newid);
+    // fetchData() {
+    //   this.$store.dispatch("fetchNewsItem", this.newid);
+    // },
+
+    hidePreloader() {
+      this.preloaderClass = "hidden";
     },
   },
 
@@ -483,4 +522,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.section {
+  //   position: relative;
+}
+</style>

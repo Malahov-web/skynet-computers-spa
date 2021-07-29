@@ -111,4 +111,28 @@ a.menu-main__item--active {
     color: $grey_super_dark;
   }
 }
+
+//
+.menu-main-outer {
+  margin-top: 20px !important;
+}
+// Nprogress
+
+/* Make clicks pass-through */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  //   background: rgb(34, 221, 81);
+  background: $accent !important;
+
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 10px;
+}
 </style>

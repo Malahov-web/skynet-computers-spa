@@ -316,3 +316,51 @@ input {
   }
 }
 
+/* Preloader */
+.preloader {
+    z-index: 200;
+    position: relative;
+    position: absolute;
+    width: 100%;
+    //   height: 100%;
+    height: 100vh;
+    background-color: #fff;
+  
+    font-size: 24px;
+    font-weight: 500;
+    color: #41b883;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    transition: all 0.3s;
+  
+    &.hidden {
+      opacity: 0;
+      z-index: -1;
+      // display: none;
+    }
+  
+    //
+    span,
+    span.preloader__text {
+      animation-duration: 2s;
+      animation-name: preloaderBlink;
+      animation-iteration-count: infinite;
+    }
+  }
+  
+  @keyframes preloaderBlink {
+    0% {
+      opacity: 0.35;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0.35;
+    }
+  }

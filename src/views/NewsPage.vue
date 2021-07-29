@@ -1,5 +1,10 @@
 <template>
   <section class="section">
+    <span class="preloader" :class="preloaderClass"
+      ><span>Loading..</span></span
+    >
+    <!-- <Preloader class="asd" :class_?="_?"></Preloader> -->
+
     <section class="section">
       <div class="container">
         <div class="row">
@@ -29,18 +34,6 @@
                 :posts_total="postsTotal"
                 :page_current="pageNumber"
               ></BasePagination>
-
-              <!-- <ul class="pagination">
-                <li class="pagination__item pagination__item--active">
-                  <span>1</span>
-                </li>
-                <li class="pagination__item"><a href="#">2</a></li>
-                <li class="pagination__item"><a href="#">3</a></li>
-                <li class="pagination__item"><a href="#">4</a></li>
-                <li class="pagination__item pagination__item--next">
-                  <a href="#"></a>
-                </li>
-              </ul> -->
             </div>
           </div>
         </div>
@@ -66,36 +59,28 @@ export default {
     return {
       perPage: 3,
       //   pagesTotal: 4,
+
+      preloaderClass: "",
     };
   },
 
   created() {
     // this.$store.dispatch("fetchNews");
 
-    this.$store.dispatch("fetchNewsWithPagination", {
-      perPage: this.perPage,
-      pageNumber: this.pageNumber,
-      //   pageNumber: 2,
-    });
+    this.$store
+      .dispatch("fetchNewsWithPagination", {
+        perPage: this.perPage,
+        pageNumber: this.pageNumber,
+        //   pageNumber: 2,
+      })
+      .then(() => {
+        this.hidePreloader();
+      });
   },
 
   computed: {
-    // v1 HardCoding / Static
-    // // v2 Computed Var
-    // news() {
-    //   return this.$store.state.news.news; //
-    // },
-    // // v3
-    // mapState({
-    //   userName: state => state.user.name,
-    //   categories: state => state.categories
-    // })
-
-    // // v6
-    // someProp() {
-    //   // ...
-    // },
-    // ...mapState(["user", "categories"]),
+    // v7
+    // use getter
 
     news() {
       //   return this.$store.state.news;
@@ -111,6 +96,12 @@ export default {
     postsTotal() {
       //   return parseInt(this.$store.state.paginationPostsTotal);
       return parseInt(this.$store.state.news.paginationPostsTotal); // refact: module news.js
+    },
+  },
+
+  methods: {
+    hidePreloader() {
+      this.preloaderClass = "hidden";
     },
   },
 

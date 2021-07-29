@@ -65,7 +65,7 @@ BaseRating
   BaseRating.vue (1)
   BaseSetRating.vue (1)
 
-чт
+чт 08.07
 ..ReviewsCounter.vue, ReviewsForm.vue, :styles (1.5)
   ReviewsForm.vue :update, modules - revies.js :update, services - ReviewsServies.js :update (0.5)
   ReviewsForm.vue :update, modules - revies.js :update, services - ReviewsServies.js :update (1)
@@ -79,3 +79,25 @@ BaseRating
 || корзина?
 || сравнение товаров?
 || главная
+
+--
+
+
+--
+
+вт
+  Update: NewsServices.js - add progress bar nprogress (0.5)
+..где-то еще добавил нормальный preloader в NewFullPage.vue
+пт
+  Update: NewsPage.vue - add preloader (1)
+
+Добавление Preloader в К.
++ 1. добавить в template разметку
++ 2. data для класса preloaderClass
++ 3. methods : hidePreloader()
++ 4. styles - CSS Стили - перенести в общий файл стилей?
++ 5. Вызыват метод скрытия hidePreloader() на хук created
++ 6. Добавить в модуле news.js в экшене return для промисса
+
+..далее:
+Создать комп-и BasePreloader

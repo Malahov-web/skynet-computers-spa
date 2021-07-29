@@ -3,6 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+import 'nprogress/nprogress.css' // libs for progress bar
+
 
 // import BaseButtonBuy from '@/components/BaseButtonBuy.vue';
 // import BaseSelect from '@/components/BaseSelect.vue';
