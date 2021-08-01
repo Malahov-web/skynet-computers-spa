@@ -1,0 +1,281 @@
+[HMR] Waiting for update signal from WDS... log.js:24
+action fetchReviews reviews.js:33
+[Vue warn]: Error in render: "TypeError: can't access property "length", this.product.reviews is undefined"
+
+found in
+
+---> <Productfull> at src/components/productfull/Productfull.vue
+       <ProductPage> at src/views/ProductPage.vue
+         <App> at src/App.vue
+           <Root> vue.runtime.esm.js:619
+TypeError: can't access property "length", this.product.reviews is undefined
+    reviewsQuantity Productfull.vue:234
+    VueJS 4
+    render Productfull.vue:53
+    VueJS 45
+    <anonymous> main.js:74
+    js app.js:4458
+    __webpack_require__ app.js:849
+    fn app.js:151
+    1 app.js:4867
+    __webpack_require__ app.js:849
+    checkDeferredModules app.js:46
+    <anonymous> app.js:925
+    <anonymous> app.js:928
+vue.runtime.esm.js:1888
+Download the Vue Devtools extension for a better development experience:
+https://github.com/vuejs/vue-devtools vue.runtime.esm.js:8429
+uploads/productfull/DELL-S2421HN-black.jpg ProductfullSlider.vue:52
+uploads/productfull/DELL-S2421HN-silver.jpg ProductfullSlider.vue:52
+uploads/productfull/product_full_image_dell_08_image_4.jpg ProductfullSlider.vue:52
+uploads/productfull/product_full_image_dell_08_image_1.jpg ProductfullSlider.vue:52
+uploads/productfull/DELL-S2421HN-black.jpg ProductfullGallery.vue:49
+uploads/productfull/DELL-S2421HN-silver.jpg ProductfullGallery.vue:49
+uploads/productfull/product_full_image_dell_08_image_4.jpg ProductfullGallery.vue:49
+uploads/productfull/product_full_image_dell_08_image_1.jpg ProductfullGallery.vue:49
+[Vue warn]: Unknown custom element: <ProductfullAvailability> - did you register the component correctly? For recursive components, make sure to provide the "name" option.
+
+found in
+
+---> <Productfull> at src/components/productfull/Productfull.vue
+       <ProductPage> at src/views/ProductPage.vue
+         <App> at src/App.vue
+           <Root> vue.runtime.esm.js:619
+[Vue warn]: Unknown custom element: <ProductfullParameters> - did you register the component correctly? For recursive components, make sure to provide the "name" option.
+
+found in
+
+---> <Productfull> at src/components/productfull/Productfull.vue
+       <ProductPage> at src/views/ProductPage.vue
+         <App> at src/App.vue
+           <Root> vue.runtime.esm.js:619
+[Vue warn]: Invalid prop: type check failed for prop "productId". Expected Number with value 1, got String with value "1".
+
+found in
+
+---> <ProductfullReviews> at src/components/productfull/ProductfullReviews.vue
+       <BaseTabs> at src/components/base/BaseTabs.vue
+         <Productfull> at src/components/productfull/Productfull.vue
+           <ProductPage> at src/views/ProductPage.vue
+             <App> at src/App.vue
+               <Root> vue.runtime.esm.js:619
+[Vue warn]: Invalid prop: type check failed for prop "productId". Expected Number with value 1, got String with value "1".
+
+found in
+
+---> <Reviews> at src/components/reviews/Reviews.vue
+       <ProductfullReviews> at src/components/productfull/ProductfullReviews.vue
+         <BaseTabs> at src/components/base/BaseTabs.vue
+           <Productfull> at src/components/productfull/Productfull.vue
+             <ProductPage> at src/views/ProductPage.vue
+               <App> at src/App.vue
+                 <Root> vue.runtime.esm.js:619
+[Vue warn]: Error in render: "RangeError: invalid array length"
+
+found in
+
+---> <BaseRating> at src/components/base/BaseRating.vue
+       <ReviewsHeader> at src/components/reviews/ReviewsHeader.vue
+         <Reviews> at src/components/reviews/Reviews.vue
+           <ProductfullReviews> at src/components/productfull/ProductfullReviews.vue
+             <BaseTabs> at src/components/base/BaseTabs.vue
+               <Productfull> at src/components/productfull/Productfull.vue
+                 <ProductPage> at src/views/ProductPage.vue
+                   <App> at src/App.vue
+                     <Root> vue.runtime.esm.js:619
+RangeError: invalid array length
+    renderList VueJS
+    render BaseRating.vue:12
+    VueJS 6
+vue.runtime.esm.js:1888
+[Vue warn]: Invalid prop: type check failed for prop "productId". Expected Number with value 1, got String with value "1".
+
+found in
+
+---> <ReviewsForm> at src/components/reviews/ReviewsForm.vue
+       <Reviews> at src/components/reviews/Reviews.vue
+         <ProductfullReviews> at src/components/productfull/ProductfullReviews.vue
+           <BaseTabs> at src/components/base/BaseTabs.vue
+             <Productfull> at src/components/productfull/Productfull.vue
+               <ProductPage> at src/views/ProductPage.vue
+                 <App> at src/App.vue
+                   <Root> vue.runtime.esm.js:619
+[Vue warn]: Property or method "rating" is not defined on the instance but referenced during render. Make sure that this property is reactive, either in the data option, or for class-based components, by initializing the property. See: https://vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties.
+
+found in
+
+---> <BaseSetRating> at src/components/base/BaseSetRating.vue
+       <ReviewsForm> at src/components/reviews/ReviewsForm.vue
+         <Reviews> at src/components/reviews/Reviews.vue
+           <ProductfullReviews> at src/components/productfull/ProductfullReviews.vue
+             <BaseTabs> at src/components/base/BaseTabs.vue
+               <Productfull> at src/components/productfull/Productfull.vue
+                 <ProductPage> at src/views/ProductPage.vue
+                   <App> at src/App.vue
+                     <Root> vue.runtime.esm.js:619
+[Vue warn]: Property or method "value" is not defined on the instance but referenced during render. Make sure that this property is reactive, either in the data option, or for class-based components, by initializing the property. See: https://vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties.
+
+found in
+
+---> <BaseInput> at src/components/base/BaseInput.vue
+       <ReviewsForm> at src/components/reviews/ReviewsForm.vue
+         <Reviews> at src/components/reviews/Reviews.vue
+           <ProductfullReviews> at src/components/productfull/ProductfullReviews.vue
+             <BaseTabs> at src/components/base/BaseTabs.vue
+               <Productfull> at src/components/productfull/Productfull.vue
+                 <ProductPage> at src/views/ProductPage.vue
+                   <App> at src/App.vue
+                     <Root> vue.runtime.esm.js:619
+Reviews has been fetched: 
+Object { data: (14) […], status: 200, statusText: "OK", headers: {…}, config: {…}, request: XMLHttpRequest }
+reviews.js:36
+[Vue warn]: Invalid prop: type check failed for prop "productId". Expected Number with value 1, got String with value "1".
+
+found in
+
+---> <ProductfullReviews> at src/components/productfull/ProductfullReviews.vue
+       <BaseTabs> at src/components/base/BaseTabs.vue
+         <Productfull> at src/components/productfull/Productfull.vue
+           <ProductPage> at src/views/ProductPage.vue
+             <App> at src/App.vue
+               <Root> vue.runtime.esm.js:619
+[Vue warn]: Invalid prop: type check failed for prop "productId". Expected Number with value 1, got String with value "1".
+
+found in
+
+---> <Reviews> at src/components/reviews/Reviews.vue
+       <ProductfullReviews> at src/components/productfull/ProductfullReviews.vue
+         <BaseTabs> at src/components/base/BaseTabs.vue
+           <Productfull> at src/components/productfull/Productfull.vue
+             <ProductPage> at src/views/ProductPage.vue
+               <App> at src/App.vue
+                 <Root> vue.runtime.esm.js:619
+[Vue warn]: Duplicate keys detected: '3'. This may cause an update error.
+
+found in
+
+---> <BaseRating> at src/components/base/BaseRating.vue
+       <ReviewsItem> at src/components/reviews/ReviewsItem.vue
+         <Reviews> at src/components/reviews/Reviews.vue
+           <ProductfullReviews> at src/components/productfull/ProductfullReviews.vue
+             <BaseTabs> at src/components/base/BaseTabs.vue
+               <Productfull> at src/components/productfull/Productfull.vue
+                 <ProductPage> at src/views/ProductPage.vue
+                   <App> at src/App.vue
+                     <Root> vue.runtime.esm.js:619
+[Vue warn]: Invalid prop: type check failed for prop "productId". Expected Number with value 1, got String with value "1".
+
+found in
+
+---> <ReviewsForm> at src/components/reviews/ReviewsForm.vue
+       <Reviews> at src/components/reviews/Reviews.vue
+         <ProductfullReviews> at src/components/productfull/ProductfullReviews.vue
+           <BaseTabs> at src/components/base/BaseTabs.vue
+             <Productfull> at src/components/productfull/Productfull.vue
+               <ProductPage> at src/views/ProductPage.vue
+                 <App> at src/App.vue
+                   <Root> vue.runtime.esm.js:619
+[Vue warn]: Duplicate keys detected: '3'. This may cause an update error.
+
+found in
+
+---> <BaseRating> at src/components/base/BaseRating.vue
+       <ReviewsHeader> at src/components/reviews/ReviewsHeader.vue
+         <Reviews> at src/components/reviews/Reviews.vue
+           <ProductfullReviews> at src/components/productfull/ProductfullReviews.vue
+             <BaseTabs> at src/components/base/BaseTabs.vue
+               <Productfull> at src/components/productfull/Productfull.vue
+                 <ProductPage> at src/views/ProductPage.vue
+                   <App> at src/App.vue
+                     <Root> vue.runtime.esm.js:619
+Component - this: BaseInput.vue:43
+{…}
+​
+"$attrs": 
+​
+"$children": Array []
+​
+"$createElement": function $createElement(a, b, c, d)
+​
+"$el": <div class="field-text" data-v-d3863baa="" data-v-679b680b="" _class="$attrs['field-class']" _v-if="$attrs['field-class']">
+​
+"$listeners": 
+​
+"$options": Object { parent: {…}, _parentVnode: {…}, _componentTag: "BaseInput", … }
+​
+"$parent": Object { _uid: 31, _isVue: true, "$options": {…}, … }
+​
+"$refs": Object {  }
+​
+"$root": Object { _uid: 2, _isVue: true, "$options": {…}, … }
+​
+"$scopedSlots": Object { … }
+​
+"$slots": Object {  }
+​
+"$store": Object { _committing: false, _actions: {…}, _actionSubscribers: [], … }
+​
+"$vnode": Object { tag: "vue-component-6-BaseInput", data: {…}, children: undefined, … }
+​
+_c: function _c(a, b, c, d)
+​
+_data: Object { elClass: Getter & Setter, attrs: Getter & Setter, … }
+​
+_directInactive: false
+​
+_events: Object {  }
+​
+_hasHookEvent: false
+​
+_inactive: null
+​
+_isBeingDestroyed: false
+​
+_isDestroyed: false
+​
+_isMounted: true
+​
+_isVue: true
+​
+_props: Object { label: Getter & Setter }
+​
+_renderProxy: Proxy { <target>: {…}, <handler>: {…} }
+​
+_routerRoot: Object { _uid: 2, _isVue: true, "$options": {…}, … }
+​
+_self: Object { _uid: 33, _isVue: true, "$options": {…}, … }
+​
+_staticTrees: null
+​
+_uid: 33
+​
+_vnode: Object { tag: "div", data: {…}, children: (2) […], … }
+​
+_watcher: Object { deep: false, user: false, lazy: false, … }
+​
+_watchers: Array [ {…} ]
+​
+attrs: 
+​
+elClass: 
+​
+onInput: function onInput()
+​
+<get $attrs()>: function reactiveGetter()
+​
+<set $attrs()>: function reactiveSetter(newVal)
+​
+<get $listeners()>: function reactiveGetter()
+​
+<set $listeners()>: function reactiveSetter(newVal)
+​
+<get attrs()>: function proxyGetter()
+​
+<set attrs()>: function proxySetter(val)
+​
+<get elClass()>: function proxyGetter()
+​
+<set elClass()>: function proxySetter(val)
+​
+<prototype>: Object { constructor: VueComponent(options), label: Getter & Setter }
+BaseInput.vue:44

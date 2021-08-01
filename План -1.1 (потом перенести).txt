@@ -105,3 +105,33 @@ BaseRating
 вт
 ..Error404.vue (0.5)
   Error404.vue; CategoriesServices.js - fix; ErrorNetwork.vue (1)
+
+ср
+  BaseInput.vue
+  .. Проблема - не добавляется атрр-т класс к инпуту пр ипередаче через $attrs) 
+  ( при этом из аттр-та Placeholder апр. класс назначается )
+
++ elclass="field-text"   :class="$attrs.elclass"
+- class="field-text"     :class="$attrs.class"
+    при этом класс привязывается корневому элементу компонента
+
+Если отключить inheritAttrs: false,
+то корнеовму передаются ВСЕ атррибуты,
+если включить - то ТОЛЬКО class
+
+
+Аттрибута class
+НЕТУ в $attrs В инспекторе VueDevTools
+
+
+чт
+  BaseInput.vue (0.5)
+
+пт
+  BaseTextarea.vue, BaseInput.vue :fix (1)
+
+..далее:
+git commit, fixup
+git rebase
+add BaseButton submit
+refact: ReviewsForm and NewAdd form - add base components

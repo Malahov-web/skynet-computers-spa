@@ -1,0 +1,26 @@
+* [33m41bb453[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m 25 Add: comps - BaseInput, BaseTextarea
+* [33m017d542[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mvue-cli-project[m[33m)[m 24 Add: comps - Error404, ErrorNetwork
+* [33ma4ddf66[m 23 Add: comps - NewFullPage, NewsPage - add Preloader
+* [33mc58d574[m 22 Add: comps - Reviews, ReviewsHeader, ReviewsItem, ReviewsForm, ReviewsCounter
+* [33m782cd70[m 21 Add: comps - BaseRating, BaseSetRating
+* [33mf3bb56a[m 20 Add: modules - reviews.js, services - ReviewsServies
+* [33m0c1ba37[m 19 Add: comps - BaseTabs.vue, ProductfullSpecificationsTable.vue
+* [33m8ef8456[m 18 Add: comps - ProductfullDescription, ProductfullReviewsCounter, ProductfullSlider, ProductfullGallery, ProductfullBrand; update: Productfull; integrated: vue-owl-carousel
+* [33m9cedf3f[m[33m ([m[1;31morigin/vue-cli-project[m[33m)[m 17 Add: comps - Productfull, ProductSpecifications; update: modules - products.js, services - productsServices.js
+* [33m49c9511[m 16 Add: comps - Notifications, NotificationsItem
+* [33m46210ca[m 15 Add: store modules - notifications
+* [33m9533987[m 14 Add: store modules - products.js, categories.js
+* [33m32f4122[m 13 Add: comps - BasePagination, update: NewsPage, services - NewsServices.js
+* [33mdd33ef9[m 12 Add: comps - NewAdd; Update: comps - NewFull, views - NewFullPages
+* [33mad96095[m 11 Add: views - NewsPages, NewFullPage, comps - News, NewsItem, NewFull; services - NewsServices; store
+* [33md558f18[m 10 Update: Home; Add: Edges, Actions, BasePagination
+* [33m76af752[m 9 Add: NavMenu, ProductsList, ProductsListItem
+* [33m8071f9b[m 8 Add: comps - Toolbar.vue, ViewSwitcher.vue, ProductsList.vue
+* [33m0660332[m 7 Add: comps - BaseButtonBuy.vue, BaseSelect.vue
+* [33m0188d72[m 6 Add: comps - ProductsGrid, ProductsGridItem, /components/product/*.vue
+* [33m32077df[m 5 Add: comps - CategorySubcategoriesList, CategorySubcategoriesListItem
+* [33m3fd7abc[m 4 Add: router settings, views/ comps placeholders, components - CategoryBlock
+* [33m5f2073d[m 3 Create Vue project from vue-cli; Integrate project files: assets/
+* [33m12e20d8[m 2 Update app: app.js - add description and specificationsShort
+* [33m7f6ed2b[m 1 Create project files: dev/, dev/_src, app/; add: product.html,  app.js
+* [33m21d2171[m Initial commit

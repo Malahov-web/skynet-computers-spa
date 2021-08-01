@@ -22,6 +22,7 @@
         </div>
 
         <template class="asd" v-if="1" __style="display: none">
+          <!-- Textareas -->
           <div class="field-outer">
             <div class="row">
               <div class="mv_12 tb_6">
@@ -54,7 +55,7 @@
             </div>
           </div>
 
-          <div class="field-outer">
+          <!-- <div class="field-outer">
             <div class="reviews__item-title">
               <i class="themify themify-comment-alt"></i>
               Общие впечатления:
@@ -63,9 +64,25 @@
               name="text_general"
               class="textarea"
               v-model="item['textGeneral']"
-            ></textarea>
-          </div>
+            >
+            </textarea>
+          </div> -->
 
+          <BaseTextarea
+            name="text_general"
+            elClass="textarea"
+            placeholder=""
+            v-model="item['textGeneral']"
+          >
+            <template v-slot:before>
+              <div class="reviews__item-title">
+                <i class="themify themify-comment-alt"></i>
+                Общие впечатления:
+              </div>
+            </template>
+          </BaseTextarea>
+
+          <!-- Inputs -->
           <div class="field-outer">
             <label>Ваше Имя</label>
             <input
@@ -76,6 +93,17 @@
               v-model="item['firstname']"
             />
           </div>
+
+          <BaseInput
+            _field-class="field-outer"
+            _class="'field-text'"
+            elClass="field-text"
+            :label="'Title'"
+            type="фыв"
+            placeholder="Имя"
+            class="field-text"
+          ></BaseInput>
+
           <div class="field-outer">
             <label>Ваша Фамилия</label>
             <input
@@ -86,6 +114,7 @@
               v-model="item['surname']"
             />
           </div>
+
           <div class="field-outer">
             <label>Email</label>
             <input

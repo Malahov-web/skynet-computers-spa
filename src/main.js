@@ -12,6 +12,8 @@ import 'nprogress/nprogress.css' // libs for progress bar
 import BaseTabs from "@/components/base/BaseTabs.vue";
 import BaseRating from "@/components/base/BaseRating.vue";
 import BaseSetRating from "@/components/base/BaseSetRating.vue";
+import BaseInput from "@/components/base/BaseInput.vue";
+import BaseTextarea from "@/components/base/BaseTextarea.vue";
 
 // Vue.component( 'BaseButtonBuy', BaseButtonBuy);
 // Vue.component( 'BaseSelect', BaseSelect);
@@ -19,6 +21,9 @@ import BaseSetRating from "@/components/base/BaseSetRating.vue";
 Vue.component('BaseTabs', BaseTabs);
 Vue.component('BaseRating', BaseRating);
 Vue.component('BaseSetRating', BaseSetRating);
+Vue.component('BaseSetRating', BaseSetRating);
+Vue.component('BaseInput', BaseInput);
+Vue.component('BaseTextarea', BaseTextarea);
 
 
 // Automatic Global registration

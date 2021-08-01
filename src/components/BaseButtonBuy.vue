@@ -1,6 +1,8 @@
 <template>
   <a :href="link" class="product__button button button-buy"
-    ><span><slot>В корзину</slot></span></a
+    ><span>
+      <slot>В корзину</slot>
+    </span></a
   >
 </template>
 
