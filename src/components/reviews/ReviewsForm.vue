@@ -23,50 +23,42 @@
 
         <template class="asd" v-if="1" __style="display: none">
           <!-- Textareas -->
-          <div class="field-outer">
-            <div class="row">
-              <div class="mv_12 tb_6">
-                <!-- <label>Ваш комментарий</label> -->
-                <div
-                  class="reviews__item-title reviews__item-title--advantages"
-                >
-                  <i class="themify themify-plus"></i>
-                  Достоинства:
-                </div>
-                <textarea
-                  name="text_advantages"
-                  class="textarea"
-                  v-model="item['textAdvantages']"
-                ></textarea>
-              </div>
-              <div class="mv_12 tb_6">
-                <div
-                  class="reviews__item-title reviews__item-title--limitations"
-                >
-                  <i class="themify themify-minus"></i>
-                  Недостатки:
-                </div>
-                <textarea
-                  name="text_defects"
-                  class="textarea"
-                  v-model="item['textDefects']"
-                ></textarea>
-              </div>
+          <div class="row">
+            <div class="mv_12 tb_6">
+              <BaseTextarea
+                name="text_advantages"
+                elClass="textarea"
+                placeholder=""
+                v-model="item['textAdvantages']"
+              >
+                <template v-slot:before>
+                  <div
+                    class="reviews__item-title reviews__item-title--advantages"
+                  >
+                    <i class="themify themify-plus"></i>
+                    Достоинства:
+                  </div>
+                </template>
+              </BaseTextarea>
+            </div>
+            <div class="mv_12 tb_6">
+              <BaseTextarea
+                name="text_defects"
+                elClass="textarea"
+                placeholder=""
+                v-model="item['textDefects']"
+              >
+                <template v-slot:before>
+                  <div
+                    class="reviews__item-title reviews__item-title--limitations"
+                  >
+                    <i class="themify themify-minus"></i>
+                    Недостатки:
+                  </div>
+                </template>
+              </BaseTextarea>
             </div>
           </div>
-
-          <!-- <div class="field-outer">
-            <div class="reviews__item-title">
-              <i class="themify themify-comment-alt"></i>
-              Общие впечатления:
-            </div>
-            <textarea
-              name="text_general"
-              class="textarea"
-              v-model="item['textGeneral']"
-            >
-            </textarea>
-          </div> -->
 
           <BaseTextarea
             name="text_general"
@@ -83,48 +75,38 @@
           </BaseTextarea>
 
           <!-- Inputs -->
-          <div class="field-outer">
-            <label>Ваше Имя</label>
-            <input
-              name="firstname"
-              type="text"
-              class="field-text"
-              placeholder="Имя"
-              v-model="item['firstname']"
-            />
-          </div>
+          <BaseInput
+            class="field-outer"
+            elClass="field-text"
+            :label="'Ваше Имя'"
+            type="text"
+            name="firstname"
+            placeholder="Имя"
+            v-model="item['firstname']"
+          >
+          </BaseInput>
 
           <BaseInput
-            _field-class="field-outer"
-            _class="'field-text'"
+            class="field-outer"
             elClass="field-text"
-            :label="'Title'"
-            type="фыв"
-            placeholder="Имя"
-            class="field-text"
-          ></BaseInput>
+            :label="'Ваша Фамилия'"
+            type="text"
+            name="surname"
+            placeholder="Фамилия"
+            v-model="item['surname']"
+          >
+          </BaseInput>
 
-          <div class="field-outer">
-            <label>Ваша Фамилия</label>
-            <input
-              name="surname"
-              type="text"
-              class="field-text"
-              placeholder="Фамилия"
-              v-model="item['surname']"
-            />
-          </div>
-
-          <div class="field-outer">
-            <label>Email</label>
-            <input
-              name="email"
-              type="text"
-              class="field-text"
-              placeholder="E-mail"
-              v-model="item['email']"
-            />
-          </div>
+          <BaseInput
+            class="field-outer"
+            elClass="field-text"
+            :label="'Email'"
+            type="text"
+            name="surname"
+            placeholder="E-mail"
+            v-model="item['email']"
+          >
+          </BaseInput>
 
           <div class="field-outer">
             <a

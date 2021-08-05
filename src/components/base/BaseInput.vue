@@ -1,11 +1,8 @@
 <template>
   <div _class="$attrs['field-class']" _v-if="$attrs['field-class']">
-    <!-- <label>Ваше Имя</label> -->
+    <!-- Аттр-т class добавляется к кроневому эл-ту автоматически -->
     <label v-if="label"> {{ label }} </label>
     <input
-      __class="$attrs.class"
-      _class="$attrs['placeholder']"
-      ___class="$attrs.myneattr"
       :class="$attrs.elClass || ''"
       :type="$attrs.type || 'text'"
       :name="$attrs.name || ''"
@@ -27,6 +24,10 @@ export default {
       type: [String, Number],
       default: "",
     },
+    value: {
+      type: [String, Number],
+      default: "",
+    },
   },
 
   data() {
@@ -40,9 +41,11 @@ export default {
   },
 
   methods: {
-    onInput() {
-      console.log("Component - this: ");
-      console.log(this);
+    onInput(event) {
+      this.$emit("input", event.target.value);
+
+      //   console.log("Component - this: ");
+      //   console.log(this);
 
       //   console.log("Component - this.$attrs: ");
       //   console.log(this.$attrs);
