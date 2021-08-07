@@ -1,3 +1,8 @@
+CSS Webkit Inputs autocomplete styles
+https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/
+TODO: добавить в malahov-web blog
+
+
 Валидация форм
 https://ru.vuejs.org/v2/cookbook/form-validation.html
 https://habr.com/ru/post/444900/

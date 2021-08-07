@@ -5,6 +5,9 @@ import store from "./store";
 
 import 'nprogress/nprogress.css' // libs for progress bar
 
+import Vuelidate from 'vuelidate'
+
+Vue.use(Vuelidate)
 
 // import BaseButtonBuy from '@/components/BaseButtonBuy.vue';
 // import BaseSelect from '@/components/BaseSelect.vue';

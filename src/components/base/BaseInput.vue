@@ -3,13 +3,17 @@
     <!-- Аттр-т class добавляется к кроневому эл-ту автоматически -->
     <label v-if="label"> {{ label }} </label>
     <input
-      :class="$attrs.elClass || ''"
+      __class="$attrs.elClass || ''"
+      :class="elClass"
       :type="$attrs.type || 'text'"
       :name="$attrs.name || ''"
       :placeholder="$attrs.placeholder"
       @input="onInput"
       :value="value"
+      __v-on="$listeners"
+      v-on="listeners"
     />
+    <slot name="after"></slot>
   </div>
 </template>
 
@@ -52,6 +56,26 @@ export default {
       //   console.log(JSON.stringify(this));
       //   this.demoObj = this;
       //   debugger;
+    },
+  },
+
+  computed: {
+    elClass() {
+      let className = this.$attrs.elClass;
+
+      if (this.$attrs["stateClass"]) {
+        className += " " + this.$attrs["stateClass"];
+      }
+      //   $attrs["stateClass"];
+      //   return this.data
+      return className;
+    },
+
+    listeners() {
+      return {
+        ...this.$listeners,
+        input: this.updateValue,
+      };
     },
   },
 };

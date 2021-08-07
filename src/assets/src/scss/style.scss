@@ -364,3 +364,103 @@ input {
       opacity: 0.35;
     }
   }
+
+
+
+/* Forms States  */
+.field-validation {
+    // display: none;
+    font-size: $fb;
+    // padding-top: 0.333334 * $l_h;
+    // margin-top: -0.333334 * $l_h; 
+    
+    i {
+        font-weight: bold;
+        color: $error_color; 
+    }
+}
+.field-outer {
+
+    .field-validation {
+        // display: none;
+        font-size: $fb;
+        // padding-top: 0.333334 * $l_h;
+        // margin-top: -0.333334 * $l_h; 
+        margin-bottom: 0;       
+    }
+    .field-validation + .field-validation {
+        margin-bottom: 0.5em;
+    }
+
+    // States
+    &.error {
+
+        // p
+        .field-validation {
+            color: $error_color; 
+            
+        }
+
+    }
+}
+
+input.field-text,
+textarea.textarea {
+    outline: none !important;
+    &:focus {
+        outline: none !important;
+    }
+    &:focus,
+    &.focus{
+        border-color: $accent;
+        // border-color: $info_color;
+    }    
+
+    &.error{
+        border-color: $error_color;
+        background-color: transparentize($error_color, 0.95) !important;
+    }      
+    
+    &.valid {
+        border-color: $success_color;
+        background-color: transparentize($success_color, 0.95) !important;
+        // background: transparentize($success_color, 0.55) !important;
+        // background: $success_color!important;
+    }
+    // &:-internal-autofill-selected ,
+    // &::-internal-autofill-selected , 
+    
+    
+    &.valid:-webkit-autofill,
+    &.valid::-webkit-autofill,
+    &.valid:-internal-autofill-selected ,
+    &.valid::-internal-autofill-selected {
+        border-color: $success_color;
+        background-color: transparentize($success_color, 0.95) !important;
+        // background: transparentize($success_color, 0.55) !important;
+        // background: $success_color!important;
+
+        //
+        box-shadow: 0 0 0px 1000px #000 inset; // Здесь не работает, проблема в селекторе)
+    }
+}
+
+/* Change autocomplete styles in WebKit */
+// $success_superlight:  transparentize($success_color, 0.95);
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+    // box-shadow: 0 0 0px 1000px #000 inset; // +
+    // box-shadow: 0 0 0px 1000px $success_color inset; // +
+    // box-shadow: 0 0 0px 1000px $success_superlight inset; // -
+    box-shadow: 
+        0 0 0px 1000px rgba(129, 201, 124, 0.05)  inset,
+        0 0 0px 1000px #fff  inset;
+    // box-shadow: 0 0 0px 1000px transparentize($success_color, 0.95) inset; // -
+}
+
+// textarea.textarea {
+//     outline: none !important;
+//     &:focus {
+//         outline: none !important;
+//     }
+// }

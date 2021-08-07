@@ -135,3 +135,27 @@ git commit, fixup
 git rebase
 add BaseButton submit
 refact: ReviewsForm and NewAdd form - add base components
+
+
+вт
+  ReviewsForm :refact; ReviewsForm :update - add Vuelidation  (1)
+..продолжить дописывать формы..
+  ReviewsForm :update - add Vuelidation (1)
+
++ 1. Компоненты BaseInput, BaseSelect
+2. Валидация
+
+Написать custom validator на количество слов
+  .. на содержание спама
+
+..Прим.:
+minLength видимо не работает из--за конфликта listeners
+
+ср
+  ReviewsForm :update - add Vuelidation (0.5)
+  ReviewsForm :update - add Vuelidation; :styles (1)
+  ReviewsForm :update - add Vuelidation; services - ValidationServices.js (1)
++ Добавить ф-ю проверки на спам
+
+чт
+..git commit
