@@ -368,6 +368,11 @@ input {
 
 
 /* Forms States  */
+button.button {
+    font-weight: 300;
+    font-family: $font_family;
+}
+
 .field-validation {
     // display: none;
     font-size: $fb;
@@ -407,6 +412,22 @@ input {
 input.field-text,
 textarea.textarea {
     outline: none !important;
+ 
+
+    &.error{
+        border-color: $error_color !important;
+        background-color: transparentize($error_color, 0.95) !important;
+    }      
+    
+    &.valid {
+        border-color: $success_color !important; // +
+        background-color: transparentize($success_color, 0.95) !important; // +
+        // border-color: transparentize($success_color, 0.5); // v
+
+        // background: transparentize($success_color, 0.55) !important;
+        // background: $success_color!important;
+    }
+
     &:focus {
         outline: none !important;
     }
@@ -414,21 +435,8 @@ textarea.textarea {
     &.focus{
         border-color: $accent;
         // border-color: $info_color;
-    }    
-
-    &.error{
-        border-color: $error_color;
-        background-color: transparentize($error_color, 0.95) !important;
-    }      
-    
-    &.valid {
-        border-color: $success_color;
-        background-color: transparentize($success_color, 0.95) !important;
-        // background: transparentize($success_color, 0.55) !important;
-        // background: $success_color!important;
-    }
-    // &:-internal-autofill-selected ,
-    // &::-internal-autofill-selected , 
+        background-color: $white !important;
+    }   
     
     
     &.valid:-webkit-autofill,
@@ -449,13 +457,38 @@ textarea.textarea {
 // $success_superlight:  transparentize($success_color, 0.95);
 input:-webkit-autofill,
 textarea:-webkit-autofill {
+    // background-color: #372; // ?
+    //
     // box-shadow: 0 0 0px 1000px #000 inset; // +
     // box-shadow: 0 0 0px 1000px $success_color inset; // +
-    // box-shadow: 0 0 0px 1000px $success_superlight inset; // -
+    // box-shadow: 0 0 0px 1000px $success_superlight inset; // -\
+    //
     box-shadow: 
-        0 0 0px 1000px rgba(129, 201, 124, 0.05)  inset,
-        0 0 0px 1000px #fff  inset;
+        0 0 0px 1000px rgba(129, 201, 124, 0.05)  inset, // +
+        0 0 0px 1000px #fff  inset; // +
+
     // box-shadow: 0 0 0px 1000px transparentize($success_color, 0.95) inset; // -
+
+    // 2. Цвет текста
+    // color: #ff3300!important; // -
+    -webkit-text-fill-color: #33ff00; // +
+}
+
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus {
+    background-color: $white !important;
+    box-shadow: 
+        0 0 0px 1000px #fff  inset; // +    
+}
+
+
+// Тоже работает, так же, только box-shadow
+input:-internal-autofill-selected {
+    // background-color: #327 !important; // -
+    // background-color: rgb(0, 128, 64) !important; // -
+    // box-shadow: 
+    //     0 0 0px 1000px rgba(129, 201, 124, 0.55)  inset, // +
+    //     0 0 0px 1000px #fff  inset; // +    
 }
 
 // textarea.textarea {

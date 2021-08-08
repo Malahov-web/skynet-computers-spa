@@ -8,7 +8,7 @@
         v-for="i in ratingMax"
         :data-set-rating="i"
         :key="100 * i + ratingMax"
-        @click="setRating(i)"
+        @click="setRating(event, i)"
         @mouseover="hoverRating(i)"
       >
         <span></span>
@@ -21,7 +21,7 @@
         v-for="i in hoveredRating"
         :data-set-rating="i"
         :key="210 * i + hoveredRating"
-        @click="setRating(i)"
+        @click="setRating(event, i)"
         @mouseover="hoverRating(i)"
         @mouseout="cleanHoverRating"
       >
@@ -34,7 +34,7 @@
         v-for="i in hoverRatingLeftToMax"
         :data-set-rating="hoveredRating + i"
         :key="220 * i + hoverRatingLeftToMax"
-        @click="setRating(hoveredRating + i)"
+        @click="setRating(event, hoveredRating + i)"
         @mouseover="hoverRating(hoveredRating + i)"
         @mouseout="cleanHoverRating"
       >
@@ -96,11 +96,13 @@ export default {
   },
 
   methods: {
-    setRating(value) {
+    setRating(event, value) {
       this.activeRating = value;
       this.cleanHoverRating();
       //   this.$emit("myEvent");
       this.$emit("set-rating", value);
+
+      this.$emit("input", event.target.value);
     },
 
     hoverRating(value) {

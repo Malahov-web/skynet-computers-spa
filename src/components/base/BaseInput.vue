@@ -18,16 +18,20 @@
 </template>
 
 <script>
+import { formFieldsMixin } from "@/mixins/formFieldsMixins.js";
+
 export default {
   name: "BaseInput",
 
-  inheritAttrs: false,
+  mixins: [formFieldsMixin],
+
+  //   inheritAttrs: false,
 
   props: {
-    label: {
-      type: [String, Number],
-      default: "",
-    },
+    // label: {
+    //   type: [String, Number],
+    //   default: "",
+    // },
     value: {
       type: [String, Number],
       default: "",
@@ -44,40 +48,29 @@ export default {
     };
   },
 
-  methods: {
-    onInput(event) {
-      this.$emit("input", event.target.value);
+  //   methods: {
+  //     onInput(event) {
+  //       this.$emit("input", event.target.value);
+  //     },
+  //   },
 
-      //   console.log("Component - this: ");
-      //   console.log(this);
+  //   computed: {
+  //     elClass() {
+  //       let className = this.$attrs.elClass;
 
-      //   console.log("Component - this.$attrs: ");
-      //   console.log(this.$attrs);
-      //   console.log(JSON.stringify(this));
-      //   this.demoObj = this;
-      //   debugger;
-    },
-  },
+  //       if (this.$attrs["stateClass"]) {
+  //         className += " " + this.$attrs["stateClass"];
+  //       }
+  //       return className;
+  //     },
 
-  computed: {
-    elClass() {
-      let className = this.$attrs.elClass;
-
-      if (this.$attrs["stateClass"]) {
-        className += " " + this.$attrs["stateClass"];
-      }
-      //   $attrs["stateClass"];
-      //   return this.data
-      return className;
-    },
-
-    listeners() {
-      return {
-        ...this.$listeners,
-        input: this.updateValue,
-      };
-    },
-  },
+  //     listeners() {
+  //       return {
+  //         ...this.$listeners,
+  //         input: this.updateValue,
+  //       };
+  //     },
+  //   },
 };
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="field-outer" :class="$attrs['stateClass']">
     <slot name="before"></slot>
-
+    <label v-if="label"> {{ label }} </label>
     <textarea
       :name="$attrs.name || ''"
       old__class="$attrs.elClass || ''"
@@ -16,37 +16,48 @@
 </template>
 
 <script>
+import { formFieldsMixin } from "@/mixins/formFieldsMixins.js";
+
 export default {
   name: "BaseTextarea",
 
-  inheritAttrs: false,
+  mixins: [formFieldsMixin],
 
-  methods: {
-    onInput(event) {
-      this.$emit("input", event.target.value);
-    },
-  },
+  //   inheritAttrs: false,
 
-  computed: {
-    elClass() {
-      let className = this.$attrs.elClass;
+  //   props: {
+  //     label: {
+  //       type: [String, Number],
+  //       default: "",
+  //     },
+  //   },
 
-      if (this.$attrs["stateClass"]) {
-        className += " " + this.$attrs["stateClass"];
-        // className += " mystr";
-      }
-      //   $attrs["stateClass"];
-      //   return this.data
-      return className;
-    },
+  //   methods: {
+  //     onInput(event) {
+  //       this.$emit("input", event.target.value);
+  //     },
+  //   },
 
-    listeners() {
-      return {
-        ...this.$listeners,
-        input: this.updateValue,
-      };
-    },
-  },
+  //   computed: {
+  //     elClass() {
+  //       let className = this.$attrs.elClass;
+
+  //       if (this.$attrs["stateClass"]) {
+  //         className += " " + this.$attrs["stateClass"];
+  //         // className += " mystr";
+  //       }
+  //       //   $attrs["stateClass"];
+  //       //   return this.data
+  //       return className;
+  //     },
+
+  //     listeners() {
+  //       return {
+  //         ...this.$listeners,
+  //         input: this.updateValue,
+  //       };
+  //     },
+  //   },
 };
 </script>
 

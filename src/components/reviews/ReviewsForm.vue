@@ -9,15 +9,7 @@
           <div class="reviews__rating-average-title">Ваша оценка:</div>
           <div class="reviews__rating-average-rating">
             <BaseSetRating class="asd" @set-rating="setRating"></BaseSetRating>
-            <!-- <div class="rating" data-value="4">
-              <ul>
-                <li class="off"><span></span></li>
-                <li class="off"><span></span></li>
-                <li class="off"><span></span></li>
-                <li class="off"><span></span></li>
-                <li class="off"><span></span></li>
-              </ul>
-            </div> -->
+            <!-- <input type="text" v-model="item.rating" /> -->
           </div>
         </div>
 
@@ -157,12 +149,22 @@
           </BaseInput>
 
           <div class="field-outer">
-            <a
+            <!-- <a
               href="#"
               class="button button-send"
               @click.prevent="createReviewsItem"
-              ><span>Отправить</span></a
+              :disabled="$v.$anyError"
+              ><span>Отправить</span>
+            </a> -->
+            <button
+              type="submit"
+              href="#"
+              class="button button-send"
+              @click.prevent="createReviewsItem"
+              :disabled="$v.$anyError"
             >
+              <span>Отправить</span>
+            </button>
           </div>
         </template>
       </form>
@@ -173,83 +175,6 @@
 <script>
 import { required, minLength, email, alpha } from "vuelidate/lib/validators";
 import ValidationServices from "@/services/ValidationServices.js";
-
-// const noSpam = function (str, spamWordsArray) {
-// const noSpam = function (str) {
-//   //   str = "";
-//   //   const keywords = ["viagra", "XXX"];
-
-//   //   let hasKeywords = keywords.reduce((accumulator, item) => {
-//   //     // Если есть вхождение добавить 1
-//   //     return accumulator + str.toLowerCase().includes(item.toLowerCase());
-//   //   }, 0);
-//   console.log("noSpam this: ");
-//   console.log(str);
-
-//   //   if (hasKeywords) {
-//   //     return false;
-//   //   }
-
-//   return true;
-// };
-
-// + v1 Doc - arrow func
-// const mustBeCool = (value) => value.indexOf("cool") >= 0;
-
-// + v2 function style
-// const mustBeCool = function (value) {
-//   return value.indexOf("cool") >= 0;
-// };
-
-// +v3 With with normal return
-// const mustBeCool = function (value) {
-//   let hasCool = value.indexOf("cool") >= 0;
-
-//   if (hasCool) {
-//     return true;
-//   }
-//   return false;
-// };
-
-// + v4
-// const mustBeCool = function (value) {
-//   //   let hasCool = value.indexOf("cool") >= 0;
-
-//   const keywords = ["viagra", "XXX"];
-//   const str = value;
-
-//   let hasKeywords = keywords.reduce((accumulator, item) => {
-//     // Если есть вхождение добавить 1
-//     return accumulator + str.toLowerCase().includes(item.toLowerCase());
-//   }, 0);
-
-//   if (hasKeywords) {
-//     return false;
-//   }
-//   return true;
-// };
-
-// + v5 Prod
-// const noSpam = function (str) {
-//   //   let hasCool = value.indexOf("cool") >= 0;
-
-//   //   const keywords = ["viagra", "XXX"];
-//   const keywords = ValidationServices.spamWordsArray;
-//   //   const str = value;
-
-//   let hasKeywords = keywords.reduce((accumulator, item) => {
-//     // Если есть вхождение добавить 1
-//     return accumulator + str.toLowerCase().includes(item.toLowerCase());
-//   }, 0);
-
-//   if (hasKeywords) {
-//     return false;
-//   }
-//   return true;
-// };
-
-// v6
-// const noSpam = ValidationServices.noSpam;
 
 // @click.prevent>
 export default {
@@ -305,6 +230,10 @@ export default {
     },
 
     createReviewsItem() {
+      if (this.$v.$invalid) {
+        return;
+      }
+
       let id = this.generateID();
       this.item.id = id;
       this.item.productId = this.productId;
@@ -335,6 +264,14 @@ export default {
 
     setRating(value) {
       this.item.rating = value;
+
+      // Вероятно нужно добавить  каксние формы
+      // TODO: move to teplate
+      //   this.$v.item.rating.$touch();
+      this.$v.item.rating.$invalid = false;
+      this.$v.item.rating.$error = false;
+      //   this.$v.item.rating.$error = false;
+      this.$v.item.rating.$error = true;
     },
 
     validStatusClass(name) {
@@ -351,26 +288,47 @@ export default {
 
       return statusClass;
     },
-
-    // noSpam(str) {
-    //   //   str = "";
-    //   //   const keywords = ["viagra", "XXX"];
-
-    //   //   let hasKeywords = keywords.reduce((accumulator, item) => {
-    //   //     // Если есть вхождение добавить 1
-    //   //     return accumulator + str.toLowerCase().includes(item.toLowerCase());
-    //   //   }, 0);
-    //   console.log("noSpam this: ");
-    //   console.log(str);
-
-    //   //   if (hasKeywords) {
-    //   //     return false;
-    //   //   }
-
-    //   return true;
-    // },
   },
 };
+
+/*
+// До touch
+
+rating:Object
+    $anyDirty:false
+    $anyError:false
+    $dirty:false
+    $error:false
+    $invalid:true
+    $model:undefined
+
+    required:false
+
+
+// После touch
+
+rating:Object
+    $anyDirty:true
+    $anyError:true
+    $dirty:true
+    $error:true
+    $invalid:true
+    $model:4
+
+    required:false
+
+
+// Ввод в инпут вручную
+rating:Object
+    $anyDirty:false
+    $anyError:false
+    $dirty:false
+    $error:false
+    $invalid:false
+    $model:"asd"
+
+    required:true
+*/
 </script>
 
 <style lang="scss" scoped>

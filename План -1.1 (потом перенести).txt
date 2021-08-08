@@ -143,11 +143,9 @@ refact: ReviewsForm and NewAdd form - add base components
   ReviewsForm :update - add Vuelidation (1)
 
 + 1. Компоненты BaseInput, BaseSelect
-2. Валидация
-
-Написать custom validator на количество слов
-  .. на содержание спама
-
++ 2. Валидация
+    + 2.1 Написать custom validator на количество слов
+    .. на содержание спама
 ..Прим.:
 minLength видимо не работает из--за конфликта listeners
 
@@ -158,4 +156,24 @@ minLength видимо не работает из--за конфликта liste
 + Добавить ф-ю проверки на спам
 
 чт
-..git commit
+  BaseTextarea.vue, BaseInput.vue :update; mixins - formFieldsMixins.js (0.5)
+
++ git commit
++ Mixins
+
+пт
+  ReviewsForm :update, BaseSelect, BaseButton (1)
+
+..Не добавляется из-за рейтинга
+..После $touch()  изменилось значени , но ошибки и инвалид остались
+     $model:4
+     $error:true
+     $invalid:true
+
+Если заменить rating на обычный nput - работает)
+Что если сделать скрытый инпут  и привязать к нему item.rating
+
+!!!.. TODO :
+  Refact BaseSelect - см. real-world-next-level
+  Нужно также привязать значение и передавать через v-model и input
+  чтобы работала валидация!
