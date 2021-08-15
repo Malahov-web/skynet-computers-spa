@@ -7,6 +7,7 @@ import NewsPage from "@/views/NewsPage.vue";
 import NewFullPage from "@/views/NewFullPage.vue";
 import Error404 from "@/views/Error404.vue";
 import ErrorNetwork from "@/views/ErrorNetwork.vue";
+import ComparePage from "@/views/ComparePage.vue";
 
 Vue.use(VueRouter);
 
@@ -71,6 +72,12 @@ const routes = [
         name: "NewFullPage",
         component: NewFullPage,
         props: true,
+    },
+
+    {
+        path: "/compare",
+        name: "ComparePage",
+        component: ComparePage,
     },
 
     // Errors pages

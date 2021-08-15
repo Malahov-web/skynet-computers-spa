@@ -3080,3 +3080,185 @@ body .selectric-items {
     border-right: 1px solid $grey_super_light;
     border: 1px solid $grey_super_light;
 }
+
+
+/* 23. compare
+ * **********************************************************************
+ *  
+*/
+
+.compare {
+
+    &__header {
+        margin-bottom: 1.5*$l_h;
+    }
+    &__content {
+
+    }
+    &-left {
+
+    }
+    &__cap {
+        height: 450px; // product grid
+        // height: 468px;
+
+        height: 405px; // product-mini
+
+        // 
+        height: 377px; // skynet-computers-app
+    }
+
+    &-right {
+
+    }
+    &__controls {
+
+    }
+    &__products {
+        .product-outer {
+            // margin-bottom: 0;
+            // margin-top: 0;
+
+        }
+
+        
+
+    }
+    &__specifications {
+        @include h_rhytm('row', $fb);
+        // width: 100%;
+        // @extend .row;
+        
+        &-title {
+            margin-top: 1*$l_h;
+            font-weight: 500;
+        }
+    }
+
+    //
+    & .product{
+        &__remove-outer {
+            position: absolute;
+            right: 2*$columns_gap+px; // 0;
+            top : 0;
+        }
+    }
+
+}
+
+.product__footer {
+    @extend .row;
+    margin-left: 0;
+    margin-right: 0;
+    // @extend .row;
+
+    // Inheritence ?
+    // В этом футере отступы элементов не будут схлопываться,
+    // поэтому отменим отступ у след-го за ним эл-та
+    & + div {
+        margin-top: 0!important;
+    }
+
+}
+
+
+
+.tooltip {
+    &-button {
+
+        display: inline-block;
+        // @include flex(center, center);
+        margin-left: 0.25em;
+
+        font-size: $font_h3;
+        width: 1em;
+        height: 1em;
+        border: 1px solid $grey_dark;
+        @extend %border_circle;
+
+        // line-height: 1em;
+        // text-align: center;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        // font-size: $font_h4;
+        // font-size: $fb;
+        color: $grey_dark;
+        // TEMP 
+        // display: none;
+        i {
+            font-size: $fb;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: $accent !important;
+            color: $white !important;
+            border-color: $accent !important;
+        }
+        
+    }
+
+}
+
+.compare__specifications-table {
+
+    width: 100%;
+    // max-width: 800px;
+    border-collapse: collapse;
+
+    tr {
+        font-size: $fb;
+        line-height: 2 * $l_h;
+        height: 2 * $l_h;
+
+        td {
+           @include h_rhytm('forms_element', $fb);
+            vertical-align: middle;
+            font-size: $fb;
+            // color: $grey_dark;
+
+            padding-top: 0;
+            padding-bottom: 0;
+
+            font-weight: 400;
+            color: $text;           
+        }
+        td.hover {
+            background-color: transparentize($accent, 1-0.2); // d3e9f8 ;
+            color: $accent_dark !important;
+
+            .tooltip {
+                &-button {
+                    color: $accent_dark;
+                    border-color: $accent_dark;
+                }
+            }
+        }
+
+    }
+    tr:nth-child(odd) {
+
+
+        td {
+           background-color: $grey_super_light;
+
+        }
+    } 
+}
+
+.compare__products .compare__specifications-table {
+
+    tr {
+
+        td {
+            // font-size: $font_small;
+            font-size: 90%;
+            font-weight: 300;
+            // color: $text;
+            color: $grey_dark;
+        }
+
+    }
+}

@@ -92,7 +92,7 @@
 
         padding-left: $fs * 2;
         padding-right: $fs * 2;
-        @media (min-width: __($devices, 'tb_', 'breakpoint')+px)  {
+        @media (min-width: #{map-get($devices, 'tb_')}px) {
 
         padding-left: $fs * 4;
         padding-right: $fs * 4;
@@ -103,6 +103,17 @@
         padding-left: 3 * $columns_gap+px;
         padding-right: 3 * $columns_gap+px;
     }
+
+    @else if $type == row {
+
+        margin-left:  -$columns_gap+px;
+        margin-right:  -$columns_gap+px;
+    }     
+    @else if $type == column {
+
+        padding-left:  $columns_gap+px;
+        padding-right:  $columns_gap+px;
+    }    
 }
 
 

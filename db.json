@@ -1,547 +1,857 @@
 {
-  "edges": [
-    {
-      "item-title": "Подарки к каждой покупке ",
-      "item-icon": "gift"
-    },
-    {
-      "item-title": "Доставка в кратчайшие сроки",
-      "item-icon": "truck"
-    },
-    {
-      "item-title": "Скидка 10% при оплате картой",
-      "item-icon": "credit-card"
-    },
-    {
-      "item-title": "Круглосуточная техподдержка",
-      "item-icon": "comments-smiley"
-    }
-  ],
-  "actions": [
-    {
-      "item-title": "Latest Mi LED TV",
-      "item-image": "actions-item-img-1.jpg",
-      "item-date": "25.06.2019",
-      "item-datetime": "2019-06-25",
-      "item-text": "Big Sale 20% <br>on new models",
-      "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
-      "item-promocode": "skynet20",
-      "item-link": "#"
-    },
-    {
-      "item-title": "Big Great Offer",
-      "item-image": "actions-item-img-2.jpg",
-      "item-date": "06.06.2019",
-      "item-datetime": "2019-06-06",
-      "item-text": "St. Louis Blues Audio shortcode: “Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-      "item-text-long": "St. Louis Blues Audio shortcode: “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in rep.,  ",
-      "item-promocode": "skynet",
-      "item-link": "#"
-    }
-  ],
-  "subcategories": [
-    {
-      "id": 11,
-      "title": "Компьютеры",
-      "image": "uploads/categories/comp.png"
-    },
-    {
-      "id": 12,
-      "title": "Ноутбуки",
-      "image": "uploads/categories/nout.png"
-    },
-    {
-      "id": 14,
-      "title": "Наушники",
-      "image": "uploads/categories/phone.png"
-    },
-    {
-      "id": 15,
-      "title": "Принтеры, Сканеры, МФУ",
-      "image": "uploads/categories/mfu.png"
-    }
-  ],
-  "products": {
-    "1": {
-      "id": "1",
-      "title": "Монитор 23.8\" DELL S2421HN",
-      "image": "uploads/productfull/DELL-S2421HN-black.jpg",
-      "gallery": [
+    "edges": [
         {
-          "title": "DELL-S2421HN-black",
-          "image": "uploads/productfull/DELL-S2421HN-black.jpg"
+            "item-title": "Подарки к каждой покупке ",
+            "item-icon": "gift"
         },
         {
-          "title": "DELL-S2421HN-silver",
-          "image": "uploads/productfull/DELL-S2421HN-silver.jpg"
+            "item-title": "Доставка в кратчайшие сроки",
+            "item-icon": "truck"
         },
         {
-          "title": "DELL S2421HN Black and White",
-          "image": "uploads/productfull/product_full_image_dell_08_image_4.jpg"
+            "item-title": "Скидка 10% при оплате картой",
+            "item-icon": "credit-card"
         },
         {
-          "title": "DELL S2421HN White",
-          "image": "uploads/productfull/product_full_image_dell_08_image_1.jpg"
+            "item-title": "Круглосуточная техподдержка",
+            "item-icon": "comments-smiley"
         }
-      ],
-      "diagonal": 23.8,
-      "brand": "dell",
-      "brandImage": "uploads/brands/dell.webp",
-      "availability": 1,
-      "description": "Элегантный дизайн с тонкой рифленой текстурой на задней панели придает монитору Dell S2421HN неповторимый внешний вид. Он привносит гармоничное сочетание великолепного стиля и качества в любое пространство. <br>Благодаря трехсторонней сверхтонкой рамке вы можете наслаждаться превосходной четкостью изображения на 23,8-дюймовом мониторе с разрешением <b>Full HD</b> (1920 x 1080).",
-      "price": 9490,
-      "priceSale": 7990,
-      "quantity": 9,
-      "specificationsShort": {
-        "diagonal": {
-          "title": "Диагональ",
-          "value": 23.8
+    ],
+    "actions": [
+        {
+            "item-title": "Latest Mi LED TV",
+            "item-image": "actions-item-img-1.jpg",
+            "item-date": "25.06.2019",
+            "item-datetime": "2019-06-25",
+            "item-text": "Big Sale 20% <br>on new models",
+            "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
+            "item-promocode": "skynet20",
+            "item-link": "#"
         },
-        "dimension": {
-          "title": "Разрешение экрана",
-          "value": "1920x1080 "
-        },
-        "matrixType": {
-          "title": "Тип матрицы",
-          "value": "IPS"
-        },
-        "backlight": {
-          "title": "Подсветка",
-          "value": "WLED"
-        },
-        "responseTime": {
-          "title": "Время отклика",
-          "value": 4
+        {
+            "item-title": "Big Great Offer",
+            "item-image": "actions-item-img-2.jpg",
+            "item-date": "06.06.2019",
+            "item-datetime": "2019-06-06",
+            "item-text": "St. Louis Blues Audio shortcode: “Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
+            "item-text-long": "St. Louis Blues Audio shortcode: “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in rep.,  ",
+            "item-promocode": "skynet",
+            "item-link": "#"
         }
-      },
-      "specificationsFull": {
-        "brand": {
-          "title": "Производитель",
-          "value": "dell"
+    ],
+    "subcategories": [
+        {
+            "id": 11,
+            "title": "Компьютеры",
+            "image": "uploads/categories/comp.png"
         },
-        "producingСountry ": {
-          "title": "Страна производитель",
-          "value": "Китай"
+        {
+            "id": 12,
+            "title": "Ноутбуки",
+            "image": "uploads/categories/nout.png"
         },
-        "operatingSystem ": {
-          "title": "Операционная система",
-          "value": "Mac OS"
+        {
+            "id": 14,
+            "title": "Наушники",
+            "image": "uploads/categories/phone.png"
         },
-        "ram": {
-          "title": "Оперативная память",
-          "value": "8 Гб"
-        },
-        "rom": {
-          "title": "Постоянная память",
-          "value": "1 Тб HDD + 512 Гб SSD"
-        },
-        "diagonal": {
-          "title": "Диагональ",
-          "value": 23.8
-        },
-        "dimension": {
-          "title": "Разрешение экрана",
-          "value": "1920x1080 "
-        },
-        "matrixType": {
-          "title": "Тип матрицы",
-          "value": "IPS"
-        },
-        "backlight": {
-          "title": "Подсветка",
-          "value": "WLED"
-        },
-        "responseTime": {
-          "title": "Время отклика",
-          "value": 4
+        {
+            "id": 15,
+            "title": "Принтеры, Сканеры, МФУ",
+            "image": "uploads/categories/mfu.png"
         }
-      },
-      "variants": [
-        {
-          "variantId": 119105271,
-          "variantColor": "black",
-          "variantColorValue": "#41b883",
-          "variantImage": "uploads/productfull/DELL-S2421HN-black.jpg"
+    ],
+    "products": {
+        "1": {
+            "id": "1",
+            "title": "Монитор 23.8\" DELL S2421HN",
+            "image": "uploads/productfull/DELL-S2421HN-black.jpg",
+            "gallery": [
+                {
+                    "title": "DELL-S2421HN-black",
+                    "image": "uploads/productfull/DELL-S2421HN-black.jpg"
+                },
+                {
+                    "title": "DELL-S2421HN-silver",
+                    "image": "uploads/productfull/DELL-S2421HN-silver.jpg"
+                },
+                {
+                    "title": "DELL S2421HN Black and White",
+                    "image": "uploads/productfull/product_full_image_dell_08_image_4.jpg"
+                },
+                {
+                    "title": "DELL S2421HN White",
+                    "image": "uploads/productfull/product_full_image_dell_08_image_1.jpg"
+                }
+            ],
+            "diagonal": 23.8,
+            "brand": "dell",
+            "brandImage": "uploads/brands/dell.webp",
+            "availability": 1,
+            "description": "Элегантный дизайн с тонкой рифленой текстурой на задней панели придает монитору Dell S2421HN неповторимый внешний вид. Он привносит гармоничное сочетание великолепного стиля и качества в любое пространство. <br>Благодаря трехсторонней сверхтонкой рамке вы можете наслаждаться превосходной четкостью изображения на 23,8-дюймовом мониторе с разрешением <b>Full HD</b> (1920 x 1080).",
+            "price": 9490,
+            "priceSale": 7990,
+            "quantity": 9,
+            "specificationsShort": {
+                "diagonal": {
+                    "title": "Диагональ",
+                    "value": 23.8
+                },
+                "dimension": {
+                    "title": "Разрешение экрана",
+                    "value": "1920x1080 "
+                },
+                "matrixType": {
+                    "title": "Тип матрицы",
+                    "value": "IPS"
+                },
+                "backlight": {
+                    "title": "Подсветка",
+                    "value": "WLED"
+                },
+                "responseTime": {
+                    "title": "Время отклика",
+                    "value": 4
+                }
+            },
+            "specificationsFull": {
+                "brand": {
+                    "title": "Производитель",
+                    "value": "dell",
+                    "group": 0
+                },
+                "producingСountry ": {
+                    "title": "Страна производитель",
+                    "value": "Китай",
+                    "group": 0
+                },
+                "operatingSystem ": {
+                    "title": "Операционная система",
+                    "value": "Mac OS",
+                    "group": 0
+                },
+                "ram": {
+                    "title": "Оперативная память",
+                    "value": "8 Гб",
+                    "group": 0
+                },
+                "rom": {
+                    "title": "Постоянная память",
+                    "value": "1 Тб HDD + 512 Гб SSD",
+                    "group": 0
+                },
+                "diagonal": {
+                    "title": "Диагональ",
+                    "value": 23.8,
+                    "group": 1
+                },
+                "dimension": {
+                    "title": "Разрешение экрана",
+                    "value": "1920x1080 ",
+                    "group": 1
+                },
+                "matrixType": {
+                    "title": "Тип матрицы",
+                    "value": "IPS",
+                    "group": 1
+                },
+                "backlight": {
+                    "title": "Подсветка",
+                    "value": "WLED",
+                    "group": 1
+                },
+                "responseTime": {
+                    "title": "Время отклика",
+                    "value": 4,
+                    "group": 1
+                }
+            },
+            "variants": [
+                {
+                    "variantId": 119105271,
+                    "variantColor": "black",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/DELL-S2421HN-black.jpg"
+                },
+                {
+                    "variantId": 119105272,
+                    "variantColor": "silver",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/DELL-S2421HN-silver.jpg"
+                },
+                {
+                    "variantId": 119105271,
+                    "variantColor": "white",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/product_full_image_dell_08_image_1.jpg"
+                }
+            ],
+            "rating": 4.7,
+            "reviews": [
+                {},
+                {}
+            ]
         },
-        {
-          "variantId": 119105272,
-          "variantColor": "silver",
-          "variantColorValue": "#41b883",
-          "variantImage": "uploads/productfull/DELL-S2421HN-silver.jpg"
+        "21910538": {
+            "id": "21910538",
+            "title": "Монитор ASUS VG258QR 24.5\"",
+            "diagonal": 24.5,
+            "brand": "ASUS",
+            "brandImage": "uploads/brands/asus.webp",
+            "availability": 2,
+            "description": "Asus VG258QR – модель для офиса и дома. 24,5-дюймовый экран поддерживает разрешение 1920х1080 пикселей (стандарт Full HD) и отображает четкую, детализированную картинку, которая имеет реалистичные цвета. Время отклика матрицы составляет 165 Гц, за счет чего изображение не мерцает, и не создается большая нагрузка на зрение.<br>Широкоформатный Asus VG258QR поставляется на устойчивой пластиковой подставке, которую можно регулировать по наклону и высоте, а также вращать, переводя монитор в портретный режим. Модель оснащена акустической системой и внутренним блоком питания. В корпусе есть монтажные отверстия для крепления VESA.",
+            "price": 23000,
+            "priceSale": 21990,
+            "quantity": 20,
+            "specificationsShort": {
+                "diagonal": {
+                    "title": "Диагональ",
+                    "value": 24.5
+                },
+                "dimension": {
+                    "title": "Разрешение экрана",
+                    "value": "1920x1080 "
+                },
+                "matrixType": {
+                    "title": "Тип матрицы",
+                    "value": "TN"
+                },
+                "backlight": {
+                    "title": "Подсветка",
+                    "value": "Flicker-Free"
+                },
+                "responseTime": {
+                    "title": "Время отклика",
+                    "value": 1
+                }
+            },
+            "specificationsFull": {
+                "brand": {
+                    "title": "Производитель",
+                    "value": "ASUS",
+                    "group": 0
+                },
+                "producingСountry ": {
+                    "title": "Страна производитель",
+                    "value": "Китай",
+                    "group": 0
+                },
+                "operatingSystem ": {
+                    "title": "Операционная система",
+                    "value": "Mac OS",
+                    "group": 0
+                },
+                "ram": {
+                    "title": "Оперативная память",
+                    "value": "8 Гб",
+                    "group": 0
+                },
+                "rom": {
+                    "title": "Постоянная память",
+                    "value": "1 Тб HDD + 512 Гб SSD",
+                    "group": 0
+                },
+                "diagonal": {
+                    "title": "Диагональ",
+                    "value": 24.5,
+                    "group": 1
+                },
+                "dimension": {
+                    "title": "Разрешение экрана",
+                    "value": "1920x1080 ",
+                    "group": 1
+                },
+                "matrixType": {
+                    "title": "Тип матрицы",
+                    "value": "TN",
+                    "group": 1
+                },
+                "backlight": {
+                    "title": "Подсветка",
+                    "value": "WLED",
+                    "group": 1
+                },
+                "responseTime": {
+                    "title": "Время отклика",
+                    "value": 1,
+                    "group": 1
+                }
+            },
+            "variants": [
+                {
+                    "variantId": 219105271,
+                    "variantColor": "black",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/DELL-S2421HN-black.jpg"
+                },
+                {
+                    "variantId": 219105272,
+                    "variantColor": "silver",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/DELL-S2421HN-silver.jpg"
+                },
+                {
+                    "variantId": 219105271,
+                    "variantColor": "white",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/product_full_image_dell_08_image_1.jpg"
+                }
+            ],
+            "rating": 4.2,
+            "reviews": [
+                {},
+                {}
+            ]
         },
-        {
-          "variantId": 119105271,
-          "variantColor": "white",
-          "variantColorValue": "#41b883",
-          "variantImage": "uploads/productfull/product_full_image_dell_08_image_1.jpg"
+        "355745446": {
+            "id": "355745446",
+            "title": "Монитор LG 27UL500 27\"",
+            "image": "uploads/productfull/LG-27UL500-W_DZ01.jpg",
+            "gallery": [
+                {
+                    "title": "LG 27UL500",
+                    "image": "uploads/productfull/LG-27UL500-W_DZ01.jpg"
+                },
+                {
+                    "title": "LG 27UL500",
+                    "image": "uploads/productfull/LG-27UL500-W_DZ02.webp"
+                },
+                {
+                    "title": "LG 27UL500",
+                    "image": "uploads/productfull/LG-27UL500-W_DZ05.webp"
+                },
+                {
+                    "title": "LG 27UL500",
+                    "image": "uploads/productfull/LG-27UL500-W_DZ06.webp"
+                }
+            ],
+            "diagonal": 27,
+            "brand": "LG",
+            "brandImage": "uploads/brands/dell.webp",
+            "availability": 1,
+            "description": "LG 27UL500-W станет прекрасным подарком как для заядлого геймера, так и киномана. Прежде всего, об этом свидетельствует 27-дюймовый дисплей, демонстрирующий поистине роскошную и реалистичную картинку в разрешении 3840 x 2160 пикселей. Минимальные рамки вокруг экрана способствуют более усиленному погружению в процесс, а также придают монитору дополнительный шарм.",
+            "price": 21200,
+            "priceSale": null,
+            "quantity": 20,
+            "specificationsShort": {
+                "diagonal": {
+                    "title": "Диагональ",
+                    "value": 23.8
+                },
+                "dimension": {
+                    "title": "Разрешение экрана",
+                    "value": "1920x1080 "
+                },
+                "matrixType": {
+                    "title": "Тип матрицы",
+                    "value": "IPS"
+                },
+                "backlight": {
+                    "title": "Подсветка",
+                    "value": "WLED"
+                },
+                "responseTime": {
+                    "title": "Время отклика",
+                    "value": 4
+                }
+            },
+            "specificationsFull": {
+                "brand": {
+                    "title": "Производитель",
+                    "value": "LG",
+                    "group": 0
+                },
+                "producingСountry ": {
+                    "title": "Страна производитель",
+                    "value": "Китай",
+                    "group": 0
+                },
+                "operatingSystem ": {
+                    "title": "Операционная система",
+                    "value": "Windows 10",
+                    "group": 0
+                },
+                "ram": {
+                    "title": "Оперативная память",
+                    "value": "16 Гб",
+                    "group": 0
+                },
+                "rom": {
+                    "title": "Постоянная память",
+                    "value": "1 Тб HDD + 256 Гб SSD",
+                    "group": 0
+                },
+                "diagonal": {
+                    "title": "Диагональ",
+                    "value": 27,
+                    "group": 1
+                },
+                "dimension": {
+                    "title": "Разрешение экрана",
+                    "value": "3840x2160",
+                    "group": 1
+                },
+                "matrixType": {
+                    "title": "Тип матрицы",
+                    "value": "IPS",
+                    "group": 1
+                },
+                "backlight": {
+                    "title": "Подсветка",
+                    "value": "WLED",
+                    "group": 1
+                },
+                "responseTime": {
+                    "title": "Время отклика",
+                    "value": 5,
+                    "group": 1
+                }
+            },
+            "variants": [
+                {
+                    "variantId": 119105271,
+                    "variantColor": "black",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/DELL-S2421HN-black.jpg"
+                },
+                {
+                    "variantId": 119105272,
+                    "variantColor": "silver",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/DELL-S2421HN-silver.jpg"
+                },
+                {
+                    "variantId": 119105271,
+                    "variantColor": "white",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/product_full_image_dell_08_image_1.jpg"
+                }
+            ],
+            "rating": 4.7,
+            "reviews": [
+                {},
+                {}
+            ]
+        },
+        "4": {
+            "id": "4",
+            "title": "Монитор LG 24QP550-B 23.8\"",
+            "image": "uploads/productfull/LG-24QP550-B.webp",
+            "gallery": [
+                {
+                    "title": "LG 24QP550-B",
+                    "image": "uploads/productfull/LG-24QP550-B.webp"
+                }
+            ],
+            "diagonal": 23.8,
+            "brand": "LG",
+            "brandImage": "uploads/brands/dell.webp",
+            "availability": 1,
+            "description": "LG 27UL500-W станет прекрасным подарком как для заядлого геймера, так и киномана. Прежде всего, об этом свидетельствует 27-дюймовый дисплей, демонстрирующий поистине роскошную и реалистичную картинку в разрешении 3840 x 2160 пикселей. Минимальные рамки вокруг экрана способствуют более усиленному погружению в процесс, а также придают монитору дополнительный шарм.",
+            "price": 21999,
+            "priceSale": null,
+            "quantity": 20,
+            "specificationsShort": {
+                "diagonal": {
+                    "title": "Диагональ",
+                    "value": 23.8
+                },
+                "dimension": {
+                    "title": "Разрешение экрана",
+                    "value": "2560×1440"
+                },
+                "matrixType": {
+                    "title": "Тип матрицы",
+                    "value": "IPS"
+                },
+                "backlight": {
+                    "title": "Подсветка",
+                    "value": "WLED"
+                },
+                "responseTime": {
+                    "title": "Время отклика",
+                    "value": 5
+                }
+            },
+            "specificationsFull": {
+                "brand": {
+                    "title": "Производитель",
+                    "value": "LG",
+                    "group": 0
+                },
+                "producingСountry ": {
+                    "title": "Страна производитель",
+                    "value": "Китай",
+                    "group": 0
+                },
+                "operatingSystem ": {
+                    "title": "Операционная система",
+                    "value": "Windows 10",
+                    "group": 0
+                },
+                "ram": {
+                    "title": "Оперативная память",
+                    "value": "16 Гб",
+                    "group": 0
+                },
+                "rom": {
+                    "title": "Постоянная память",
+                    "value": "1 Тб HDD + 256 Гб SSD",
+                    "group": 0
+                },
+                "diagonal": {
+                    "title": "Диагональ",
+                    "value": 23.8,
+                    "group": 1
+                },
+                "dimension": {
+                    "title": "Разрешение экрана",
+                    "value": "2560×1440",
+                    "group": 1
+                },
+                "matrixType": {
+                    "title": "Тип матрицы",
+                    "value": "IPS",
+                    "group": 1
+                },
+                "backlight": {
+                    "title": "Подсветка",
+                    "value": "WLED",
+                    "group": 1
+                },
+                "responseTime": {
+                    "title": "Время отклика",
+                    "value": 5,
+                    "group": 1
+                }
+            },
+            "variants": [
+                {
+                    "variantId": 119105271,
+                    "variantColor": "black",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/DELL-S2421HN-black.jpg"
+                },
+                {
+                    "variantId": 119105272,
+                    "variantColor": "silver",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/DELL-S2421HN-silver.jpg"
+                },
+                {
+                    "variantId": 119105271,
+                    "variantColor": "white",
+                    "variantColorValue": "#41b883",
+                    "variantImage": "uploads/productfull/product_full_image_dell_08_image_1.jpg"
+                }
+            ],
+            "rating": 4.8,
+            "reviews": [
+                {},
+                {}
+            ]
         }
-      ],
-      "rating": 4.7,
-      "reviews": [
-        {},
-        {}
-      ]
     },
-    "2": {
-      "id": "01910538",
-      "title": "Монитор ASUS VG258QR 24.5\"",
-      "diagonal": 24.5,
-      "brand": "ASUS",
-      "brandImage": "uploads/brands/asus.webp",
-      "availability": 2,
-      "description": "Asus VG258QR – модель для офиса и дома. 24,5-дюймовый экран поддерживает разрешение 1920х1080 пикселей (стандарт Full HD) и отображает четкую, детализированную картинку, которая имеет реалистичные цвета. Время отклика матрицы составляет 165 Гц, за счет чего изображение не мерцает, и не создается большая нагрузка на зрение.<br>Широкоформатный Asus VG258QR поставляется на устойчивой пластиковой подставке, которую можно регулировать по наклону и высоте, а также вращать, переводя монитор в портретный режим. Модель оснащена акустической системой и внутренним блоком питания. В корпусе есть монтажные отверстия для крепления VESA.",
-      "price": 23000,
-      "priceSale": 21990,
-      "quantity": 20,
-      "specificationsShort": {
-        "diagonal": {
-          "title": "Диагональ",
-          "value": 24.5
+    "news": [
+        {
+            "id": 1,
+            "item-title": "QCYBER MOBILE: оторвись от проводов! QCYBER MOBILE: оторвись от проводов!",
+            "item-image": "news_item_image_1.jpg",
+            "item-date": "29.04.2021",
+            "item-datetime": "2021-04-29",
+            "item-text": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea",
+            "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
+            "item-link": "#"
         },
-        "dimension": {
-          "title": "Разрешение экрана",
-          "value": "1920x1080 "
+        {
+            "id": 2,
+            "item-title": "10 удивительных ноутбуков с выставки CES 2019",
+            "item-image": "news_item_image_2.jpg",
+            "item-date": "25.03.2021",
+            "item-datetime": "2021-03-25",
+            "item-text": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea",
+            "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
+            "item-link": "#"
         },
-        "matrixType": {
-          "title": "Тип матрицы",
-          "value": "TN"
+        {
+            "id": 3,
+            "item-title": "HUAWEI получила более двадцати наград на международной выставке IFA-2019",
+            "item-image": "news_item_image_3.jpg",
+            "item-date": "29.10.2019",
+            "item-datetime": "2019-10-29",
+            "item-text": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea",
+            "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
+            "item-link": "#"
         },
-        "backlight": {
-          "title": "Подсветка",
-          "value": "Flicker-Free"
+        {
+            "id": 4,
+            "item-title": "123 Going Green Is So Much Simpler Than Most People",
+            "item-image": "news_item_image_4.jpg",
+            "item-date": "29.10.2019",
+            "item-datetime": "2019-10-29",
+            "item-text": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea",
+            "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
+            "item-link": "#"
         },
-        "responseTime": {
-          "title": "Время отклика",
-          "value": 1
+        {
+            "id": 5,
+            "item-title": "Duis aute irure dolor in reprehenderit in voluptate",
+            "item-image": "news_item_image_5.jpg",
+            "item-date": "29.10.2019",
+            "item-datetime": "2019-10-29",
+            "item-text": "St. Louis Blues Audio shortcode: “Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
+            "item-text-long": "St. Louis Blues Audio shortcode: “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in rep.,  ",
+            "item-link": "#"
+        },
+        {
+            "id": 6,
+            "item-title": "occaecat cupidatat non proident, sunt in",
+            "item-image": "news_item_image_6.jpg",
+            "item-date": "29.10.2019",
+            "item-datetime": "2019-10-29",
+            "item-text": "Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. ",
+            "item-text-long": "Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. ",
+            "item-link": "#"
+        },
+        {
+            "item-title": "Toyota не исключает, что электрический Land Cruiser может стать серийным",
+            "item-text": "Общая инженерная консервативность автоконцерна Toyota Motor привела к тому, что в ассортименте её продукции сохраняются рамные внедорожники с восьмицилиндровыми моторами. Выпускать батарейные электромобили японский гигант пока тоже не особо торопится, но существующий в единственном варианте электрический вариант Land Cruiser может сделать серийным.",
+            "item-author": "Кирилл Малахов",
+            "id": 4642606
+        },
+        {
+            "item-title": "Превью изображений в постах Twitter теперь отображаются целиком",
+            "item-text": "Социальная сеть Twitter сделала обновлённый дизайн постов с прикреплёнными изображениями доступным для всех пользователей платформы. Теперь превью изображений в постах, которые отображаются в ленте, будут демонстрироваться полностью, а не частично. Информация об этом была опубликована в официальном аккаунте разработчиков соцсети.",
+            "item-author": "Кирилл Малахов",
+            "id": 9050810
+        },
+        {
+            "item-title": "Сервис коротких видео YouTube Shorts стал доступен всем пользователям в США",
+            "item-text": "Сервис коротких видео YouTube Shorts стал доступен всем пользователям в США",
+            "id": 1415759
+        },
+        {
+            "item-title": "fetchData",
+            "item-text": "fetchData",
+            "id": 9213838
+        },
+        {
+            "item-title": "Запустили Modular Scale Viewer",
+            "item-text": "asdas asd as das das as as as das",
+            "item-author": "Kirill",
+            "id": 6320802
+        },
+        {
+            "item-title": "Новость",
+            "item-text": "фыв ффы вфы фы вфы в",
+            "item-author": "Kirill",
+            "id": 5426021
+        },
+        {
+            "item-title": "На gh-pages стал доступен сервис для дизайнеров",
+            "item-text": "Modular ..",
+            "item-author": "Kirill",
+            "id": 4435518
         }
-      },
-      "variants": [
+    ],
+    "reviews": [
         {
-          "variantId": 219105271,
-          "variantColor": "black",
-          "variantColorValue": "#41b883",
-          "variantImage": "uploads/productfull/DELL-S2421HN-black.jpg"
+            "city": "Many",
+            "date": "2068-11-13",
+            "email": "corporis@outlook.com",
+            "firstname": "Raleigh",
+            "phone": "(807) 481-9570 x827",
+            "productId": 2,
+            "rating": 4,
+            "surname": "Lera",
+            "textAdvantages": "stop sint mine though death facilis accusamus consequatur long doctor fill parent laugh gun minima opposite cell print climb wind",
+            "textDefects": "illo inventore story heart corner done paint offer need middle ipsam method shoulder error probable wait",
+            "textGeneral": "father fruit strange expedita agree quia quis night dog ago voluptatum his felt molestiae stood enemy woman watch heat and two inch"
         },
         {
-          "variantId": 219105272,
-          "variantColor": "silver",
-          "variantColorValue": "#41b883",
-          "variantImage": "uploads/productfull/DELL-S2421HN-silver.jpg"
+            "city": "Picture Butte",
+            "date": "2043-12-13",
+            "email": "collin@gmail.com",
+            "firstname": "Destiney",
+            "phone": "611.268.4817",
+            "productId": 3,
+            "rating": 5,
+            "surname": "Jerrod",
+            "textAdvantages": "populate yellow captain if count sail pick came liquid fuga soldier party modi et middle I ab decide would segment",
+            "textDefects": "danger soft young cent sight time fruit explicabo sun weight hurry sapiente century sed separate walk",
+            "textGeneral": "fugit non fair particular piece for nihil led chair tell this between much select broke a experiment cut hic less reprehenderit climb"
         },
         {
-          "variantId": 219105271,
-          "variantColor": "white",
-          "variantColorValue": "#41b883",
-          "variantImage": "uploads/productfull/product_full_image_dell_08_image_1.jpg"
+            "city": "Clovis",
+            "date": "2016-08-29",
+            "email": "wear_wilfredo@yahoo.com",
+            "firstname": "Ivory",
+            "phone": "(040) 791-3845",
+            "productId": 3,
+            "rating": 5,
+            "surname": "Marcella",
+            "textAdvantages": "north went repellendus cow some et illum excite indicate dignissimos get twenty position practice move fun blow hill organ window",
+            "textDefects": "thin non thing segment similar women figure occur surprise meant locate general est porro had finish",
+            "textGeneral": "feet is quas produce shall see prove autem yellow million ab sound chief hot long some experience general just fact window leg"
+        },
+        {
+            "city": "West Babylon",
+            "date": "2119-08-24",
+            "email": "determine_bridget@hotmail.com",
+            "firstname": "Bertrand",
+            "phone": "089-895-8980 x0593",
+            "productId": 3,
+            "rating": 4,
+            "surname": "Leola",
+            "textAdvantages": "mix success plant porro qui seem should qui view dolorem aut salt me machine chart quo molestiae anger totam sing",
+            "textDefects": "chart road ring clock hole wife ipsa mind level exact say verb yard him north under",
+            "textGeneral": "receive dry huge throw been et tall fat money among arrive sit behind quaerat late place architecto off law poor there officiis"
+        },
+        {
+            "city": "Chevery",
+            "date": "1970-10-26",
+            "email": "est@yahoo.com",
+            "firstname": "Dedric",
+            "phone": "955.461.2935",
+            "productId": 2,
+            "rating": 4,
+            "surname": "Sid",
+            "textAdvantages": "fear clothe ut music subject tiny aspernatur voluptatem work discuss certain fresh sapiente felt voluptatibus neque veniam step next in",
+            "textDefects": "count row shine low electric voluptas even eaque high stead front save able us aut foot",
+            "textGeneral": "winter raise atom such interest pariatur shop minima broad east melody wire show brought numeral finish men glass answer evening condition cent"
+        },
+        {
+            "city": "Coaling",
+            "date": "2007-06-21",
+            "email": "voluptas@gmail.com",
+            "firstname": "Ted",
+            "phone": "701.506.9196",
+            "productId": 3,
+            "rating": 1,
+            "surname": "Shane",
+            "textAdvantages": "warm never land wild water them will straight that weight bird quo soft study non by pair numeral job record",
+            "textDefects": "laudantium nihil tone leave lie play culpa sit band guide pass root doloremque held prove id",
+            "textGeneral": "noon sudden fill practice cook hit seem use large soft told took temporibus summer line clear laborum skill busy length meat rich"
+        },
+        {
+            "city": "Potosi",
+            "date": "2023-09-15",
+            "email": "armand@hotmail.com",
+            "firstname": "Kristin",
+            "phone": "1-997-590-6076 x9922",
+            "productId": 1,
+            "rating": 2,
+            "surname": "Saige",
+            "textAdvantages": "omnis men way give dolor don't support fell hundred hard fair locate melody instrument note rich chief sentence big off",
+            "textDefects": "property measure city sunt begin take port doctor took describe ducimus dad ad voluptas ride complete",
+            "textGeneral": "perspiciatis doctor else quisquam better guide page chart electric third modern save product are call snow reach grew only morning sure slow"
+        },
+        {
+            "city": "Northfield Falls",
+            "date": "2112-07-31",
+            "email": "brought_myra@outlook.com",
+            "firstname": "Eliane",
+            "phone": "716.304.1400 x61697",
+            "productId": 1,
+            "rating": 3,
+            "surname": "Eryn",
+            "textAdvantages": "sit especially tail silent answer fig art order son ipsam quotient women et yes sunt done aut create story grew",
+            "textDefects": "forward settle shall more off continue quite smell esse yellow will brought supply show late were",
+            "textGeneral": "also cross card black sight degree turn rail incidunt decimal operate omnis hand recusandae order quidem own star him pose cause character"
+        },
+        {
+            "city": "Dennisville",
+            "date": "2006-06-29",
+            "email": "rerum_tavares@outlook.com",
+            "firstname": "Louisa",
+            "phone": "636.776.7731",
+            "productId": 2,
+            "rating": 2,
+            "surname": "Karina",
+            "textAdvantages": "once even case egg solution jump with my moment quidem plain product rule learn ran main complete energy compare enim",
+            "textDefects": "stop oil hill chick master kept rain incidunt same length turn try dictionary print amet music",
+            "textGeneral": "top mollitia fear he group of asperiores invent rerum ipsum rock present race old est insect week come sun note sed sense"
+        },
+        {
+            "city": "Iskut",
+            "date": "2083-12-13",
+            "email": "explicabo@yahoo.com",
+            "firstname": "Avery",
+            "phone": "(115) 843-8007 x8057",
+            "productId": 3,
+            "rating": 4,
+            "surname": "Wanda",
+            "textAdvantages": "add repudiandae nature why on leave nation town grand science milk mass room arrive heard join man great magnam rub",
+            "textDefects": "them thick exercitationem laborum lot dark delectus miss insect atom rather wide fight white noon second",
+            "textGeneral": "imagine inventore south port spell dad nothing maiores post ready picture measure my touch perferendis eos unit forward thought before moon accusantium"
+        },
+        {
+            "textAdvantages": "Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, ",
+            "textDefects": "Lorem Ipsum - это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lo",
+            "textGeneral": "\n\nМногие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так",
+            "firstname": "Kirill",
+            "surname": "Malahov",
+            "email": "malahovk@gmail.com",
+            "id": 5667374
+        },
+        {
+            "textAdvantages": "Lorem Ipsum - это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lo",
+            "textDefects": "Lorem Ipsum - это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lo",
+            "textGeneral": "Lorem Ipsum - это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lo",
+            "firstname": "Kirill",
+            "surname": "Malahov",
+            "email": "hotice@lenta.ru",
+            "id": 3669645,
+            "rating": 4
+        },
+        {
+            "firstname": "Kirill",
+            "surname": "Malahov",
+            "email": "malahovk@gmail.com",
+            "rating": 5,
+            "textAdvantages": "Код ответа сервера 500 Internal Server Error  указывает на то, что сервер столкнулся с неожиданной ошибкой, которая помешала ему выполнить запрос.",
+            "textDefects": "Код ответа сервера 500 Internal Server Error  указывает на то, что сервер столкнулся с неожиданной ошибкой, которая помешала ему выполнить запрос.",
+            "textGeneral": "Код ответа сервера 500 Internal Server Error  указывает на то, что сервер столкнулся с неожиданной ошибкой, которая помешала ему выполнить запрос.",
+            "id": 6859692,
+            "productId": 0
+        },
+        {
+            "textAdvantages": "productId",
+            "textDefects": "productId",
+            "textGeneral": "productId",
+            "firstname": "Kirill",
+            "surname": "Malahov",
+            "email": "hotice@lenta.ru",
+            "id": 3101055,
+            "productId": "01910538"
+        },
+        {
+            "surname": "Malahov",
+            "textGeneral": "asdasd asdas cxzc xzd erew re rew rew rew rew rew rew rew",
+            "email": "hotice@lenta.ru",
+            "id": 9899438,
+            "productId": "1"
+        },
+        {
+            "email": "hotice@lenta.ru",
+            "surname": "Malahov",
+            "firstname": "Kirill",
+            "textGeneral": "Also cross card black sight degree turn. Rail incidunt decimal operate omnis hand recusandae. Order quidem own star him pose cause. Character.",
+            "textAdvantages": "Also cross card black sight degree turn. Rail incidunt decimal operate omnis hand recusandae. Order quidem own star him pose cause. Character.",
+            "textDefects": "Also cross card black sight degree turn. Rail incidunt decimal operate omnis hand recusandae. Order quidem own star him pose cause. Character.",
+            "id": 4466159,
+            "productId": "1"
+        },
+        {
+            "textGeneral": "Also cross card black sight degree turn.. Rail incidunt decimal operate omnis hand recusandae.. O",
+            "textAdvantages": "Also cross card black sight degree turn.. Rail incidunt decimal operate omnis hand recusandae.. O",
+            "textDefects": "Also cross card black sight degree turn.. Rail incidunt decimal operate omnis hand recusandae.. O",
+            "firstname": "Kirill",
+            "surname": "Malahov",
+            "email": "hotice@lenta.ru",
+            "rating": "asd",
+            "id": 9707878,
+            "productId": "1"
         }
-      ],
-      "rating": 4.2,
-      "reviews": [
-        {},
-        {}
-      ]
-    }
-  },
-  "news": [
-    {
-      "id": 1,
-      "item-title": "QCYBER MOBILE: оторвись от проводов! QCYBER MOBILE: оторвись от проводов!",
-      "item-image": "news_item_image_1.jpg",
-      "item-date": "29.04.2021",
-      "item-datetime": "2021-04-29",
-      "item-text": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea",
-      "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
-      "item-link": "#"
-    },
-    {
-      "id": 2,
-      "item-title": "10 удивительных ноутбуков с выставки CES 2019",
-      "item-image": "news_item_image_2.jpg",
-      "item-date": "25.03.2021",
-      "item-datetime": "2021-03-25",
-      "item-text": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea",
-      "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
-      "item-link": "#"
-    },
-    {
-      "id": 3,
-      "item-title": "HUAWEI получила более двадцати наград на международной выставке IFA-2019",
-      "item-image": "news_item_image_3.jpg",
-      "item-date": "29.10.2019",
-      "item-datetime": "2019-10-29",
-      "item-text": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea",
-      "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
-      "item-link": "#"
-    },
-    {
-      "id": 4,
-      "item-title": "123 Going Green Is So Much Simpler Than Most People",
-      "item-image": "news_item_image_4.jpg",
-      "item-date": "29.10.2019",
-      "item-datetime": "2019-10-29",
-      "item-text": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea",
-      "item-text-long": "Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. ",
-      "item-link": "#"
-    },
-    {
-      "id": 5,
-      "item-title": "Duis aute irure dolor in reprehenderit in voluptate",
-      "item-image": "news_item_image_5.jpg",
-      "item-date": "29.10.2019",
-      "item-datetime": "2019-10-29",
-      "item-text": "St. Louis Blues Audio shortcode: “Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-      "item-text-long": "St. Louis Blues Audio shortcode: “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in rep.,  ",
-      "item-link": "#"
-    },
-    {
-      "id": 6,
-      "item-title": "occaecat cupidatat non proident, sunt in",
-      "item-image": "news_item_image_6.jpg",
-      "item-date": "29.10.2019",
-      "item-datetime": "2019-10-29",
-      "item-text": "Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. ",
-      "item-text-long": "Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. ",
-      "item-link": "#"
-    },
-    {
-      "item-title": "Toyota не исключает, что электрический Land Cruiser может стать серийным",
-      "item-text": "Общая инженерная консервативность автоконцерна Toyota Motor привела к тому, что в ассортименте её продукции сохраняются рамные внедорожники с восьмицилиндровыми моторами. Выпускать батарейные электромобили японский гигант пока тоже не особо торопится, но существующий в единственном варианте электрический вариант Land Cruiser может сделать серийным.",
-      "item-author": "Кирилл Малахов",
-      "id": 4642606
-    },
-    {
-      "item-title": "Превью изображений в постах Twitter теперь отображаются целиком",
-      "item-text": "Социальная сеть Twitter сделала обновлённый дизайн постов с прикреплёнными изображениями доступным для всех пользователей платформы. Теперь превью изображений в постах, которые отображаются в ленте, будут демонстрироваться полностью, а не частично. Информация об этом была опубликована в официальном аккаунте разработчиков соцсети.",
-      "item-author": "Кирилл Малахов",
-      "id": 9050810
-    },
-    {
-      "item-title": "Сервис коротких видео YouTube Shorts стал доступен всем пользователям в США",
-      "item-text": "Сервис коротких видео YouTube Shorts стал доступен всем пользователям в США",
-      "id": 1415759
-    },
-    {
-      "item-title": "fetchData",
-      "item-text": "fetchData",
-      "id": 9213838
-    },
-    {
-      "item-title": "Запустили Modular Scale Viewer",
-      "item-text": "asdas asd as das das as as as das",
-      "item-author": "Kirill",
-      "id": 6320802
-    },
-    {
-      "item-title": "Новость",
-      "item-text": "фыв ффы вфы фы вфы в",
-      "item-author": "Kirill",
-      "id": 5426021
-    },
-    {
-      "item-title": "На gh-pages стал доступен сервис для дизайнеров",
-      "item-text": "Modular ..",
-      "item-author": "Kirill",
-      "id": 4435518
-    }
-  ],
-  "reviews": [
-    {
-      "city": "Many",
-      "date": "2068-11-13",
-      "email": "corporis@outlook.com",
-      "firstname": "Raleigh",
-      "phone": "(807) 481-9570 x827",
-      "productId": 2,
-      "rating": 4,
-      "surname": "Lera",
-      "textAdvantages": "stop sint mine though death facilis accusamus consequatur long doctor fill parent laugh gun minima opposite cell print climb wind",
-      "textDefects": "illo inventore story heart corner done paint offer need middle ipsam method shoulder error probable wait",
-      "textGeneral": "father fruit strange expedita agree quia quis night dog ago voluptatum his felt molestiae stood enemy woman watch heat and two inch"
-    },
-    {
-      "city": "Picture Butte",
-      "date": "2043-12-13",
-      "email": "collin@gmail.com",
-      "firstname": "Destiney",
-      "phone": "611.268.4817",
-      "productId": 3,
-      "rating": 5,
-      "surname": "Jerrod",
-      "textAdvantages": "populate yellow captain if count sail pick came liquid fuga soldier party modi et middle I ab decide would segment",
-      "textDefects": "danger soft young cent sight time fruit explicabo sun weight hurry sapiente century sed separate walk",
-      "textGeneral": "fugit non fair particular piece for nihil led chair tell this between much select broke a experiment cut hic less reprehenderit climb"
-    },
-    {
-      "city": "Clovis",
-      "date": "2016-08-29",
-      "email": "wear_wilfredo@yahoo.com",
-      "firstname": "Ivory",
-      "phone": "(040) 791-3845",
-      "productId": 3,
-      "rating": 5,
-      "surname": "Marcella",
-      "textAdvantages": "north went repellendus cow some et illum excite indicate dignissimos get twenty position practice move fun blow hill organ window",
-      "textDefects": "thin non thing segment similar women figure occur surprise meant locate general est porro had finish",
-      "textGeneral": "feet is quas produce shall see prove autem yellow million ab sound chief hot long some experience general just fact window leg"
-    },
-    {
-      "city": "West Babylon",
-      "date": "2119-08-24",
-      "email": "determine_bridget@hotmail.com",
-      "firstname": "Bertrand",
-      "phone": "089-895-8980 x0593",
-      "productId": 3,
-      "rating": 4,
-      "surname": "Leola",
-      "textAdvantages": "mix success plant porro qui seem should qui view dolorem aut salt me machine chart quo molestiae anger totam sing",
-      "textDefects": "chart road ring clock hole wife ipsa mind level exact say verb yard him north under",
-      "textGeneral": "receive dry huge throw been et tall fat money among arrive sit behind quaerat late place architecto off law poor there officiis"
-    },
-    {
-      "city": "Chevery",
-      "date": "1970-10-26",
-      "email": "est@yahoo.com",
-      "firstname": "Dedric",
-      "phone": "955.461.2935",
-      "productId": 2,
-      "rating": 4,
-      "surname": "Sid",
-      "textAdvantages": "fear clothe ut music subject tiny aspernatur voluptatem work discuss certain fresh sapiente felt voluptatibus neque veniam step next in",
-      "textDefects": "count row shine low electric voluptas even eaque high stead front save able us aut foot",
-      "textGeneral": "winter raise atom such interest pariatur shop minima broad east melody wire show brought numeral finish men glass answer evening condition cent"
-    },
-    {
-      "city": "Coaling",
-      "date": "2007-06-21",
-      "email": "voluptas@gmail.com",
-      "firstname": "Ted",
-      "phone": "701.506.9196",
-      "productId": 3,
-      "rating": 1,
-      "surname": "Shane",
-      "textAdvantages": "warm never land wild water them will straight that weight bird quo soft study non by pair numeral job record",
-      "textDefects": "laudantium nihil tone leave lie play culpa sit band guide pass root doloremque held prove id",
-      "textGeneral": "noon sudden fill practice cook hit seem use large soft told took temporibus summer line clear laborum skill busy length meat rich"
-    },
-    {
-      "city": "Potosi",
-      "date": "2023-09-15",
-      "email": "armand@hotmail.com",
-      "firstname": "Kristin",
-      "phone": "1-997-590-6076 x9922",
-      "productId": 1,
-      "rating": 2,
-      "surname": "Saige",
-      "textAdvantages": "omnis men way give dolor don't support fell hundred hard fair locate melody instrument note rich chief sentence big off",
-      "textDefects": "property measure city sunt begin take port doctor took describe ducimus dad ad voluptas ride complete",
-      "textGeneral": "perspiciatis doctor else quisquam better guide page chart electric third modern save product are call snow reach grew only morning sure slow"
-    },
-    {
-      "city": "Northfield Falls",
-      "date": "2112-07-31",
-      "email": "brought_myra@outlook.com",
-      "firstname": "Eliane",
-      "phone": "716.304.1400 x61697",
-      "productId": 1,
-      "rating": 3,
-      "surname": "Eryn",
-      "textAdvantages": "sit especially tail silent answer fig art order son ipsam quotient women et yes sunt done aut create story grew",
-      "textDefects": "forward settle shall more off continue quite smell esse yellow will brought supply show late were",
-      "textGeneral": "also cross card black sight degree turn rail incidunt decimal operate omnis hand recusandae order quidem own star him pose cause character"
-    },
-    {
-      "city": "Dennisville",
-      "date": "2006-06-29",
-      "email": "rerum_tavares@outlook.com",
-      "firstname": "Louisa",
-      "phone": "636.776.7731",
-      "productId": 2,
-      "rating": 2,
-      "surname": "Karina",
-      "textAdvantages": "once even case egg solution jump with my moment quidem plain product rule learn ran main complete energy compare enim",
-      "textDefects": "stop oil hill chick master kept rain incidunt same length turn try dictionary print amet music",
-      "textGeneral": "top mollitia fear he group of asperiores invent rerum ipsum rock present race old est insect week come sun note sed sense"
-    },
-    {
-      "city": "Iskut",
-      "date": "2083-12-13",
-      "email": "explicabo@yahoo.com",
-      "firstname": "Avery",
-      "phone": "(115) 843-8007 x8057",
-      "productId": 3,
-      "rating": 4,
-      "surname": "Wanda",
-      "textAdvantages": "add repudiandae nature why on leave nation town grand science milk mass room arrive heard join man great magnam rub",
-      "textDefects": "them thick exercitationem laborum lot dark delectus miss insect atom rather wide fight white noon second",
-      "textGeneral": "imagine inventore south port spell dad nothing maiores post ready picture measure my touch perferendis eos unit forward thought before moon accusantium"
-    },
-    {
-      "textAdvantages": "Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, ",
-      "textDefects": "Lorem Ipsum - это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lo",
-      "textGeneral": "\n\nМногие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так",
-      "firstname": "Kirill",
-      "surname": "Malahov",
-      "email": "malahovk@gmail.com",
-      "id": 5667374
-    },
-    {
-      "textAdvantages": "Lorem Ipsum - это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lo",
-      "textDefects": "Lorem Ipsum - это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lo",
-      "textGeneral": "Lorem Ipsum - это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lo",
-      "firstname": "Kirill",
-      "surname": "Malahov",
-      "email": "hotice@lenta.ru",
-      "id": 3669645,
-      "rating": 4
-    },
-    {
-      "firstname": "Kirill",
-      "surname": "Malahov",
-      "email": "malahovk@gmail.com",
-      "rating": 5,
-      "textAdvantages": "Код ответа сервера 500 Internal Server Error  указывает на то, что сервер столкнулся с неожиданной ошибкой, которая помешала ему выполнить запрос.",
-      "textDefects": "Код ответа сервера 500 Internal Server Error  указывает на то, что сервер столкнулся с неожиданной ошибкой, которая помешала ему выполнить запрос.",
-      "textGeneral": "Код ответа сервера 500 Internal Server Error  указывает на то, что сервер столкнулся с неожиданной ошибкой, которая помешала ему выполнить запрос.",
-      "id": 6859692,
-      "productId": 0
-    },
-    {
-      "textAdvantages": "productId",
-      "textDefects": "productId",
-      "textGeneral": "productId",
-      "firstname": "Kirill",
-      "surname": "Malahov",
-      "email": "hotice@lenta.ru",
-      "id": 3101055,
-      "productId": "01910538"
-    },
-    {
-      "surname": "Malahov",
-      "textGeneral": "asdasd asdas cxzc xzd erew re rew rew rew rew rew rew rew",
-      "email": "hotice@lenta.ru",
-      "id": 9899438,
-      "productId": "1"
-    },
-    {
-      "email": "hotice@lenta.ru",
-      "surname": "Malahov",
-      "firstname": "Kirill",
-      "textGeneral": "Also cross card black sight degree turn. Rail incidunt decimal operate omnis hand recusandae. Order quidem own star him pose cause. Character.",
-      "textAdvantages": "Also cross card black sight degree turn. Rail incidunt decimal operate omnis hand recusandae. Order quidem own star him pose cause. Character.",
-      "textDefects": "Also cross card black sight degree turn. Rail incidunt decimal operate omnis hand recusandae. Order quidem own star him pose cause. Character.",
-      "id": 4466159,
-      "productId": "1"
-    },
-    {
-      "textGeneral": "Also cross card black sight degree turn.. Rail incidunt decimal operate omnis hand recusandae.. O",
-      "textAdvantages": "Also cross card black sight degree turn.. Rail incidunt decimal operate omnis hand recusandae.. O",
-      "textDefects": "Also cross card black sight degree turn.. Rail incidunt decimal operate omnis hand recusandae.. O",
-      "firstname": "Kirill",
-      "surname": "Malahov",
-      "email": "hotice@lenta.ru",
-      "rating": "asd",
-      "id": 9707878,
-      "productId": "1"
-    }
-  ]
+    ]
 }

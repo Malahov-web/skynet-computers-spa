@@ -22,4 +22,22 @@ export default {
     getProductById(productid) {
         return axiosInstance.get("/products/" + productid);
     },
+
+    isPropertyDifference(property, productsArray) {
+        // let isPropertyNotEqual;
+        // let propertyValue;
+        // let propertyValue = productSpecsObj[0][property]['value'];
+
+        for (let i = 1; i < productsArray.length; i++) {
+
+            let propertyValueCurrent = productsArray[i]['specificationsFull'][property]['value']
+            let propertyValuePrev = productsArray[i - 1]['specificationsFull'][property]['value']
+
+            if (propertyValueCurrent != propertyValuePrev) {
+                return true
+            }
+        }
+
+        return false
+    }
 };

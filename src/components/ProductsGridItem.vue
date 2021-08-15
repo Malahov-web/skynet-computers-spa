@@ -16,9 +16,9 @@
 
     <ProductCode :productCode="product.id"></ProductCode>
 
-    <ProductRating :productRating="product.rating"></ProductRating>
+    <!-- <ProductRating :productRating="product.rating"></ProductRating> -->
 
-    <BaseRating class="asd"></BaseRating>
+    <BaseRating class="asd" :rating="product.rating"></BaseRating>
 
     <ProductPrice
       :price="product.price"
@@ -38,7 +38,7 @@ import ProductImage from "@/components/product/ProductImage.vue";
 import ProductTitle from "@/components/product/ProductTitle.vue";
 import ProductParameters from "@/components/product/ProductParameters.vue";
 import ProductCode from "@/components/product/ProductCode.vue";
-import ProductRating from "@/components/product/ProductRating.vue";
+// import ProductRating from "@/components/product/ProductRating.vue";
 import ProductPrice from "@/components/product/ProductPrice.vue";
 import ProductButton from "@/components/product/ProductButton.vue";
 import ProductAvailability from "@/components/product/ProductAvailability.vue";
@@ -59,7 +59,7 @@ export default {
     ProductTitle,
     ProductParameters,
     ProductCode,
-    ProductRating,
+    // ProductRating,
     ProductPrice,
     ProductButton,
     ProductAvailability,

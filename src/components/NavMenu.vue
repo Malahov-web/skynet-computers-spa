@@ -34,6 +34,10 @@
           <router-link :to="{ name: 'NewsPage' }">News</router-link>
         </li>
 
+        <li class="menu-main__item">
+          <router-link :to="{ name: 'ComparePage' }">Compare</router-link>
+        </li>
+
         <div class="dropdown" style="">
           <ul class="dropdown__list js-dropdown_list" style=""></ul>
         </div>

@@ -177,3 +177,29 @@ minLength видимо не работает из--за конфликта liste
   Refact BaseSelect - см. real-world-next-level
   Нужно также привязать значение и передавать через v-model и input
   чтобы работала валидация!
+
+
+--
+
+чт
+  compare - Проектирование / Функционал, Модель данных, (1)
+  compare - ComparePage.vue;  modules - products.js : update, ds.json :update (1)
+
+  ComparePage.vue; (1) 
+  getDifferenceProperties(), isPropertyDifference() (1)
+  ComparePage.vue - setSpecificationsProcutsCompareAll(), setSpecificationsProcutsCompareDifference (1)
+
+..далее
+вывести в шаблон, нарезать компоненты дочерние, добавить уже имеющиеся для Product***.vue 
+
+пт
+  db.json :update; Проектирование - Products - Data.txt21 999 (1)
+  ComparePage.vue,  ProductsGridV2.vue, ProductsGridItemV2.vue (1)
+  ProductsGridV2.vue, ProductsGridItemV2.vue, (1)
+
+..git commit
+..rename    ProductsGridV2  -> ProductsCompare
+создать папку compare в src ?
+
+  ProductsGridV2
+  ProductsGridItemV2

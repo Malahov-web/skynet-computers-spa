@@ -18,6 +18,9 @@ import BaseSetRating from "@/components/base/BaseSetRating.vue";
 import BaseInput from "@/components/base/BaseInput.vue";
 import BaseTextarea from "@/components/base/BaseTextarea.vue";
 
+import BaseButtonBuy from '@/components/base/BaseButtonBuy.vue';
+
+
 // Vue.component( 'BaseButtonBuy', BaseButtonBuy);
 // Vue.component( 'BaseSelect', BaseSelect);
 // Vue.component( 'BaseRating', BaseRating);
@@ -28,6 +31,7 @@ Vue.component('BaseSetRating', BaseSetRating);
 Vue.component('BaseInput', BaseInput);
 Vue.component('BaseTextarea', BaseTextarea);
 
+Vue.component('BaseButtonBuy', BaseButtonBuy);
 
 // Automatic Global registration
 import upperFirst from 'lodash/upperFirst'
