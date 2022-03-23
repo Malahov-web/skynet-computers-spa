@@ -39,5 +39,24 @@ export default {
         }
 
         return false
-    }
+    },
+
+    groupObjectByField(object, field) {
+        let groupedObject = {};
+
+        for (const key in object) {
+            let subObject = object[key];
+            let fieldValue = subObject[field];
+
+            if (!Object.hasOwnProperty.call(groupedObject, fieldValue)) {
+                groupedObject[fieldValue] = {};
+            }
+            // debugger
+
+            groupedObject[fieldValue][key] = subObject;
+        }
+
+        return groupedObject;
+    },
+
 };

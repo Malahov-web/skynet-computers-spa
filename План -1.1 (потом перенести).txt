@@ -193,13 +193,23 @@ minLength видимо не работает из--за конфликта liste
 вывести в шаблон, нарезать компоненты дочерние, добавить уже имеющиеся для Product***.vue 
 
 пт
-  db.json :update; Проектирование - Products - Data.txt21 999 (1)
+  db.json :update; Проектирование - Products - Data.txt (1)
   ComparePage.vue,  ProductsGridV2.vue, ProductsGridItemV2.vue (1)
   ProductsGridV2.vue, ProductsGridItemV2.vue, (1)
 
-..git commit
-..rename    ProductsGridV2  -> ProductsCompare
-создать папку compare в src ?
+  git commit; CompareSpecifications.vue (1)
+  services - ProductsServices.js: add groupObjectByField() (1)
+  CompareSpecificationsTable.vue, BaseTooltip.vue (1)
 
-  ProductsGridV2
-  ProductsGridItemV2
++ rename    ProductsGridV2  -> ProductsCompare
++ создать папку compare в src ?
++ сгруппировать specifications
+
+
+..далее
+..git commit
+..добавить таблицу вправо в контейнер под продукт
+..сделать выбор режима (как-то))
+
+
+

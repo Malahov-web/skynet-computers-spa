@@ -20,6 +20,8 @@ import BaseTextarea from "@/components/base/BaseTextarea.vue";
 
 import BaseButtonBuy from '@/components/base/BaseButtonBuy.vue';
 
+import BaseTooltip from '@/components/base/BaseTooltip.vue';
+
 
 // Vue.component( 'BaseButtonBuy', BaseButtonBuy);
 // Vue.component( 'BaseSelect', BaseSelect);
@@ -32,6 +34,8 @@ Vue.component('BaseInput', BaseInput);
 Vue.component('BaseTextarea', BaseTextarea);
 
 Vue.component('BaseButtonBuy', BaseButtonBuy);
+
+Vue.component('BaseTooltip', BaseTooltip);
 
 // Automatic Global registration
 import upperFirst from 'lodash/upperFirst'

@@ -41,7 +41,18 @@
           <div class="mv_12 mh_6 tb_4 ds_3 compare-left">
             <div class="compare__cap"></div>
 
-            <div class="compare__specifications">
+            <CompareSpecifications
+              class="compare__specifications"
+              :specificationsProcutsCompareAll="specificationsProcutsCompareAll"
+              :specificationsProcutsCompareActive="
+                specificationsProcutsCompareActive
+              "
+              :specificationsProcutsCompareDifference="
+                specificationsProcutsCompareDifference
+              "
+            ></CompareSpecifications>
+
+            <div class="compare__specifications" style="display: none">
               <div class="compare__specifications-title g-subtitle h4">
                 Общие характеристики:
               </div>
@@ -396,15 +407,17 @@
 
 <script>
 import ProductsServices from "@/services/ProductsServices.js";
-import ProductsGridV2 from "@/components/product/ProductsGridV2.vue";
+// import ProductsGridV2 from "@/components/product/ProductsGridV2.vue";
 import CompareProducts from "@/components/compare/CompareProducts.vue";
+import CompareSpecifications from "@/components/compare/CompareSpecifications.vue";
 
 export default {
   name: "ComparePage",
 
   components: {
-    ProductsGridV2,
+    // ProductsGridV2,
     CompareProducts,
+    CompareSpecifications,
   },
 
   data() {

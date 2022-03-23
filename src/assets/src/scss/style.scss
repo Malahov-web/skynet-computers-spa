@@ -497,3 +497,45 @@ input:-internal-autofill-selected {
 //         outline: none !important;
 //     }
 // }
+
+
+.tooltip-button {
+    position: relative;
+}
+
+.tooltip {
+    z-index: $zindex_icon;
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    width: 300px;
+
+    padding: 2em 2em;
+    background-color: $grey_super_light; // $white;
+    background-color:  $white;
+    border: 1px solid $grey_lighter;
+    // box-shadow: shadow;
+    @extend %shadow;
+
+    font-size: $font_small;
+    line-height: $l_h;
+
+    color: $text;
+
+    &__remove {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        color: $error_color;
+
+        // State
+        opacity: 0;
+        // @extend .product__remove;
+        
+    }
+    &:hover &__remove {
+        opacity: 1;
+    }
+
+
+}
