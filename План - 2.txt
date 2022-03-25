@@ -1,0 +1,26 @@
+
+
+ср 23.03
+  Обзор проекта (0.5)
+
+  Обзор проекта, CompareProducts.vue (1)
+..CompareProducts.vue, ProductCompareSpecifications.vue (1)
+
+чт
+  ProductCompareSpecifications.vue (0.5)
+
+..ProductCompareSpecifications (2)
+
+..CSS 
+селектор четного элемента
+.compare__specifications-table tr:nth-child(2n+1) td
+перебивает селектор hover
+compare__specifications-table tr td.hover {
+
+
+..далее
+рефакторинг,
+вынести части д-х в store,
+уменьшить кол-во props, особенно specificationsProcutsCompareDifference, compareModeActive и т.п.
+пересмотреть шаблоны ProductCompareSpecifications - ProductCompareSpecificationsTable ?
+

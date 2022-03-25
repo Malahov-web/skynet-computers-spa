@@ -43,6 +43,7 @@
 
             <CompareSpecifications
               class="compare__specifications"
+              :compareModeActive="compareModeActive"
               :specificationsProcutsCompareAll="specificationsProcutsCompareAll"
               :specificationsProcutsCompareActive="
                 specificationsProcutsCompareActive
@@ -148,6 +149,14 @@
             <CompareProducts
               class="compare__products"
               v-bind:products="products"
+              :compareModeActive="compareModeActive"
+              :specificationsProcutsCompareAll="specificationsProcutsCompareAll"
+              :specificationsProcutsCompareActive="
+                specificationsProcutsCompareActive
+              "
+              :specificationsProcutsCompareDifference="
+                specificationsProcutsCompareDifference
+              "
             ></CompareProducts>
 
             <div

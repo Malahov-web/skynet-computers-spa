@@ -4,8 +4,12 @@
       class="asd"
       v-for="(specsGroup, key) in specificationsByGroups"
       :key="'group-' + key"
+      :compareModeActive="compareModeActive"
       :specsGroup="specsGroup"
       :specsGroupInfo="specificationsGroups[key]"
+      :specificationsProcutsCompareDifference="
+        specificationsProcutsCompareDifference
+      "
     ></CompareSpecificationsTable>
   </div>
 </template>
@@ -23,6 +27,11 @@ export default {
   },
 
   props: {
+    compareModeActive: {
+      type: Number,
+      defalut: 0,
+    },
+
     specificationsProcutsCompareAll: {
       type: Array,
       default: () => {

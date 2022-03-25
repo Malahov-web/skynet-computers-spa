@@ -3106,6 +3106,9 @@ body .selectric-items {
 
         // 
         height: 377px; // skynet-computers-app
+
+        // 
+        height: 355px; // skynet-computers-app        
     }
 
     &-right {
@@ -3226,7 +3229,7 @@ body .selectric-items {
             color: $text;           
         }
         td.hover {
-            background-color: transparentize($accent, 1-0.2); // d3e9f8 ;
+            background-color: transparentize($accent, 1-0.2) !important; // d3e9f8 ;
             color: $accent_dark !important;
 
             .tooltip {

@@ -45,11 +45,29 @@
           ></ProductAvailability>
         </template>
       </ProductsGridItemV2>
+
+      <ProductCompareSpecifications
+        class="asd"
+        :compareModeActive="compareModeActive"
+        :specificationsValuesByGroups="
+          // this.setSpecificationsValuesByGroups(product)
+          setSpecificationsValuesByGroups
+        "
+        :specificationsFull="product.specificationsFull"
+        :specificationsByGroups="specificationsByGroups"
+        :specificationsProcutsCompareDifference="
+          specificationsProcutsCompareDifference
+        "
+      >
+        таблица
+      </ProductCompareSpecifications>
     </div>
   </div>
 </template>
 
 <script>
+import ProductsServices from "@/services/ProductsServices.js";
+
 // import ProductsGridItem from "@/components/ProductsGridItem.vue";
 import ProductsGridItemV2 from "@/components/product/ProductsGridItemV2.vue";
 
@@ -59,6 +77,8 @@ import ProductTitle from "@/components/product/ProductTitle.vue";
 import ProductPrice from "@/components/product/ProductPrice.vue";
 import ProductButton from "@/components/product/ProductButton.vue";
 import ProductAvailability from "@/components/product/ProductAvailability.vue";
+
+import ProductCompareSpecifications from "@/components/compare/ProductCompareSpecifications.vue";
 
 export default {
   name: "CompareProducts",
@@ -73,6 +93,8 @@ export default {
     ProductPrice,
     ProductButton,
     ProductAvailability,
+
+    ProductCompareSpecifications,
   },
   props: {
     products: {
@@ -80,6 +102,61 @@ export default {
       default: () => {
         return {};
       },
+    },
+
+    compareModeActive: {
+      type: Number,
+      defalut: 0,
+    },
+
+    specificationsProcutsCompareAll: {
+      type: Array,
+      default: () => {
+        return [];
+      },
+    },
+
+    specificationsProcutsCompareDifference: {
+      type: Array,
+      default: () => {
+        return [];
+      },
+    },
+  },
+
+  computed: {
+    specifications() {
+      return this.$store.state.products_module.specifications;
+    },
+
+    specificationsGroups() {
+      return this.$store.state.products_module.specificationsGroups;
+    },
+
+    specificationsByGroups() {
+      return this.groupProperties();
+    },
+
+    // specificationsValuesByGroups() {
+    //   return this.setSpecificationsValuesByGroup();
+    // },
+  },
+
+  methods: {
+    // setSpecificationsValuesByGroup(product) {
+    //   //   product.specificationsFull;
+    //   //   return { yeah: 1 };
+    //   return product.specificationsFull;
+    // },
+
+    groupProperties() {
+      //   let specs = this.specificationsProcutsCompareAll; // -
+      let specs = this.specifications; // +
+      let groupedSpecs;
+      //   let groupedSpecs = this.groupByField(specs); // my custom methodgroupByField() is for Arrays
+      //   groupedSpecs = groupBy(specs, "group"); // - Lodash method for Arrays, возвращает эл-ты сгруппированые в массивы, у нас теряется имя-ключ
+      groupedSpecs = ProductsServices.groupObjectByField(specs, "group");
+      return groupedSpecs;
     },
   },
 };

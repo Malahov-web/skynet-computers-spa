@@ -120,12 +120,12 @@
                     "value": "dell",
                     "group": 0
                 },
-                "producingСountry ": {
+                "producingСountry": {
                     "title": "Страна производитель",
                     "value": "Китай",
                     "group": 0
                 },
-                "operatingSystem ": {
+                "operatingSystem": {
                     "title": "Операционная система",
                     "value": "Mac OS",
                     "group": 0
@@ -231,12 +231,12 @@
                     "value": "ASUS",
                     "group": 0
                 },
-                "producingСountry ": {
+                "producingСountry": {
                     "title": "Страна производитель",
                     "value": "Китай",
                     "group": 0
                 },
-                "operatingSystem ": {
+                "operatingSystem": {
                     "title": "Операционная система",
                     "value": "Mac OS",
                     "group": 0
@@ -361,12 +361,12 @@
                     "value": "LG",
                     "group": 0
                 },
-                "producingСountry ": {
+                "producingСountry": {
                     "title": "Страна производитель",
                     "value": "Китай",
                     "group": 0
                 },
-                "operatingSystem ": {
+                "operatingSystem": {
                     "title": "Операционная система",
                     "value": "Windows 10",
                     "group": 0
@@ -479,12 +479,12 @@
                     "value": "LG",
                     "group": 0
                 },
-                "producingСountry ": {
+                "producingСountry": {
                     "title": "Страна производитель",
                     "value": "Китай",
                     "group": 0
                 },
-                "operatingSystem ": {
+                "operatingSystem": {
                     "title": "Операционная система",
                     "value": "Windows 10",
                     "group": 0
