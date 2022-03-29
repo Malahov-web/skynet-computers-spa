@@ -20,20 +20,7 @@
       <div class="container compare">
         <div class="row compare__header">
           <div class="mv_12">
-            <div class="compare__tabs tabs">
-              <ul class="tabs__controls js-tabs__controls">
-                <li
-                  class="tabs__controls-button"
-                  :data-target="mode['name']"
-                  v-for="(mode, key) in compareModes"
-                  :key="mode['name'] + key"
-                  @click.prevent="setCompareMode(key)"
-                  :class="{ active: key == compareModeActive }"
-                >
-                  <a href="#">{{ mode["title"] }}</a>
-                </li>
-              </ul>
-            </div>
+            <CompareControls class=""></CompareControls>
           </div>
         </div>
 
@@ -43,7 +30,6 @@
 
             <CompareSpecifications
               class="compare__specifications"
-              :compareModeActive="compareModeActive"
               :specificationsProcutsCompareAll="specificationsProcutsCompareAll"
               :specificationsProcutsCompareActive="
                 specificationsProcutsCompareActive
@@ -149,7 +135,6 @@
             <CompareProducts
               class="compare__products"
               v-bind:products="products"
-              :compareModeActive="compareModeActive"
               :specificationsProcutsCompareAll="specificationsProcutsCompareAll"
               :specificationsProcutsCompareActive="
                 specificationsProcutsCompareActive
@@ -419,6 +404,7 @@ import ProductsServices from "@/services/ProductsServices.js";
 // import ProductsGridV2 from "@/components/product/ProductsGridV2.vue";
 import CompareProducts from "@/components/compare/CompareProducts.vue";
 import CompareSpecifications from "@/components/compare/CompareSpecifications.vue";
+import CompareControls from "@/components/compare/CompareControls.vue";
 
 export default {
   name: "ComparePage",
@@ -427,26 +413,11 @@ export default {
     // ProductsGridV2,
     CompareProducts,
     CompareSpecifications,
+    CompareControls,
   },
 
   data() {
     return {
-      compareModeActive: 0,
-      compareModes: {
-        0: {
-          name: "all",
-          title: "Все параметры",
-        },
-        1: {
-          name: "general",
-          title: "Основные",
-        },
-        2: {
-          name: "difference",
-          title: "Различия",
-        },
-      },
-
       specificationsProcutsCompareAll: [],
       //   specificationsProcutsCompareAll: this.setSpecificationsProcutsCompareAll(),
       specificationsProcutsCompareActive: [],
@@ -490,10 +461,6 @@ export default {
   },
 
   methods: {
-    setCompareMode(key) {
-      this.compareModeActive = key;
-    },
-
     productsCompare() {
       return this.products;
     },

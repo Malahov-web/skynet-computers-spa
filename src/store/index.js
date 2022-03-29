@@ -8,6 +8,7 @@ import news from "@/store/modules/news.js";
 import products from "@/store/modules/products.js";
 import categories from "@/store/modules/categories.js";
 import reviews from "@/store/modules/reviews.js";
+import compare from "@/store/modules/compare.js";
 
 // import notifications from "@/store/modules/notifications.js";
 // import * from "@/store/modules/notifications.js";
@@ -25,7 +26,8 @@ export default new Vuex.Store({
         // categories: categories,
         categories,
         notifications,
-        reviews
+        reviews,
+        compare
 
     },
 

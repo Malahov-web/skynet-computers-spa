@@ -39,11 +39,6 @@ export default {
   name: "ProductCompareSpecificationsTable",
 
   props: {
-    compareModeActive: {
-      type: Number,
-      defalut: 0,
-    },
-
     group: {
       type: Object,
       default: () => {},
@@ -55,6 +50,20 @@ export default {
         return [];
       },
     },
+  },
+
+  computed: {
+    // compareModeActive() {
+    //   return this.$store.state.compare.compareModeActive;
+    //   //   return this.$store.dispatch("getCompareModeActive"); // -
+    // },
+    compareModeActive() {
+      return this.$store.getters.getCompareModeActive;
+    },
+
+    // specificationsGroups() {
+    //   return this.$store.state.products_module.specificationsGroups;
+    // },
   },
 
   methods: {

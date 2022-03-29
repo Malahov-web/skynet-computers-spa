@@ -48,7 +48,6 @@
 
       <ProductCompareSpecifications
         class="asd"
-        :compareModeActive="compareModeActive"
         :specificationsValuesByGroups="
           // this.setSpecificationsValuesByGroups(product)
           setSpecificationsValuesByGroups
@@ -102,11 +101,6 @@ export default {
       default: () => {
         return {};
       },
-    },
-
-    compareModeActive: {
-      type: Number,
-      defalut: 0,
     },
 
     specificationsProcutsCompareAll: {

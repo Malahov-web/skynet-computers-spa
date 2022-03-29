@@ -76,11 +76,6 @@ export default {
       default: () => {},
     },
 
-    compareModeActive: {
-      type: Number,
-      defalut: 0,
-    },
-
     specificationsProcutsCompareDifference: {
       type: Array,
       default: () => {
@@ -93,6 +88,12 @@ export default {
     return {
       activeTooltip: "",
     };
+  },
+
+  computed: {
+    compareModeActive() {
+      return this.$store.getters.getCompareModeActive;
+    },
   },
 
   methods: {

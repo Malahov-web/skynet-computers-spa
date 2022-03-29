@@ -4,57 +4,12 @@
       class="asd"
       v-for="(group, key) in specificationsValuesByGroups"
       :key="key"
-      :compareModeActive="compareModeActive"
       :group="group"
       :specificationsProcutsCompareDifference="
         specificationsProcutsCompareDifference
       "
     >
     </ProductCompareSpecificationsTable>
-
-    <div
-      style="display: none"
-      v-if="compareModeActive == 0"
-      class=""
-      v-for="(group, key) in specificationsValuesByGroups"
-      :key="key"
-    >
-      <div class="compare__specifications-title g-subtitle h4">.</div>
-
-      <table class="compare__specifications-table">
-        <tr v-for="(value, key2) in group" :key="key2">
-          <!-- <td>Производитель</td> -->
-          <!-- Вывести класс, если isDifference(key2) -->
-          <td v-bind:class="{ hover: isDifference(key2) }">
-            {{ value }}
-          </td>
-        </tr>
-      </table>
-    </div>
-
-    <div
-      style="display: none"
-      v-if="compareModeActive == 2"
-      class=""
-      v-for="(group, key) in specificationsValuesByGroups"
-      :key="key"
-    >
-      <div class="compare__specifications-title g-subtitle h4">.</div>
-
-      <table class="compare__specifications-table">
-        <tr
-          v-for="(value, key2) in group"
-          :key="key2"
-          v-if="isDifference(key2)"
-        >
-          <!-- <td>Производитель</td> -->
-          <!-- Вывести класс, если isDifference(key2) -->
-          <td v-bind:class="{ __hover: isDifference(key2) }">
-            {{ value }}
-          </td>
-        </tr>
-      </table>
-    </div>
   </div>
 </template>
 
@@ -94,11 +49,6 @@ export default {
       default: () => {
         return [];
       },
-    },
-
-    compareModeActive: {
-      type: Number,
-      defalut: 0,
     },
   },
 

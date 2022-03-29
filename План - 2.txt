@@ -9,7 +9,7 @@
 чт
   ProductCompareSpecifications.vue (0.5)
 
-..ProductCompareSpecifications (2)
+ ProductCompareSpecifications (2)
 
 ..CSS 
 селектор четного элемента
@@ -24,3 +24,17 @@ compare__specifications-table tr td.hover {
 уменьшить кол-во props, особенно specificationsProcutsCompareDifference, compareModeActive и т.п.
 пересмотреть шаблоны ProductCompareSpecifications - ProductCompareSpecificationsTable ?
 
+пт
+  ProductCompareSpecificationsTable (1)
+  modules - compare.js - refact: ProductCompareSpecificationsTable,.ProductCompareSpecifications  (1)
+
+..далее 
+  продолжить рефакторинг с compareModeActive для цепочки шаблонов CompareSpecificationsTable
+
+--
+
+пн
+  modules - compare.js - refact: CompareSpecificationsTable, CompareSpecifications , ComparePage (1)
+
+можно ли вставить сюда базовый комп-т BaseTabs?
+или по сути это не табы? а табы только визуально?
