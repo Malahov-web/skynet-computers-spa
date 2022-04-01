@@ -19,16 +19,16 @@
 export default {
   name: "CompareControls",
 
-  props: {
-    //   propName: {
-    //       type: Number,
-    //       default:
-    //   },
-  },
+  //   props: {
+  //     //   propName: {
+  //     //       type: Number,
+  //     //       default:
+  //     //   },
+  //   },
 
   data() {
     return {
-      compareModeActive: 0,
+      //   compareModeActive: 0,
       compareModes: {
         0: {
           name: "all",
@@ -44,6 +44,12 @@ export default {
         },
       },
     };
+  },
+
+  computed: {
+    compareModeActive() {
+      return this.$store.getters.getCompareModeActive;
+    },
   },
 
   methods: {

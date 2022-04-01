@@ -6,9 +6,6 @@
       :key="'group-' + key"
       :specsGroup="specsGroup"
       :specsGroupInfo="specificationsGroups[key]"
-      :specificationsProcutsCompareDifference="
-        specificationsProcutsCompareDifference
-      "
     ></CompareSpecificationsTable>
   </div>
 </template>
@@ -26,29 +23,13 @@ export default {
   },
 
   props: {
-    specificationsProcutsCompareAll: {
-      type: Array,
-      default: () => {
-        return [];
-      },
-    },
     specificationsProcutsCompareActive: {
       type: Array,
       default: () => {
         return [];
       },
     },
-    specificationsProcutsCompareDifference: {
-      type: Array,
-      default: () => {
-        return [];
-      },
-    },
   },
-
-  //   created () {
-  //       ;
-  //   },
 
   computed: {
     specifications() {
@@ -68,7 +49,6 @@ export default {
     // name() {},
 
     groupProperties() {
-      //   let specs = this.specificationsProcutsCompareAll; // -
       let specs = this.specifications; // +
 
       // [ 'diagonal', 'prop2', 'brand']

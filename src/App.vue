@@ -135,4 +135,9 @@ a.menu-main__item--active {
   width: 100%;
   height: 10px;
 }
+
+// compare
+.product-outer .compare__specifications-title {
+  opacity: 0;
+}
 </style>

@@ -54,9 +54,6 @@
         "
         :specificationsFull="product.specificationsFull"
         :specificationsByGroups="specificationsByGroups"
-        :specificationsProcutsCompareDifference="
-          specificationsProcutsCompareDifference
-        "
       >
         таблица
       </ProductCompareSpecifications>
@@ -100,20 +97,6 @@ export default {
       type: Object,
       default: () => {
         return {};
-      },
-    },
-
-    specificationsProcutsCompareAll: {
-      type: Array,
-      default: () => {
-        return [];
-      },
-    },
-
-    specificationsProcutsCompareDifference: {
-      type: Array,
-      default: () => {
-        return [];
       },
     },
   },

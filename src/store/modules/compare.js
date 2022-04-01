@@ -1,13 +1,25 @@
 
 export default {
     state: {
-        compareModeActive: 2
+        compareModeActive: 2,
+
+        specificationsProcutsCompareDifference: [],
+        specificationsProcutsCompareAll: [],
+        specificationsProcutsCompareGeneral: []
     },
     getters: {
 
 
+
         getCompareModeActive: (state) => {
             return state.compareModeActive;
+        },
+
+        getSpecificationsProcutsCompareDifference: (state) => {
+            return state.specificationsProcutsCompareDifference;
+        },
+        getSpecificationsProcutsCompareAll: (state) => {
+            return state.specificationsProcutsCompareAll;
         },
 
     },
@@ -18,6 +30,14 @@ export default {
         SET_COMPARE_MODE(state, compareModeActive) {
             state.compareModeActive = compareModeActive;
         },
+
+        SET_SPECIFICATIONS_PROCUTS_COMPARE_DIFFERENCE(state, specificationsProcutsCompareDifference) {
+            state.specificationsProcutsCompareDifference = specificationsProcutsCompareDifference;
+        },
+        SET_SPECIFICATIONS_PROCUTS_COMPARE_ALL(state, specificationsProcutsCompareAll) {
+            state.specificationsProcutsCompareAll = specificationsProcutsCompareAll;
+        },
+
     },
     actions: {
         // updateValue({ commit }, payload) {
@@ -36,5 +56,13 @@ export default {
             // alert(); // +
             commit("SET_COMPARE_MODE", value);
         },
+
+        setSpecificationsProcutsCompareDifference({ commit }, value) {
+            commit("SET_SPECIFICATIONS_PROCUTS_COMPARE_DIFFERENCE", value);
+        },
+        setSpecificationsProcutsCompareAll({ commit }, value) {
+            commit("SET_SPECIFICATIONS_PROCUTS_COMPARE_ALL", value);
+        },
+
     }
 };

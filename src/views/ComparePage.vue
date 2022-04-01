@@ -34,108 +34,13 @@
               :specificationsProcutsCompareActive="
                 specificationsProcutsCompareActive
               "
-              :specificationsProcutsCompareDifference="
-                specificationsProcutsCompareDifference
-              "
             ></CompareSpecifications>
-
-            <div class="compare__specifications" style="display: none">
-              <div class="compare__specifications-title g-subtitle h4">
-                Общие характеристики:
-              </div>
-              <table class="compare__specifications-table">
-                <tr>
-                  <td>Производитель</td>
-                  <!-- <td>Apple</td> -->
-                </tr>
-                <tr>
-                  <td>Страна производитель</td>
-                  <!-- <td>Китай</td> -->
-                </tr>
-                <tr>
-                  <td>Операционная система</td>
-                  <!-- <td>Mac OS</td> -->
-                </tr>
-                <tr>
-                  <td>Оперативная память</td>
-                  <!-- <td>8 Гб</td> -->
-                </tr>
-                <tr>
-                  <td>Объем памяти видеокарты</td>
-                  <!-- <td>512 Гб</td> -->
-                </tr>
-                <tr>
-                  <td>Разрешение экрана</td>
-                  <!-- <td>2560 х 1440</td> -->
-                </tr>
-                <tr>
-                  <td>Постоянная память</td>
-                  <!-- <td>1 Тб HDD + 512 Гб SSD</td> -->
-                </tr>
-              </table>
-
-              <div class="compare__specifications-title g-subtitle h4">
-                Экран:
-              </div>
-              <table class="compare__specifications-table">
-                <tr>
-                  <td>
-                    Диагональ
-                    <span class="tooltip-button"
-                      ><i class="themify themify-plus _themify-help"></i
-                    ></span>
-                  </td>
-                  <!-- <td>Apple</td> -->
-                </tr>
-
-                <tr>
-                  <td class="hover">
-                    Разрешение экрана
-                    <span
-                      class="tooltip-button"
-                      title="Нажмите чтобы увидеть подсказку"
-                      ><i class="themify themify-plus _themify-help"></i
-                    ></span>
-                  </td>
-                  <!-- <td>Apple</td> -->
-                </tr>
-
-                <tr>
-                  <td>
-                    Тип матрицы
-                    <span class="tooltip-button"
-                      ><i class="themify themify-plus _themify-help"></i
-                    ></span>
-                  </td>
-                  <!-- <td>Apple</td> -->
-                </tr>
-                <tr>
-                  <td>
-                    Подсветка
-                    <span class="tooltip-button"
-                      ><i class="themify themify-plus _themify-help"></i
-                    ></span>
-                  </td>
-                  <!-- <td>Apple</td> -->
-                </tr>
-                <tr>
-                  <td>
-                    Время отклика
-                    <span class="tooltip-button"
-                      ><i class="themify themify-plus _themify-help"></i
-                    ></span>
-                  </td>
-                  <!-- <td>Apple</td> -->
-                </tr>
-              </table>
-            </div>
           </div>
 
           <div class="mv_12 mh_6 tb_8 ds_9 compare-right">
             <CompareProducts
               class="compare__products"
               v-bind:products="products"
-              :specificationsProcutsCompareAll="specificationsProcutsCompareAll"
               :specificationsProcutsCompareActive="
                 specificationsProcutsCompareActive
               "
@@ -143,255 +48,6 @@
                 specificationsProcutsCompareDifference
               "
             ></CompareProducts>
-
-            <div
-              class="row compare__products products-grid"
-              style="display: none"
-            >
-              <div class="mv_12 mh_12 tb_6 ds_4 product-outer">
-                <div class="product product--viewed">
-                  <div class="product__remove-outer">
-                    <a href="#" class="product__remove">
-                      <i class="themify themify-close"></i>
-                    </a>
-                  </div>
-                  <a href="product.html" class="product__image"
-                    ><img src="uploads/products-grid/0185414_3.JPG" alt=""
-                  /></a>
-                  <div class="product__title-outer">
-                    <a href="product.html" class="product__title"
-                      >Материнская плата ASUS M5A78L-M LX3</a
-                    >
-                  </div>
-                  <div class="product__rating-outer">
-                    <div class="product__rating rating" data-value="4">
-                      <ul>
-                        <li class="on"><span></span></li>
-                        <li class="on"><span></span></li>
-                        <li class="on"><span></span></li>
-                        <li class="on"><span></span></li>
-                        <li class="off"><span></span></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="product__footer __row">
-                    <div class="product__price-outer">
-                      <div class="product__price">
-                        <span class="product__price-value">3 530</span>
-                        <span class="product__price-currency">₽</span>
-                      </div>
-                    </div>
-                    <div class="product__button-outer">
-                      <a href="#" class="button button-buy button-buy--small">
-                        <i class="themify themify-shopping-cart"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- <div class="product__price-outer">
-                                <div class="product__price">
-                                    <span class="product__price-value">3 530</span>
-                                    <span class="product__price-currency">₽</span>
-                                </div>
-                            </div> -->
-                  <!-- <div class="product__button-outer">
-                                <a href="" class="product__button button button-buy"><span>В корзину</span></a>
-                            </div> -->
-                  <div class="product__availability product__availability">
-                    наличие:
-                    <span
-                      class="product__availability-value product__availability-value--in-stock"
-                      >в магазине</span
-                    >
-                  </div>
-                </div>
-                <div class="compare__specifications">
-                  <div class="compare__specifications-title g-subtitle h4">
-                    .
-                  </div>
-                  <table class="compare__specifications-table">
-                    <tr>
-                      <!-- <td>Производитель</td> -->
-                      <td>Apple</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Страна производитель</td> -->
-                      <td>Китай</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Операционная система</td> -->
-                      <td>Mac OS</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Оперативная память</td> -->
-                      <td>8 Гб</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Объем памяти видеокарты</td> -->
-                      <td>512 Гб</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Разрешение экрана</td> -->
-                      <td>2560 х 1440</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Постоянная память</td> -->
-                      <td>1 Тб HDD + 512 Гб SSD</td>
-                    </tr>
-                  </table>
-
-                  <div class="compare__specifications-title g-subtitle h4">
-                    .
-                  </div>
-                  <table class="compare__specifications-table">
-                    <tr>
-                      <!-- <td>Производитель</td> -->
-                      <td>23.8"</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Страна производитель</td> -->
-                      <td class="hover">1920x1080</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Операционная система</td> -->
-                      <td>IPS</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Оперативная память</td> -->
-                      <td>WLED</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Объем памяти видеокарты</td> -->
-                      <td>4 мс</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-
-              <div class="mv_12 mh_12 tb_6 ds_4 product-outer">
-                <div class="product product--viewed">
-                  <div class="product__remove-outer">
-                    <a href="#" class="product__remove">
-                      <i class="themify themify-close"></i>
-                    </a>
-                  </div>
-                  <a href="product.html" class="product__image"
-                    ><img src="uploads/products-grid/0185414_3.JPG" alt=""
-                  /></a>
-                  <div class="product__title-outer">
-                    <a href="product.html" class="product__title"
-                      >Материнская плата ASUS M5A78L-M LX3</a
-                    >
-                  </div>
-                  <div class="product__rating-outer">
-                    <div class="product__rating rating" data-value="4">
-                      <ul>
-                        <li class="on"><span></span></li>
-                        <li class="on"><span></span></li>
-                        <li class="on"><span></span></li>
-                        <li class="on"><span></span></li>
-                        <li class="off"><span></span></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="product__footer __row">
-                    <div class="product__price-outer">
-                      <div class="product__price">
-                        <span class="product__price-value">3 530</span>
-                        <span class="product__price-currency">₽</span>
-                      </div>
-                    </div>
-                    <div class="product__button-outer">
-                      <a href="#" class="button button-buy button-buy--small">
-                        <i class="themify themify-shopping-cart"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- <div class="product__price-outer">
-                                <div class="product__price">
-                                    <span class="product__price-value">3 530</span>
-                                    <span class="product__price-currency">₽</span>
-                                </div>
-                            </div> -->
-                  <!-- <div class="product__button-outer">
-                                <a href="" class="product__button button button-buy"><span>В корзину</span></a>
-                            </div> -->
-                  <div class="product__availability product__availability">
-                    наличие:
-                    <span
-                      class="product__availability-value product__availability-value--in-stock"
-                      >в магазине</span
-                    >
-                  </div>
-                </div>
-                <div class="compare__specifications">
-                  <div class="compare__specifications-title g-subtitle h4">
-                    .
-                  </div>
-                  <table class="compare__specifications-table">
-                    <tr>
-                      <!-- <td>Производитель</td> -->
-                      <td>Apple</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Страна производитель</td> -->
-                      <td>Китай</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Операционная система</td> -->
-                      <td>Mac OS</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Оперативная память</td> -->
-                      <td>8 Гб</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Объем памяти видеокарты</td> -->
-                      <td>512 Гб</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Разрешение экрана</td> -->
-                      <td>2560 х 1440</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Постоянная память</td> -->
-                      <td>1 Тб HDD + 512 Гб SSD</td>
-                    </tr>
-                  </table>
-
-                  <div class="compare__specifications-title g-subtitle h4">
-                    .
-                  </div>
-                  <table class="compare__specifications-table">
-                    <tr>
-                      <!-- <td>Производитель</td> -->
-                      <td>23.8"</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Страна производитель</td> -->
-                      <td class="hover">1920x1080</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Операционная система</td> -->
-                      <td>IPS</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Оперативная память</td> -->
-                      <td>WLED</td>
-                    </tr>
-                    <tr>
-                      <!-- <td>Объем памяти видеокарты</td> -->
-                      <td>4 мс</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-
-              <div class="mv_12 mh_12 tb_6 ds_4 product-outer">
-                <div class="product"></div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -490,6 +146,12 @@ export default {
           this.specificationsProcutsCompareAll.push(property);
         }
       }
+
+      // v2. update in store
+      this.$store.dispatch(
+        "setSpecificationsProcutsCompareAll",
+        this.specificationsProcutsCompareAll
+      );
     },
 
     // setSpecificationsProcutsCompareActive() {
@@ -506,6 +168,13 @@ export default {
           if (ProductsServices.isPropertyDifference(item, this.products))
             this.specificationsProcutsCompareDifference.push(item);
         }
+      );
+
+      // v2. update in store
+      this.$store.dispatch(
+        "setSpecificationsProcutsCompareDifference",
+        // differenceProperies  // - это неправильно, этот массив пуст
+        this.specificationsProcutsCompareDifference
       );
 
       return differenceProperies;

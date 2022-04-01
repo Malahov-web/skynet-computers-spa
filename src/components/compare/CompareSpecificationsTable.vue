@@ -59,6 +59,34 @@
         </tr>
       </table>
     </div>
+
+    <div class="" v-if="compareModeActive == 1">
+      <div class="compare__specifications-title g-subtitle h4">
+        {{ specsGroupInfo.title }}:
+      </div>
+      <table class="compare__specifications-table">
+        <tr v-for="(item, key) in specsGroup" :key="key" v-if="isGeneral(key)">
+          <td>
+            {{ item.title || key }}
+
+            <span
+              class="tooltip-button"
+              title="Нажмите чтобы увидеть подсказку"
+              @click="toggleTooltip(key)"
+              @close-tooltip="toggleTooltip('')"
+            >
+              <i class="themify themify-plus _themify-help"></i>
+              <BaseTooltip
+                class="asd"
+                :name="key"
+                :text="item.description"
+                :activeTooltip="activeTooltip"
+              ></BaseTooltip>
+            </span>
+          </td>
+        </tr>
+      </table>
+    </div>
   </div>
 </template>
 
@@ -75,13 +103,6 @@ export default {
       type: Object,
       default: () => {},
     },
-
-    specificationsProcutsCompareDifference: {
-      type: Array,
-      default: () => {
-        return [];
-      },
-    },
   },
 
   data() {
@@ -93,6 +114,9 @@ export default {
   computed: {
     compareModeActive() {
       return this.$store.getters.getCompareModeActive;
+    },
+    specificationsProcutsCompareDifference() {
+      return this.$store.getters.getSpecificationsProcutsCompareDifference;
     },
   },
 
@@ -120,6 +144,12 @@ export default {
       );
 
       return hasInArray;
+    },
+
+    isGeneral(fieldName) {
+      // "specsGroup.brand.group"
+
+      return this.specsGroup[fieldName].group == 0 ? true : false;
     },
   },
 };

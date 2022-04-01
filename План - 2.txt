@@ -38,3 +38,23 @@ compare__specifications-table tr td.hover {
 
 можно ли вставить сюда базовый комп-т BaseTabs?
 или по сути это не табы? а табы только визуально?
+
+вт
+  CompareControls.vue (1)
+  refact: CompareSpecifications, CompareSpecificationsTable, modules - compare.js 
+    (specificationsProcutsCompareDifference, specificationsProcutsCompareAll) (1)
+
+ср
+..refact: CompareProducts, ProductCompareSpecifications, ProductCompareSpecificationsTable.vue (0.5)
+
+...далее:
+добавить specificationsProcutsCompareGeneral,
+кнопки add to compare
+завершить модуль
+
+чт
+  CompareSpecificationsTable.vue (specificationsProcutsCompareGeneral,) (0.5)
+
+пт
+  ProductCompareSpecificationsTable.vue, ProductCompareSpecifications.vue (1)
+..

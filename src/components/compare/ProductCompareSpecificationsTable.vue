@@ -4,11 +4,11 @@
       <div class="compare__specifications-title g-subtitle h4">.</div>
 
       <table class="compare__specifications-table">
-        <tr v-for="(value, key2) in group" :key="key2">
+        <tr v-for="(item, key2) in specsGroup" :key="key2">
           <!-- <td>Производитель</td> -->
           <!-- Вывести класс, если isDifference(key2) -->
           <td v-bind:class="{ hover: isDifference(key2) }">
-            {{ value }}
+            {{ item.value }}
           </td>
         </tr>
       </table>
@@ -19,14 +19,32 @@
 
       <table class="compare__specifications-table">
         <tr
-          v-for="(value, key2) in group"
+          v-for="(item, key2) in specsGroup"
           :key="key2"
           v-if="isDifference(key2)"
         >
           <!-- <td>Производитель</td> -->
           <!-- Вывести класс, если isDifference(key2) -->
           <td>
-            {{ value }}
+            {{ item.value }}
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div v-if="compareModeActive == 1">
+      <div class="compare__specifications-title g-subtitle h4">.</div>
+
+      <table class="compare__specifications-table">
+        <tr
+          v-for="(item, key2) in specsGroup"
+          :key="key2"
+          v-if="isGeneral(key2)"
+        >
+          <!-- <td>Производитель</td> -->
+          <!-- Вывести класс, если isDifference(key2) -->
+          <td>
+            {{ item.value }}
           </td>
         </tr>
       </table>
@@ -39,31 +57,19 @@ export default {
   name: "ProductCompareSpecificationsTable",
 
   props: {
-    group: {
+    specsGroup: {
       type: Object,
       default: () => {},
-    },
-
-    specificationsProcutsCompareDifference: {
-      type: Array,
-      default: () => {
-        return [];
-      },
     },
   },
 
   computed: {
-    // compareModeActive() {
-    //   return this.$store.state.compare.compareModeActive;
-    //   //   return this.$store.dispatch("getCompareModeActive"); // -
-    // },
     compareModeActive() {
       return this.$store.getters.getCompareModeActive;
     },
-
-    // specificationsGroups() {
-    //   return this.$store.state.products_module.specificationsGroups;
-    // },
+    specificationsProcutsCompareDifference() {
+      return this.$store.getters.getSpecificationsProcutsCompareDifference;
+    },
   },
 
   methods: {
@@ -76,6 +82,11 @@ export default {
       );
 
       return hasInArray;
+    },
+
+    isGeneral(fieldName) {
+      // "specsGroup.brand.group"
+      return this.specsGroup[fieldName].group == 0 ? true : false;
     },
   },
 };
