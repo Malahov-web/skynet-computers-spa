@@ -22,6 +22,8 @@ import BaseButtonBuy from '@/components/base/BaseButtonBuy.vue';
 
 import BaseTooltip from '@/components/base/BaseTooltip.vue';
 
+import BaseButtonCompare from '@/components/base/BaseButtonCompare.vue';
+
 
 // Vue.component( 'BaseButtonBuy', BaseButtonBuy);
 // Vue.component( 'BaseSelect', BaseSelect);
@@ -36,6 +38,9 @@ Vue.component('BaseTextarea', BaseTextarea);
 Vue.component('BaseButtonBuy', BaseButtonBuy);
 
 Vue.component('BaseTooltip', BaseTooltip);
+
+Vue.component('BaseButtonCompare', BaseButtonCompare);
+
 
 // Automatic Global registration
 import upperFirst from 'lodash/upperFirst'

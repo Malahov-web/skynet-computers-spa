@@ -1,28 +1,14 @@
 
 export default {
     state: {
+
         compareModeActive: 2,
 
         specificationsProcutsCompareDifference: [],
         specificationsProcutsCompareAll: [],
         specificationsProcutsCompareGeneral: []
     },
-    getters: {
 
-
-
-        getCompareModeActive: (state) => {
-            return state.compareModeActive;
-        },
-
-        getSpecificationsProcutsCompareDifference: (state) => {
-            return state.specificationsProcutsCompareDifference;
-        },
-        getSpecificationsProcutsCompareAll: (state) => {
-            return state.specificationsProcutsCompareAll;
-        },
-
-    },
     mutations: {
         // updateValue(state, payload) {
         //     state.value = payload;
@@ -37,6 +23,13 @@ export default {
         SET_SPECIFICATIONS_PROCUTS_COMPARE_ALL(state, specificationsProcutsCompareAll) {
             state.specificationsProcutsCompareAll = specificationsProcutsCompareAll;
         },
+
+        ADD_TO_COMPARE() {
+
+        },
+        // ADD_TO_COMPARE() {
+
+        // },        
 
     },
     actions: {
@@ -64,5 +57,25 @@ export default {
             commit("SET_SPECIFICATIONS_PROCUTS_COMPARE_ALL", value);
         },
 
-    }
+    },
+
+    getters: {
+
+
+
+        getCompareModeActive: (state) => {
+            return state.compareModeActive;
+        },
+
+        getSpecificationsProcutsCompareDifference: (state) => {
+            return state.specificationsProcutsCompareDifference;
+        },
+        getSpecificationsProcutsCompareAll: (state) => {
+            return state.specificationsProcutsCompareAll;
+        },
+
+
+
+
+    },
 };

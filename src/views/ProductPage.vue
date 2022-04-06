@@ -23,6 +23,13 @@
         <Productfull class="asd" :product="product"> </Productfull>
       </main>
 
+      <aside class="sidebar sidebar--productfull">
+        <div class="sidebar-inner">
+          <ProductfullSidebar class="asd" :product="product">
+          </ProductfullSidebar>
+        </div>
+      </aside>
+
       <div class="bottomline"></div>
     </div>
   </section>
@@ -30,11 +37,13 @@
 
 <script>
 import Productfull from "@/components/productfull/Productfull.vue";
+import ProductfullSidebar from "@/components/productfull/ProductfullSidebar.vue";
 
 export default {
   name: "ProductPage",
   components: {
     Productfull,
+    ProductfullSidebar,
   },
 
   props: {

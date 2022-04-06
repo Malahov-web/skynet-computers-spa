@@ -105,6 +105,8 @@ export default {
       //   return this.$store.state
       //   return this.$store.state.getProductsCompare; // undefined
       //   return this.$store.state.products_module.getProductsCompare; //
+      //   return this.$store.getters.getProductsCompare;
+
       return this.$store.getters.getProductsCompare;
     },
 

@@ -9,6 +9,16 @@
 
       <ProductsGridItemV2 class="product--viewed" v-bind:product="product">
         <template class="asd" v-slot:imageSlot>
+          <div class="product__remove-outer">
+            <a
+              href="#"
+              class="product__remove"
+              @click.prevent="removeFromCompare(product.id)"
+            >
+              <i class="themify themify-close"></i>
+            </a>
+          </div>
+
           <ProductImage
             :productImage="product.image"
             :productTitle="product.title"
@@ -134,6 +144,10 @@ export default {
       //   groupedSpecs = groupBy(specs, "group"); // - Lodash method for Arrays, возвращает эл-ты сгруппированые в массивы, у нас теряется имя-ключ
       groupedSpecs = ProductsServices.groupObjectByField(specs, "group");
       return groupedSpecs;
+    },
+
+    removeFromCompare(productId) {
+      this.$store.dispatch("removeFromCompare", productId);
     },
   },
 };

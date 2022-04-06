@@ -5,7 +5,8 @@ export default {
         products: {},
         productFull: {},
 
-        productsCompareIds: [1, 21910538], // [ ] // [1, 01910538]
+        // productsCompareIds: [1, 21910538], // [ ] // [1, 01910538]
+        productsCompareIds: [1], // [ ] // [1, 01910538]
 
         specificationsGroups: {
             0: {
@@ -82,6 +83,24 @@ export default {
         SET_PRODUCT_FULL(state, productFull) {
             state.productFull = productFull;
         },
+
+        // ADD_TO_COMPARE(state, productsCompareIds) {
+        //     state.productsCompareIds = productsCompareIds;
+
+        // },
+
+        ADD_TO_COMPARE(state, newProductId) {
+            state.productsCompareIds.push(newProductId);
+            // state.productsCompareIds.push(21910538);
+        },
+        REMOVE_FROM_COMPARE(state, removeProductId) {
+            // state.productsCompareIds.push(newProductId);
+            // state.productsCompareIds.push(21910538);
+
+            let newProductsCompareIds = state.productsCompareIds.filter((item) => { return item !== removeProductId })
+            state.productsCompareIds = newProductsCompareIds;
+        },
+
     },
     actions: {
         fetchProducts({ commit }) {
@@ -116,6 +135,30 @@ export default {
             //     console.log("response");
             //     console.log(response);
             // });
+        },
+
+
+        addToCompare({ commit, state }, newProductId) {
+
+            // if state.productsCompareIds
+            // нету этого продукта
+            let isInCompare = state.productsCompareIds.find((item) => item == newProductId)
+            if (!isInCompare) {
+                commit("ADD_TO_COMPARE", newProductId);
+            }
+
+        },
+
+
+        removeFromCompare({ commit, state }, removeProductId) {
+
+            // if state.productsCompareIds
+            // нету этого продукта
+            let isInCompare = state.productsCompareIds.find((item) => item == removeProductId)
+            if (isInCompare) {
+                commit("REMOVE_FROM_COMPARE", removeProductId);
+            }
+
         },
     },
 

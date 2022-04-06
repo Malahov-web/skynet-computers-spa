@@ -57,4 +57,19 @@ compare__specifications-table tr td.hover {
 
 пт
   ProductCompareSpecificationsTable.vue, ProductCompareSpecifications.vue (1)
-..
+  ProductfullSidebar (0.5)
+
+..далее:
+ProductfullSidebar, Base-/AddToCompareButton
+вероятно для получения товаров в сравнении придется обращаться из одного модуля в другой
+
+--
+
+пн 
+  ProductfullSidebar, BaseButtonCompare, modules - compare (1)
+
+..далее 
+продолжить ProductfullSidebar -  isInCompare
+
+вт
+  ProductfullSidebar, BaseButtonCompare, modules - compare ,(1)
