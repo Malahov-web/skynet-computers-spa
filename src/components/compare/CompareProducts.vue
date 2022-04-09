@@ -116,9 +116,9 @@ export default {
       return this.$store.state.products_module.specifications;
     },
 
-    specificationsGroups() {
-      return this.$store.state.products_module.specificationsGroups;
-    },
+    // specificationsGroups() {
+    //   return this.$store.state.products_module.specificationsGroups;
+    // },
 
     specificationsByGroups() {
       return this.groupProperties();

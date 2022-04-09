@@ -101,12 +101,50 @@ export default {
 
   computed: {
     // productsCompare() {
-    products() {
-      //   return this.$store.state
-      //   return this.$store.state.getProductsCompare; // undefined
-      //   return this.$store.state.products_module.getProductsCompare; //
-      //   return this.$store.getters.getProductsCompare;
+    // products() {
+    //   //   return this.$store.state
+    //   //   return this.$store.state.getProductsCompare; // undefined
+    //   //   return this.$store.state.products_module.getProductsCompare; //
+    //   //   return this.$store.getters.getProductsCompare;
 
+    //   return this.$store.getters.getProductsCompare;
+    // },
+
+    // //v1
+    // productsAll() {
+    //   return this.$store.getters.getProducts;
+    // },
+    // productsCompareIds() {
+    //   return this.$store.state.compare.productsCompareIds;
+    // },
+
+    // specificationsGroups() {
+    //   return this.$store.state.products_module.specificationsGroups;
+    // },
+    // specifications() {
+    //   return this.$store.state.products_module.specifications;
+    // },
+
+    // products() {
+    //   const allProducts = this.productsAll; // ?
+    //   const productsCompareIds = this.productsCompareIds;
+
+    //   // let productsCompare = []
+
+    //   // for (const key, product in allProducts) {
+    //   // }
+    //   // console.log('allProducts: ');
+    //   // console.log(allProducts); +
+    //   let productsCompare = productsCompareIds.map((id) => {
+    //     return allProducts[id];
+    //   });
+    //   console.log("productsCompare: ");
+    //   console.log(productsCompare);
+    //   return productsCompare;
+    // },
+
+    //v2
+    products() {
       return this.$store.getters.getProductsCompare;
     },
 

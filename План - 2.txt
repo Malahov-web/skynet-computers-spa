@@ -73,3 +73,9 @@ ProductfullSidebar, Base-/AddToCompareButton
 
 вт
   ProductfullSidebar, BaseButtonCompare, modules - compare ,(1)
+
+ср
+  module - compare, ComparePage:refact (1)
+
+пт
+..

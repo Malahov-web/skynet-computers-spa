@@ -75,7 +75,9 @@ export default {
     productsCompareIds() {
       //   return this.$store.getters.getProductsCompare;
       //   return this.$store.state.productsCompareIds;
-      return this.$store.state.products_module.productsCompareIds;
+      //   return this.$store.state.products_module.productsCompareIds;
+
+      return this.$store.state.compare.productsCompareIds;
     },
     isInCompare() {
       let isInCompare = this.productsCompareIds.find(

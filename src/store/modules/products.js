@@ -6,7 +6,7 @@ export default {
         productFull: {},
 
         // productsCompareIds: [1, 21910538], // [ ] // [1, 01910538]
-        productsCompareIds: [1], // [ ] // [1, 01910538]
+        // productsCompareIds: [1], // [ ] // [1, 01910538]
 
         specificationsGroups: {
             0: {
@@ -84,22 +84,19 @@ export default {
             state.productFull = productFull;
         },
 
-        // ADD_TO_COMPARE(state, productsCompareIds) {
-        //     state.productsCompareIds = productsCompareIds;
 
+
+        // ADD_TO_COMPARE(state, newProductId) {
+        //     state.productsCompareIds.push(newProductId);
+        //     // state.productsCompareIds.push(21910538);
         // },
+        // REMOVE_FROM_COMPARE(state, removeProductId) {
+        //     // state.productsCompareIds.push(newProductId);
+        //     // state.productsCompareIds.push(21910538);
 
-        ADD_TO_COMPARE(state, newProductId) {
-            state.productsCompareIds.push(newProductId);
-            // state.productsCompareIds.push(21910538);
-        },
-        REMOVE_FROM_COMPARE(state, removeProductId) {
-            // state.productsCompareIds.push(newProductId);
-            // state.productsCompareIds.push(21910538);
-
-            let newProductsCompareIds = state.productsCompareIds.filter((item) => { return item !== removeProductId })
-            state.productsCompareIds = newProductsCompareIds;
-        },
+        //     let newProductsCompareIds = state.productsCompareIds.filter((item) => { return item !== removeProductId })
+        //     state.productsCompareIds = newProductsCompareIds;
+        // },
 
     },
     actions: {
@@ -138,28 +135,28 @@ export default {
         },
 
 
-        addToCompare({ commit, state }, newProductId) {
+        // addToCompare({ commit, state }, newProductId) {
 
-            // if state.productsCompareIds
-            // нету этого продукта
-            let isInCompare = state.productsCompareIds.find((item) => item == newProductId)
-            if (!isInCompare) {
-                commit("ADD_TO_COMPARE", newProductId);
-            }
+        //     // if state.productsCompareIds
+        //     // нету этого продукта
+        //     let isInCompare = state.productsCompareIds.find((item) => item == newProductId)
+        //     if (!isInCompare) {
+        //         commit("ADD_TO_COMPARE", newProductId);
+        //     }
 
-        },
+        // },
 
 
-        removeFromCompare({ commit, state }, removeProductId) {
+        // removeFromCompare({ commit, state }, removeProductId) {
 
-            // if state.productsCompareIds
-            // нету этого продукта
-            let isInCompare = state.productsCompareIds.find((item) => item == removeProductId)
-            if (isInCompare) {
-                commit("REMOVE_FROM_COMPARE", removeProductId);
-            }
+        //     // if state.productsCompareIds
+        //     // нету этого продукта
+        //     let isInCompare = state.productsCompareIds.find((item) => item == removeProductId)
+        //     if (isInCompare) {
+        //         commit("REMOVE_FROM_COMPARE", removeProductId);
+        //     }
 
-        },
+        // },
     },
 
     getters: {
@@ -188,23 +185,7 @@ export default {
             }
         },
 
-        getProductsCompare: (state) => {
-            const allProducts = state.products
-            const productsCompareIds = state.productsCompareIds
 
-            // let productsCompare = []
-
-            // for (const key, product in allProducts) {
-            // }
-            // console.log('allProducts: ');
-            // console.log(allProducts); +
-            let productsCompare = productsCompareIds.map((id) => {
-                return allProducts[id]
-            });
-            console.log('productsCompare: ');
-            console.log(productsCompare);
-            return productsCompare
-        },
 
         // getSpecifications: state => {
         //     return state.value;
